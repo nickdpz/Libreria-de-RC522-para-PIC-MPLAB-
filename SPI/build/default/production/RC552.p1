@@ -1,0 +1,3892 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"63 ./RC522.h
+[; ;./RC522.h: 63: typedef struct {
+[s S4 `uc 1 `uc -> 10 `i `uc 1 ]
+[n S4 . size uidByte sak ]
+"2101 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2101:     struct {
+[s S118 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S118 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
+"2100
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2100: typedef union {
+[u S117 `S118 1 ]
+[n S117 . . ]
+"2112
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2112: extern volatile LATCbits_t LATCbits __attribute__((address(0x10E)));
+[v _LATCbits `VS117 ~T0 @X0 0 e@270 ]
+"39 ./mcc_generated_files/spi_driver.h
+[; ;./mcc_generated_files/spi_driver.h: 39: uint8_t spi_exchangeByte(uint8_t b);
+[v _spi_exchangeByte `(uc ~T0 @X0 0 ef1`uc ]
+"37
+[; ;./mcc_generated_files/spi_driver.h: 37: __bit spi_master_open();
+[v _spi_master_open `(b ~T0 @X0 0 e? ]
+"123 RC552.c
+[; ;RC552.c: 123:     spi_master_open(SPI_CUSTOM0);
+[c E638 0 .. ]
+[n E638 . SPI_CUSTOM0  ]
+"1163 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1163:     struct {
+[s S75 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S75 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 TRISC6 TRISC7 ]
+"1162
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1162: typedef union {
+[u S74 `S75 1 ]
+[n S74 . . ]
+"1174
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1174: extern volatile TRISCbits_t TRISCbits __attribute__((address(0x08E)));
+[v _TRISCbits `VS74 ~T0 @X0 0 e@142 ]
+"524
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 524:     struct {
+[s S43 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S43 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
+"523
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 523: typedef union {
+[u S42 `S43 1 ]
+[n S42 . . ]
+"535
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 535: extern volatile PORTCbits_t PORTCbits __attribute__((address(0x00E)));
+[v _PORTCbits `VS42 ~T0 @X0 0 e@14 ]
+[v F4986 `(v ~T0 @X0 1 tf1`ul ]
+"92 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic.h
+[v __delay `JF4986 ~T0 @X0 0 e ]
+[p i __delay ]
+"236 ./RC522.h
+[; ;./RC522.h: 236: void PCD_Reset(void);
+[v _PCD_Reset `(v ~T0 @X0 0 ef ]
+"237
+[; ;./RC522.h: 237: void PCD_AntennaOn(void);
+[v _PCD_AntennaOn `(v ~T0 @X0 0 ef ]
+"252
+[; ;./RC522.h: 252:     unsigned char PCD_CommunicateWithPICC( unsigned char command,
+[v _PCD_CommunicateWithPICC `(uc ~T0 @X0 0 ef9`uc`uc`*uc`uc`*uc`*uc`*uc`uc`a ]
+"269
+[; ;./RC522.h: 269:     unsigned char PICC_REQA_or_WUPA( unsigned char command,
+[v _PICC_REQA_or_WUPA `(uc ~T0 @X0 0 ef3`uc`*uc`*uc ]
+"71
+[; ;./RC522.h: 71: typedef struct {
+[s S5 `uc -> 6 `i ]
+[n S5 . keyByte ]
+"315
+[; ;./RC522.h: 315:     unsigned char PCD_MIFARE_Transceive(unsigned char *sendData,
+[v _PCD_MIFARE_Transceive `(uc ~T0 @X0 0 ef3`*uc`uc`a ]
+"27 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\c99\string.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\c99\string.h: 27: void *memcpy (void *restrict, const void *restrict, size_t);
+[v _memcpy `(*v ~T0 @X0 0 ef3`*v`*Cv`ui ]
+"305 ./RC522.h
+[; ;./RC522.h: 305:     unsigned char MIFARE_TwoStepHelper( unsigned char command,
+[v _MIFARE_TwoStepHelper `(uc ~T0 @X0 0 ef3`uc`uc`ul ]
+"16 ./RC522.h
+[; ;./RC522.h: 16: const unsigned char MFRC522_firmware_referenceV0_0[] = {
+[v _MFRC522_firmware_referenceV0_0 `Cuc ~T0 @X0 -> 64 `i e ]
+[i _MFRC522_firmware_referenceV0_0
+:U ..
+-> -> 0 `i `uc
+-> -> 135 `i `uc
+-> -> 152 `i `uc
+-> -> 15 `i `uc
+-> -> 73 `i `uc
+-> -> 255 `i `uc
+-> -> 7 `i `uc
+-> -> 25 `i `uc
+-> -> 191 `i `uc
+-> -> 34 `i `uc
+-> -> 48 `i `uc
+-> -> 73 `i `uc
+-> -> 89 `i `uc
+-> -> 99 `i `uc
+-> -> 173 `i `uc
+-> -> 202 `i `uc
+-> -> 127 `i `uc
+-> -> 227 `i `uc
+-> -> 78 `i `uc
+-> -> 3 `i `uc
+-> -> 92 `i `uc
+-> -> 78 `i `uc
+-> -> 73 `i `uc
+-> -> 80 `i `uc
+-> -> 71 `i `uc
+-> -> 154 `i `uc
+-> -> 55 `i `uc
+-> -> 97 `i `uc
+-> -> 231 `i `uc
+-> -> 226 `i `uc
+-> -> 198 `i `uc
+-> -> 46 `i `uc
+-> -> 117 `i `uc
+-> -> 90 `i `uc
+-> -> 237 `i `uc
+-> -> 4 `i `uc
+-> -> 61 `i `uc
+-> -> 2 `i `uc
+-> -> 75 `i `uc
+-> -> 120 `i `uc
+-> -> 50 `i `uc
+-> -> 255 `i `uc
+-> -> 88 `i `uc
+-> -> 59 `i `uc
+-> -> 124 `i `uc
+-> -> 233 `i `uc
+-> -> 0 `i `uc
+-> -> 148 `i `uc
+-> -> 180 `i `uc
+-> -> 74 `i `uc
+-> -> 89 `i `uc
+-> -> 91 `i `uc
+-> -> 253 `i `uc
+-> -> 201 `i `uc
+-> -> 41 `i `uc
+-> -> 223 `i `uc
+-> -> 53 `i `uc
+-> -> 150 `i `uc
+-> -> 152 `i `uc
+-> -> 158 `i `uc
+-> -> 79 `i `uc
+-> -> 48 `i `uc
+-> -> 50 `i `uc
+-> -> 141 `i `uc
+..
+]
+"28
+[; ;./RC522.h: 28: const unsigned char MFRC522_firmware_referenceV1_0[] = {
+[v _MFRC522_firmware_referenceV1_0 `Cuc ~T0 @X0 -> 64 `i e ]
+[i _MFRC522_firmware_referenceV1_0
+:U ..
+-> -> 0 `i `uc
+-> -> 198 `i `uc
+-> -> 55 `i `uc
+-> -> 213 `i `uc
+-> -> 50 `i `uc
+-> -> 183 `i `uc
+-> -> 87 `i `uc
+-> -> 92 `i `uc
+-> -> 194 `i `uc
+-> -> 216 `i `uc
+-> -> 124 `i `uc
+-> -> 77 `i `uc
+-> -> 217 `i `uc
+-> -> 112 `i `uc
+-> -> 199 `i `uc
+-> -> 115 `i `uc
+-> -> 16 `i `uc
+-> -> 230 `i `uc
+-> -> 210 `i `uc
+-> -> 170 `i `uc
+-> -> 94 `i `uc
+-> -> 161 `i `uc
+-> -> 62 `i `uc
+-> -> 90 `i `uc
+-> -> 20 `i `uc
+-> -> 175 `i `uc
+-> -> 48 `i `uc
+-> -> 97 `i `uc
+-> -> 201 `i `uc
+-> -> 112 `i `uc
+-> -> 219 `i `uc
+-> -> 46 `i `uc
+-> -> 100 `i `uc
+-> -> 34 `i `uc
+-> -> 114 `i `uc
+-> -> 181 `i `uc
+-> -> 189 `i `uc
+-> -> 101 `i `uc
+-> -> 244 `i `uc
+-> -> 236 `i `uc
+-> -> 34 `i `uc
+-> -> 188 `i `uc
+-> -> 211 `i `uc
+-> -> 114 `i `uc
+-> -> 53 `i `uc
+-> -> 205 `i `uc
+-> -> 170 `i `uc
+-> -> 65 `i `uc
+-> -> 31 `i `uc
+-> -> 167 `i `uc
+-> -> 243 `i `uc
+-> -> 83 `i `uc
+-> -> 20 `i `uc
+-> -> 222 `i `uc
+-> -> 126 `i `uc
+-> -> 2 `i `uc
+-> -> 217 `i `uc
+-> -> 15 `i `uc
+-> -> 181 `i `uc
+-> -> 94 `i `uc
+-> -> 37 `i `uc
+-> -> 29 `i `uc
+-> -> 41 `i `uc
+-> -> 121 `i `uc
+..
+]
+"40
+[; ;./RC522.h: 40: const unsigned char MFRC522_firmware_referenceV2_0[] = {
+[v _MFRC522_firmware_referenceV2_0 `Cuc ~T0 @X0 -> 64 `i e ]
+[i _MFRC522_firmware_referenceV2_0
+:U ..
+-> -> 0 `i `uc
+-> -> 235 `i `uc
+-> -> 102 `i `uc
+-> -> 186 `i `uc
+-> -> 87 `i `uc
+-> -> 191 `i `uc
+-> -> 35 `i `uc
+-> -> 149 `i `uc
+-> -> 208 `i `uc
+-> -> 227 `i `uc
+-> -> 13 `i `uc
+-> -> 61 `i `uc
+-> -> 39 `i `uc
+-> -> 137 `i `uc
+-> -> 92 `i `uc
+-> -> 222 `i `uc
+-> -> 157 `i `uc
+-> -> 59 `i `uc
+-> -> 167 `i `uc
+-> -> 0 `i `uc
+-> -> 33 `i `uc
+-> -> 91 `i `uc
+-> -> 137 `i `uc
+-> -> 130 `i `uc
+-> -> 81 `i `uc
+-> -> 58 `i `uc
+-> -> 235 `i `uc
+-> -> 2 `i `uc
+-> -> 12 `i `uc
+-> -> 165 `i `uc
+-> -> 0 `i `uc
+-> -> 73 `i `uc
+-> -> 124 `i `uc
+-> -> 132 `i `uc
+-> -> 77 `i `uc
+-> -> 179 `i `uc
+-> -> 204 `i `uc
+-> -> 210 `i `uc
+-> -> 27 `i `uc
+-> -> 129 `i `uc
+-> -> 93 `i `uc
+-> -> 72 `i `uc
+-> -> 118 `i `uc
+-> -> 213 `i `uc
+-> -> 113 `i `uc
+-> -> 97 `i `uc
+-> -> 33 `i `uc
+-> -> 169 `i `uc
+-> -> 134 `i `uc
+-> -> 150 `i `uc
+-> -> 131 `i `uc
+-> -> 56 `i `uc
+-> -> 207 `i `uc
+-> -> 157 `i `uc
+-> -> 91 `i `uc
+-> -> 109 `i `uc
+-> -> 220 `i `uc
+-> -> 21 `i `uc
+-> -> 186 `i `uc
+-> -> 62 `i `uc
+-> -> 125 `i `uc
+-> -> 149 `i `uc
+-> -> 59 `i `uc
+-> -> 47 `i `uc
+..
+]
+"52
+[; ;./RC522.h: 52: const unsigned char FM17522_firmware_reference[] = {
+[v _FM17522_firmware_reference `Cuc ~T0 @X0 -> 64 `i e ]
+[i _FM17522_firmware_reference
+:U ..
+-> -> 0 `i `uc
+-> -> 214 `i `uc
+-> -> 120 `i `uc
+-> -> 140 `i `uc
+-> -> 226 `i `uc
+-> -> 170 `i `uc
+-> -> 12 `i `uc
+-> -> 24 `i `uc
+-> -> 42 `i `uc
+-> -> 184 `i `uc
+-> -> 122 `i `uc
+-> -> 127 `i `uc
+-> -> 211 `i `uc
+-> -> 106 `i `uc
+-> -> 207 `i `uc
+-> -> 11 `i `uc
+-> -> 177 `i `uc
+-> -> 55 `i `uc
+-> -> 99 `i `uc
+-> -> 75 `i `uc
+-> -> 105 `i `uc
+-> -> 174 `i `uc
+-> -> 145 `i `uc
+-> -> 199 `i `uc
+-> -> 195 `i `uc
+-> -> 151 `i `uc
+-> -> 174 `i `uc
+-> -> 119 `i `uc
+-> -> 244 `i `uc
+-> -> 55 `i `uc
+-> -> 215 `i `uc
+-> -> 155 `i `uc
+-> -> 124 `i `uc
+-> -> 245 `i `uc
+-> -> 60 `i `uc
+-> -> 17 `i `uc
+-> -> 143 `i `uc
+-> -> 21 `i `uc
+-> -> 195 `i `uc
+-> -> 215 `i `uc
+-> -> 193 `i `uc
+-> -> 91 `i `uc
+-> -> 0 `i `uc
+-> -> 42 `i `uc
+-> -> 208 `i `uc
+-> -> 117 `i `uc
+-> -> 222 `i `uc
+-> -> 158 `i `uc
+-> -> 81 `i `uc
+-> -> 100 `i `uc
+-> -> 171 `i `uc
+-> -> 62 `i `uc
+-> -> 233 `i `uc
+-> -> 21 `i `uc
+-> -> 181 `i `uc
+-> -> 171 `i `uc
+-> -> 86 `i `uc
+-> -> 154 `i `uc
+-> -> 152 `i `uc
+-> -> 130 `i `uc
+-> -> 38 `i `uc
+-> -> 234 `i `uc
+-> -> 42 `i `uc
+-> -> 98 `i `uc
+..
+]
+"69
+[; ;./RC522.h: 69: Uid uid;
+[v _uid `S4 ~T0 @X0 1 e ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 54: __asm("INDF0 equ 00h");
+[; <" INDF0 equ 00h ;# ">
+"74
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 74: __asm("INDF1 equ 01h");
+[; <" INDF1 equ 01h ;# ">
+"94
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 94: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"114
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 114: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"177
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 177: __asm("FSR0L equ 04h");
+[; <" FSR0L equ 04h ;# ">
+"197
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 197: __asm("FSR0H equ 05h");
+[; <" FSR0H equ 05h ;# ">
+"221
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 221: __asm("FSR1L equ 06h");
+[; <" FSR1L equ 06h ;# ">
+"241
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 241: __asm("FSR1H equ 07h");
+[; <" FSR1H equ 07h ;# ">
+"261
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 261: __asm("BSR equ 08h");
+[; <" BSR equ 08h ;# ">
+"313
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 313: __asm("WREG equ 09h");
+[; <" WREG equ 09h ;# ">
+"333
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 333: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"353
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 353: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"431
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 431: __asm("PORTA equ 0Ch");
+[; <" PORTA equ 0Ch ;# ">
+"481
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 481: __asm("PORTB equ 0Dh");
+[; <" PORTB equ 0Dh ;# ">
+"520
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 520: __asm("PORTC equ 0Eh");
+[; <" PORTC equ 0Eh ;# ">
+"582
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 582: __asm("PIR1 equ 011h");
+[; <" PIR1 equ 011h ;# ">
+"653
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 653: __asm("PIR2 equ 012h");
+[; <" PIR2 equ 012h ;# ">
+"710
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 710: __asm("PIR3 equ 013h");
+[; <" PIR3 equ 013h ;# ">
+"755
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 755: __asm("TMR0 equ 015h");
+[; <" TMR0 equ 015h ;# ">
+"775
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 775: __asm("TMR1 equ 016h");
+[; <" TMR1 equ 016h ;# ">
+"782
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 782: __asm("TMR1L equ 016h");
+[; <" TMR1L equ 016h ;# ">
+"802
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 802: __asm("TMR1H equ 017h");
+[; <" TMR1H equ 017h ;# ">
+"822
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 822: __asm("T1CON equ 018h");
+[; <" T1CON equ 018h ;# ">
+"894
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 894: __asm("T1GCON equ 019h");
+[; <" T1GCON equ 019h ;# ">
+"964
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 964: __asm("TMR2 equ 01Ah");
+[; <" TMR2 equ 01Ah ;# ">
+"984
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 984: __asm("PR2 equ 01Bh");
+[; <" PR2 equ 01Bh ;# ">
+"1004
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1004: __asm("T2CON equ 01Ch");
+[; <" T2CON equ 01Ch ;# ">
+"1075
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1075: __asm("TRISA equ 08Ch");
+[; <" TRISA equ 08Ch ;# ">
+"1120
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1120: __asm("TRISB equ 08Dh");
+[; <" TRISB equ 08Dh ;# ">
+"1159
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1159: __asm("TRISC equ 08Eh");
+[; <" TRISC equ 08Eh ;# ">
+"1221
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1221: __asm("PIE1 equ 091h");
+[; <" PIE1 equ 091h ;# ">
+"1292
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1292: __asm("PIE2 equ 092h");
+[; <" PIE2 equ 092h ;# ">
+"1349
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1349: __asm("PIE3 equ 093h");
+[; <" PIE3 equ 093h ;# ">
+"1394
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1394: __asm("OPTION_REG equ 095h");
+[; <" OPTION_REG equ 095h ;# ">
+"1477
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1477: __asm("PCON equ 096h");
+[; <" PCON equ 096h ;# ">
+"1534
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1534: __asm("WDTCON equ 097h");
+[; <" WDTCON equ 097h ;# ">
+"1593
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1593: __asm("OSCTUNE equ 098h");
+[; <" OSCTUNE equ 098h ;# ">
+"1651
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1651: __asm("OSCCON equ 099h");
+[; <" OSCCON equ 099h ;# ">
+"1723
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1723: __asm("OSCSTAT equ 09Ah");
+[; <" OSCSTAT equ 09Ah ;# ">
+"1785
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1785: __asm("ADRES equ 09Bh");
+[; <" ADRES equ 09Bh ;# ">
+"1792
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1792: __asm("ADRESL equ 09Bh");
+[; <" ADRESL equ 09Bh ;# ">
+"1812
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1812: __asm("ADRESH equ 09Ch");
+[; <" ADRESH equ 09Ch ;# ">
+"1832
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1832: __asm("ADCON0 equ 09Dh");
+[; <" ADCON0 equ 09Dh ;# ">
+"1912
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1912: __asm("ADCON1 equ 09Eh");
+[; <" ADCON1 equ 09Eh ;# ">
+"1965
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 1965: __asm("ADCON2 equ 09Fh");
+[; <" ADCON2 equ 09Fh ;# ">
+"2013
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2013: __asm("LATA equ 010Ch");
+[; <" LATA equ 010Ch ;# ">
+"2058
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2058: __asm("LATB equ 010Dh");
+[; <" LATB equ 010Dh ;# ">
+"2097
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2097: __asm("LATC equ 010Eh");
+[; <" LATC equ 010Eh ;# ">
+"2159
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2159: __asm("CM1CON0 equ 0111h");
+[; <" CM1CON0 equ 0111h ;# ">
+"2216
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2216: __asm("CM1CON1 equ 0112h");
+[; <" CM1CON1 equ 0112h ;# ">
+"2292
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2292: __asm("CM2CON0 equ 0113h");
+[; <" CM2CON0 equ 0113h ;# ">
+"2349
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2349: __asm("CM2CON1 equ 0114h");
+[; <" CM2CON1 equ 0114h ;# ">
+"2425
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2425: __asm("CMOUT equ 0115h");
+[; <" CMOUT equ 0115h ;# ">
+"2451
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2451: __asm("BORCON equ 0116h");
+[; <" BORCON equ 0116h ;# ">
+"2484
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2484: __asm("FVRCON equ 0117h");
+[; <" FVRCON equ 0117h ;# ">
+"2560
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2560: __asm("DAC1CON0 equ 0118h");
+[; <" DAC1CON0 equ 0118h ;# ">
+"2670
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2670: __asm("DAC1CON1 equ 0119h");
+[; <" DAC1CON1 equ 0119h ;# ">
+"2790
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2790: __asm("ZCD1CON equ 011Ch");
+[; <" ZCD1CON equ 011Ch ;# ">
+"2836
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2836: __asm("ANSELA equ 018Ch");
+[; <" ANSELA equ 018Ch ;# ">
+"2881
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2881: __asm("ANSELB equ 018Dh");
+[; <" ANSELB equ 018Dh ;# ">
+"2908
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2908: __asm("ANSELC equ 018Eh");
+[; <" ANSELC equ 018Eh ;# ">
+"2959
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2959: __asm("PMADR equ 0191h");
+[; <" PMADR equ 0191h ;# ">
+"2966
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2966: __asm("PMADRL equ 0191h");
+[; <" PMADRL equ 0191h ;# ">
+"2986
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 2986: __asm("PMADRH equ 0192h");
+[; <" PMADRH equ 0192h ;# ">
+"3006
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3006: __asm("PMDAT equ 0193h");
+[; <" PMDAT equ 0193h ;# ">
+"3013
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3013: __asm("PMDATL equ 0193h");
+[; <" PMDATL equ 0193h ;# ">
+"3033
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3033: __asm("PMDATH equ 0194h");
+[; <" PMDATH equ 0194h ;# ">
+"3053
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3053: __asm("PMCON1 equ 0195h");
+[; <" PMCON1 equ 0195h ;# ">
+"3109
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3109: __asm("PMCON2 equ 0196h");
+[; <" PMCON2 equ 0196h ;# ">
+"3129
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3129: __asm("VREGCON equ 0197h");
+[; <" VREGCON equ 0197h ;# ">
+"3150
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3150: __asm("RC1REG equ 0199h");
+[; <" RC1REG equ 0199h ;# ">
+"3155
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3155: __asm("RCREG equ 0199h");
+[; <" RCREG equ 0199h ;# ">
+"3159
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3159: __asm("RCREG1 equ 0199h");
+[; <" RCREG1 equ 0199h ;# ">
+"3204
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3204: __asm("TX1REG equ 019Ah");
+[; <" TX1REG equ 019Ah ;# ">
+"3209
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3209: __asm("TXREG1 equ 019Ah");
+[; <" TXREG1 equ 019Ah ;# ">
+"3213
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3213: __asm("TXREG equ 019Ah");
+[; <" TXREG equ 019Ah ;# ">
+"3258
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3258: __asm("SP1BRG equ 019Bh");
+[; <" SP1BRG equ 019Bh ;# ">
+"3265
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3265: __asm("SP1BRGL equ 019Bh");
+[; <" SP1BRGL equ 019Bh ;# ">
+"3270
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3270: __asm("SPBRG equ 019Bh");
+[; <" SPBRG equ 019Bh ;# ">
+"3274
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3274: __asm("SPBRG1 equ 019Bh");
+[; <" SPBRG1 equ 019Bh ;# ">
+"3278
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3278: __asm("SPBRGL equ 019Bh");
+[; <" SPBRGL equ 019Bh ;# ">
+"3335
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3335: __asm("SP1BRGH equ 019Ch");
+[; <" SP1BRGH equ 019Ch ;# ">
+"3340
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3340: __asm("SPBRGH equ 019Ch");
+[; <" SPBRGH equ 019Ch ;# ">
+"3344
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3344: __asm("SPBRGH1 equ 019Ch");
+[; <" SPBRGH1 equ 019Ch ;# ">
+"3389
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3389: __asm("RC1STA equ 019Dh");
+[; <" RC1STA equ 019Dh ;# ">
+"3394
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3394: __asm("RCSTA1 equ 019Dh");
+[; <" RCSTA1 equ 019Dh ;# ">
+"3398
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3398: __asm("RCSTA equ 019Dh");
+[; <" RCSTA equ 019Dh ;# ">
+"3569
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3569: __asm("TX1STA equ 019Eh");
+[; <" TX1STA equ 019Eh ;# ">
+"3574
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3574: __asm("TXSTA1 equ 019Eh");
+[; <" TXSTA1 equ 019Eh ;# ">
+"3578
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3578: __asm("TXSTA equ 019Eh");
+[; <" TXSTA equ 019Eh ;# ">
+"3749
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3749: __asm("BAUD1CON equ 019Fh");
+[; <" BAUD1CON equ 019Fh ;# ">
+"3754
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3754: __asm("BAUDCON1 equ 019Fh");
+[; <" BAUDCON1 equ 019Fh ;# ">
+"3758
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3758: __asm("BAUDCTL1 equ 019Fh");
+[; <" BAUDCTL1 equ 019Fh ;# ">
+"3762
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3762: __asm("BAUDCON equ 019Fh");
+[; <" BAUDCON equ 019Fh ;# ">
+"3766
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3766: __asm("BAUDCTL equ 019Fh");
+[; <" BAUDCTL equ 019Fh ;# ">
+"3995
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 3995: __asm("WPUA equ 020Ch");
+[; <" WPUA equ 020Ch ;# ">
+"4045
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 4045: __asm("WPUB equ 020Dh");
+[; <" WPUB equ 020Dh ;# ">
+"4084
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 4084: __asm("WPUC equ 020Eh");
+[; <" WPUC equ 020Eh ;# ">
+"4146
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 4146: __asm("SSP1BUF equ 0211h");
+[; <" SSP1BUF equ 0211h ;# ">
+"4151
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 4151: __asm("SSPBUF equ 0211h");
+[; <" SSPBUF equ 0211h ;# ">
+"4400
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 4400: __asm("SSP1ADD equ 0212h");
+[; <" SSP1ADD equ 0212h ;# ">
+"4405
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 4405: __asm("SSPADD equ 0212h");
+[; <" SSPADD equ 0212h ;# ">
+"4654
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 4654: __asm("SSP1MSK equ 0213h");
+[; <" SSP1MSK equ 0213h ;# ">
+"4659
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 4659: __asm("SSPMSK equ 0213h");
+[; <" SSPMSK equ 0213h ;# ">
+"4908
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 4908: __asm("SSP1STAT equ 0214h");
+[; <" SSP1STAT equ 0214h ;# ">
+"4913
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 4913: __asm("SSPSTAT equ 0214h");
+[; <" SSPSTAT equ 0214h ;# ">
+"5030
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5030: __asm("SSP1CON1 equ 0215h");
+[; <" SSP1CON1 equ 0215h ;# ">
+"5035
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5035: __asm("SSPCON equ 0215h");
+[; <" SSPCON equ 0215h ;# ">
+"5039
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5039: __asm("SSPCON1 equ 0215h");
+[; <" SSPCON1 equ 0215h ;# ">
+"5043
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5043: __asm("SSP1CON equ 0215h");
+[; <" SSP1CON equ 0215h ;# ">
+"5300
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5300: __asm("SSP1CON2 equ 0216h");
+[; <" SSP1CON2 equ 0216h ;# ">
+"5305
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5305: __asm("SSPCON2 equ 0216h");
+[; <" SSPCON2 equ 0216h ;# ">
+"5422
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5422: __asm("SSP1CON3 equ 0217h");
+[; <" SSP1CON3 equ 0217h ;# ">
+"5427
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5427: __asm("SSPCON3 equ 0217h");
+[; <" SSPCON3 equ 0217h ;# ">
+"5544
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5544: __asm("ODCONA equ 028Ch");
+[; <" ODCONA equ 028Ch ;# ">
+"5589
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5589: __asm("ODCONB equ 028Dh");
+[; <" ODCONB equ 028Dh ;# ">
+"5628
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5628: __asm("ODCONC equ 028Eh");
+[; <" ODCONC equ 028Eh ;# ">
+"5690
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5690: __asm("CCPR1 equ 0291h");
+[; <" CCPR1 equ 0291h ;# ">
+"5697
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5697: __asm("CCPR1L equ 0291h");
+[; <" CCPR1L equ 0291h ;# ">
+"5717
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5717: __asm("CCPR1H equ 0292h");
+[; <" CCPR1H equ 0292h ;# ">
+"5737
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5737: __asm("CCP1CON equ 0293h");
+[; <" CCP1CON equ 0293h ;# ">
+"5742
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5742: __asm("ECCP1CON equ 0293h");
+[; <" ECCP1CON equ 0293h ;# ">
+"5893
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5893: __asm("CCPR2 equ 0298h");
+[; <" CCPR2 equ 0298h ;# ">
+"5900
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5900: __asm("CCPR2L equ 0298h");
+[; <" CCPR2L equ 0298h ;# ">
+"5920
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5920: __asm("CCPR2H equ 0299h");
+[; <" CCPR2H equ 0299h ;# ">
+"5940
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5940: __asm("CCP2CON equ 029Ah");
+[; <" CCP2CON equ 029Ah ;# ">
+"5945
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 5945: __asm("ECCP2CON equ 029Ah");
+[; <" ECCP2CON equ 029Ah ;# ">
+"6096
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 6096: __asm("CCPTMRS equ 029Eh");
+[; <" CCPTMRS equ 029Eh ;# ">
+"6184
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 6184: __asm("SLRCONA equ 030Ch");
+[; <" SLRCONA equ 030Ch ;# ">
+"6229
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 6229: __asm("SLRCONB equ 030Dh");
+[; <" SLRCONB equ 030Dh ;# ">
+"6268
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 6268: __asm("SLRCONC equ 030Eh");
+[; <" SLRCONC equ 030Eh ;# ">
+"6330
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 6330: __asm("INLVLA equ 038Ch");
+[; <" INLVLA equ 038Ch ;# ">
+"6380
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 6380: __asm("INLVLB equ 038Dh");
+[; <" INLVLB equ 038Dh ;# ">
+"6419
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 6419: __asm("INLVLC equ 038Eh");
+[; <" INLVLC equ 038Eh ;# ">
+"6481
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 6481: __asm("IOCAP equ 0391h");
+[; <" IOCAP equ 0391h ;# ">
+"6531
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 6531: __asm("IOCAN equ 0392h");
+[; <" IOCAN equ 0392h ;# ">
+"6581
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 6581: __asm("IOCAF equ 0393h");
+[; <" IOCAF equ 0393h ;# ">
+"6631
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 6631: __asm("IOCBP equ 0394h");
+[; <" IOCBP equ 0394h ;# ">
+"6670
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 6670: __asm("IOCBN equ 0395h");
+[; <" IOCBN equ 0395h ;# ">
+"6709
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 6709: __asm("IOCBF equ 0396h");
+[; <" IOCBF equ 0396h ;# ">
+"6748
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 6748: __asm("IOCCP equ 0397h");
+[; <" IOCCP equ 0397h ;# ">
+"6810
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 6810: __asm("IOCCN equ 0398h");
+[; <" IOCCN equ 0398h ;# ">
+"6872
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 6872: __asm("IOCCF equ 0399h");
+[; <" IOCCF equ 0399h ;# ">
+"6934
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 6934: __asm("TMR4 equ 0415h");
+[; <" TMR4 equ 0415h ;# ">
+"6954
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 6954: __asm("PR4 equ 0416h");
+[; <" PR4 equ 0416h ;# ">
+"6974
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 6974: __asm("T4CON equ 0417h");
+[; <" T4CON equ 0417h ;# ">
+"7045
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 7045: __asm("TMR6 equ 041Ch");
+[; <" TMR6 equ 041Ch ;# ">
+"7065
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 7065: __asm("PR6 equ 041Dh");
+[; <" PR6 equ 041Dh ;# ">
+"7085
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 7085: __asm("T6CON equ 041Eh");
+[; <" T6CON equ 041Eh ;# ">
+"7156
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 7156: __asm("OPA1CON equ 0511h");
+[; <" OPA1CON equ 0511h ;# ">
+"7210
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 7210: __asm("OPA2CON equ 0515h");
+[; <" OPA2CON equ 0515h ;# ">
+"7264
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 7264: __asm("PWM3DCL equ 0617h");
+[; <" PWM3DCL equ 0617h ;# ">
+"7300
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 7300: __asm("PWM3DCH equ 0618h");
+[; <" PWM3DCH equ 0618h ;# ">
+"7370
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 7370: __asm("PWM3CON equ 0619h");
+[; <" PWM3CON equ 0619h ;# ">
+"7375
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 7375: __asm("PWM3CON0 equ 0619h");
+[; <" PWM3CON0 equ 0619h ;# ">
+"7436
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 7436: __asm("PWM4DCL equ 061Ah");
+[; <" PWM4DCL equ 061Ah ;# ">
+"7472
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 7472: __asm("PWM4DCH equ 061Bh");
+[; <" PWM4DCH equ 061Bh ;# ">
+"7542
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 7542: __asm("PWM4CON equ 061Ch");
+[; <" PWM4CON equ 061Ch ;# ">
+"7547
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 7547: __asm("PWM4CON0 equ 061Ch");
+[; <" PWM4CON0 equ 061Ch ;# ">
+"7608
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 7608: __asm("COG1PHR equ 0691h");
+[; <" COG1PHR equ 0691h ;# ">
+"7666
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 7666: __asm("COG1PHF equ 0692h");
+[; <" COG1PHF equ 0692h ;# ">
+"7724
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 7724: __asm("COG1BLKR equ 0693h");
+[; <" COG1BLKR equ 0693h ;# ">
+"7782
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 7782: __asm("COG1BLKF equ 0694h");
+[; <" COG1BLKF equ 0694h ;# ">
+"7840
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 7840: __asm("COG1DBR equ 0695h");
+[; <" COG1DBR equ 0695h ;# ">
+"7898
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 7898: __asm("COG1DBF equ 0696h");
+[; <" COG1DBF equ 0696h ;# ">
+"7956
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 7956: __asm("COG1CON0 equ 0697h");
+[; <" COG1CON0 equ 0697h ;# ">
+"8027
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8027: __asm("COG1CON1 equ 0698h");
+[; <" COG1CON1 equ 0698h ;# ">
+"8078
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8078: __asm("COG1RIS equ 0699h");
+[; <" COG1RIS equ 0699h ;# ">
+"8134
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8134: __asm("COG1RSIM equ 069Ah");
+[; <" COG1RSIM equ 069Ah ;# ">
+"8190
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8190: __asm("COG1FIS equ 069Bh");
+[; <" COG1FIS equ 069Bh ;# ">
+"8246
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8246: __asm("COG1FSIM equ 069Ch");
+[; <" COG1FSIM equ 069Ch ;# ">
+"8302
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8302: __asm("COG1ASD0 equ 069Dh");
+[; <" COG1ASD0 equ 069Dh ;# ">
+"8368
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8368: __asm("COG1ASD1 equ 069Eh");
+[; <" COG1ASD1 equ 069Eh ;# ">
+"8406
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8406: __asm("COG1STR equ 069Fh");
+[; <" COG1STR equ 069Fh ;# ">
+"8468
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8468: __asm("PPSLOCK equ 0E0Fh");
+[; <" PPSLOCK equ 0E0Fh ;# ">
+"8488
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8488: __asm("INTPPS equ 0E10h");
+[; <" INTPPS equ 0E10h ;# ">
+"8508
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8508: __asm("T0CKIPPS equ 0E11h");
+[; <" T0CKIPPS equ 0E11h ;# ">
+"8528
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8528: __asm("T1CKIPPS equ 0E12h");
+[; <" T1CKIPPS equ 0E12h ;# ">
+"8548
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8548: __asm("T1GPPS equ 0E13h");
+[; <" T1GPPS equ 0E13h ;# ">
+"8568
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8568: __asm("CCP1PPS equ 0E14h");
+[; <" CCP1PPS equ 0E14h ;# ">
+"8588
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8588: __asm("CCP2PPS equ 0E15h");
+[; <" CCP2PPS equ 0E15h ;# ">
+"8608
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8608: __asm("COGINPPS equ 0E17h");
+[; <" COGINPPS equ 0E17h ;# ">
+"8628
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8628: __asm("SSPCLKPPS equ 0E20h");
+[; <" SSPCLKPPS equ 0E20h ;# ">
+"8648
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8648: __asm("SSPDATPPS equ 0E21h");
+[; <" SSPDATPPS equ 0E21h ;# ">
+"8668
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8668: __asm("SSPSSPPS equ 0E22h");
+[; <" SSPSSPPS equ 0E22h ;# ">
+"8688
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8688: __asm("RXPPS equ 0E24h");
+[; <" RXPPS equ 0E24h ;# ">
+"8708
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8708: __asm("CKPPS equ 0E25h");
+[; <" CKPPS equ 0E25h ;# ">
+"8728
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8728: __asm("CLCIN0PPS equ 0E28h");
+[; <" CLCIN0PPS equ 0E28h ;# ">
+"8748
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8748: __asm("CLCIN1PPS equ 0E29h");
+[; <" CLCIN1PPS equ 0E29h ;# ">
+"8768
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8768: __asm("CLCIN2PPS equ 0E2Ah");
+[; <" CLCIN2PPS equ 0E2Ah ;# ">
+"8788
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8788: __asm("CLCIN3PPS equ 0E2Bh");
+[; <" CLCIN3PPS equ 0E2Bh ;# ">
+"8808
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8808: __asm("RA0PPS equ 0E90h");
+[; <" RA0PPS equ 0E90h ;# ">
+"8828
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8828: __asm("RA1PPS equ 0E91h");
+[; <" RA1PPS equ 0E91h ;# ">
+"8848
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8848: __asm("RA2PPS equ 0E92h");
+[; <" RA2PPS equ 0E92h ;# ">
+"8868
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8868: __asm("RA4PPS equ 0E94h");
+[; <" RA4PPS equ 0E94h ;# ">
+"8888
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8888: __asm("RA5PPS equ 0E95h");
+[; <" RA5PPS equ 0E95h ;# ">
+"8908
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8908: __asm("RB4PPS equ 0E9Ch");
+[; <" RB4PPS equ 0E9Ch ;# ">
+"8928
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8928: __asm("RB5PPS equ 0E9Dh");
+[; <" RB5PPS equ 0E9Dh ;# ">
+"8948
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8948: __asm("RB6PPS equ 0E9Eh");
+[; <" RB6PPS equ 0E9Eh ;# ">
+"8968
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8968: __asm("RB7PPS equ 0E9Fh");
+[; <" RB7PPS equ 0E9Fh ;# ">
+"8988
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 8988: __asm("RC0PPS equ 0EA0h");
+[; <" RC0PPS equ 0EA0h ;# ">
+"9008
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 9008: __asm("RC1PPS equ 0EA1h");
+[; <" RC1PPS equ 0EA1h ;# ">
+"9028
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 9028: __asm("RC2PPS equ 0EA2h");
+[; <" RC2PPS equ 0EA2h ;# ">
+"9048
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 9048: __asm("RC3PPS equ 0EA3h");
+[; <" RC3PPS equ 0EA3h ;# ">
+"9068
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 9068: __asm("RC4PPS equ 0EA4h");
+[; <" RC4PPS equ 0EA4h ;# ">
+"9088
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 9088: __asm("RC5PPS equ 0EA5h");
+[; <" RC5PPS equ 0EA5h ;# ">
+"9108
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 9108: __asm("RC6PPS equ 0EA6h");
+[; <" RC6PPS equ 0EA6h ;# ">
+"9128
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 9128: __asm("RC7PPS equ 0EA7h");
+[; <" RC7PPS equ 0EA7h ;# ">
+"9148
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 9148: __asm("CLCDATA equ 0F0Fh");
+[; <" CLCDATA equ 0F0Fh ;# ">
+"9180
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 9180: __asm("CLC1CON equ 0F10h");
+[; <" CLC1CON equ 0F10h ;# ">
+"9298
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 9298: __asm("CLC1POL equ 0F11h");
+[; <" CLC1POL equ 0F11h ;# ">
+"9376
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 9376: __asm("CLC1SEL0 equ 0F12h");
+[; <" CLC1SEL0 equ 0F12h ;# ">
+"9468
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 9468: __asm("CLC1SEL1 equ 0F13h");
+[; <" CLC1SEL1 equ 0F13h ;# ">
+"9560
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 9560: __asm("CLC1SEL2 equ 0F14h");
+[; <" CLC1SEL2 equ 0F14h ;# ">
+"9652
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 9652: __asm("CLC1SEL3 equ 0F15h");
+[; <" CLC1SEL3 equ 0F15h ;# ">
+"9744
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 9744: __asm("CLC1GLS0 equ 0F16h");
+[; <" CLC1GLS0 equ 0F16h ;# ">
+"9856
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 9856: __asm("CLC1GLS1 equ 0F17h");
+[; <" CLC1GLS1 equ 0F17h ;# ">
+"9968
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 9968: __asm("CLC1GLS2 equ 0F18h");
+[; <" CLC1GLS2 equ 0F18h ;# ">
+"10080
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 10080: __asm("CLC1GLS3 equ 0F19h");
+[; <" CLC1GLS3 equ 0F19h ;# ">
+"10192
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 10192: __asm("CLC2CON equ 0F1Ah");
+[; <" CLC2CON equ 0F1Ah ;# ">
+"10310
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 10310: __asm("CLC2POL equ 0F1Bh");
+[; <" CLC2POL equ 0F1Bh ;# ">
+"10388
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 10388: __asm("CLC2SEL0 equ 0F1Ch");
+[; <" CLC2SEL0 equ 0F1Ch ;# ">
+"10480
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 10480: __asm("CLC2SEL1 equ 0F1Dh");
+[; <" CLC2SEL1 equ 0F1Dh ;# ">
+"10572
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 10572: __asm("CLC2SEL2 equ 0F1Eh");
+[; <" CLC2SEL2 equ 0F1Eh ;# ">
+"10664
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 10664: __asm("CLC2SEL3 equ 0F1Fh");
+[; <" CLC2SEL3 equ 0F1Fh ;# ">
+"10756
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 10756: __asm("CLC2GLS0 equ 0F20h");
+[; <" CLC2GLS0 equ 0F20h ;# ">
+"10868
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 10868: __asm("CLC2GLS1 equ 0F21h");
+[; <" CLC2GLS1 equ 0F21h ;# ">
+"10980
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 10980: __asm("CLC2GLS2 equ 0F22h");
+[; <" CLC2GLS2 equ 0F22h ;# ">
+"11092
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 11092: __asm("CLC2GLS3 equ 0F23h");
+[; <" CLC2GLS3 equ 0F23h ;# ">
+"11204
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 11204: __asm("CLC3CON equ 0F24h");
+[; <" CLC3CON equ 0F24h ;# ">
+"11322
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 11322: __asm("CLC3POL equ 0F25h");
+[; <" CLC3POL equ 0F25h ;# ">
+"11400
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 11400: __asm("CLC3SEL0 equ 0F26h");
+[; <" CLC3SEL0 equ 0F26h ;# ">
+"11492
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 11492: __asm("CLC3SEL1 equ 0F27h");
+[; <" CLC3SEL1 equ 0F27h ;# ">
+"11584
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 11584: __asm("CLC3SEL2 equ 0F28h");
+[; <" CLC3SEL2 equ 0F28h ;# ">
+"11676
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 11676: __asm("CLC3SEL3 equ 0F29h");
+[; <" CLC3SEL3 equ 0F29h ;# ">
+"11768
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 11768: __asm("CLC3GLS0 equ 0F2Ah");
+[; <" CLC3GLS0 equ 0F2Ah ;# ">
+"11880
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 11880: __asm("CLC3GLS1 equ 0F2Bh");
+[; <" CLC3GLS1 equ 0F2Bh ;# ">
+"11992
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 11992: __asm("CLC3GLS2 equ 0F2Ch");
+[; <" CLC3GLS2 equ 0F2Ch ;# ">
+"12104
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 12104: __asm("CLC3GLS3 equ 0F2Dh");
+[; <" CLC3GLS3 equ 0F2Dh ;# ">
+"12216
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 12216: __asm("ICDBK0H equ 0F9Eh");
+[; <" ICDBK0H equ 0F9Eh ;# ">
+"12272
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 12272: __asm("STATUS_SHAD equ 0FE4h");
+[; <" STATUS_SHAD equ 0FE4h ;# ">
+"12304
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 12304: __asm("WREG_SHAD equ 0FE5h");
+[; <" WREG_SHAD equ 0FE5h ;# ">
+"12324
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 12324: __asm("BSR_SHAD equ 0FE6h");
+[; <" BSR_SHAD equ 0FE6h ;# ">
+"12344
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 12344: __asm("PCLATH_SHAD equ 0FE7h");
+[; <" PCLATH_SHAD equ 0FE7h ;# ">
+"12364
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 12364: __asm("FSR0L_SHAD equ 0FE8h");
+[; <" FSR0L_SHAD equ 0FE8h ;# ">
+"12384
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 12384: __asm("FSR0H_SHAD equ 0FE9h");
+[; <" FSR0H_SHAD equ 0FE9h ;# ">
+"12404
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 12404: __asm("FSR1L_SHAD equ 0FEAh");
+[; <" FSR1L_SHAD equ 0FEAh ;# ">
+"12424
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 12424: __asm("FSR1H_SHAD equ 0FEBh");
+[; <" FSR1H_SHAD equ 0FEBh ;# ">
+"12444
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 12444: __asm("STKPTR equ 0FEDh");
+[; <" STKPTR equ 0FEDh ;# ">
+"12464
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 12464: __asm("TOSL equ 0FEEh");
+[; <" TOSL equ 0FEEh ;# ">
+"12484
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1709.h: 12484: __asm("TOSH equ 0FEFh");
+[; <" TOSH equ 0FEFh ;# ">
+"14 RC552.c
+[; ;RC552.c: 14: unsigned char readData;
+[v _readData `uc ~T0 @X0 1 e ]
+"15
+[; ;RC552.c: 15: unsigned char readDummy;
+[v _readDummy `uc ~T0 @X0 1 e ]
+"17
+[; ;RC552.c: 17: void PCD_WriteRegister(unsigned char addr, unsigned char value) {
+[v _PCD_WriteRegister `(v ~T0 @X0 1 ef2`uc`uc ]
+{
+[e :U _PCD_WriteRegister ]
+[v _addr `uc ~T0 @X0 1 r1 ]
+[v _value `uc ~T0 @X0 1 r2 ]
+[f ]
+"18
+[; ;RC552.c: 18:         do { LATCbits.LATC4 = 0; } while(0);
+[e :U 633 ]
+{
+[e = . . _LATCbits 0 4 -> -> 0 `i `uc ]
+}
+[e :U 632 ]
+"19
+[; ;RC552.c: 19:         readData = spi_exchangeByte((addr<<1)&0x7E);
+[e = _readData ( _spi_exchangeByte (1 -> & << -> _addr `i -> 1 `i -> 126 `i `uc ]
+"20
+[; ;RC552.c: 20:         readDummy = spi_exchangeByte(value);
+[e = _readDummy ( _spi_exchangeByte (1 _value ]
+"21
+[; ;RC552.c: 21:         do { LATCbits.LATC4 = 1; } while(0);
+[e :U 636 ]
+{
+[e = . . _LATCbits 0 4 -> -> 1 `i `uc ]
+}
+[e :U 635 ]
+"22
+[; ;RC552.c: 22: }
+[e :UE 630 ]
+}
+"23
+[; ;RC552.c: 23: void PCD_WriteRegisters( unsigned char addr,unsigned char count,unsigned char *values){
+[v _PCD_WriteRegisters `(v ~T0 @X0 1 ef3`uc`uc`*uc ]
+{
+[e :U _PCD_WriteRegisters ]
+[v _addr `uc ~T0 @X0 1 r1 ]
+[v _count `uc ~T0 @X0 1 r2 ]
+[v _values `*uc ~T0 @X0 1 r3 ]
+[f ]
+"24
+[; ;RC552.c: 24:     do { LATCbits.LATC4 = 0; } while(0);
+[e :U 640 ]
+{
+[e = . . _LATCbits 0 4 -> -> 0 `i `uc ]
+}
+[e :U 639 ]
+"25
+[; ;RC552.c: 25:     readData = spi_exchangeByte((addr << 1 ) & 0x7E );
+[e = _readData ( _spi_exchangeByte (1 -> & << -> _addr `i -> 1 `i -> 126 `i `uc ]
+"27
+[; ;RC552.c: 27:  for (unsigned char index = 0; index < count; index++) {
+{
+[v _index `uc ~T0 @X0 1 a ]
+[e = _index -> -> 0 `i `uc ]
+[e $U 644  ]
+[e :U 641 ]
+{
+"28
+[; ;RC552.c: 28:   readDummy = spi_exchangeByte(values[index]);
+[e = _readDummy ( _spi_exchangeByte (1 *U + _values * -> _index `ux -> -> # *U _values `ui `ux ]
+"29
+[; ;RC552.c: 29:  }
+}
+[e ++ _index -> -> 1 `i `uc ]
+[e :U 644 ]
+[e $ < -> _index `i -> _count `i 641  ]
+[e :U 642 ]
+}
+"30
+[; ;RC552.c: 30:  do { LATCbits.LATC4 = 1; } while(0);
+[e :U 647 ]
+{
+[e = . . _LATCbits 0 4 -> -> 1 `i `uc ]
+}
+[e :U 646 ]
+"31
+[; ;RC552.c: 31: }
+[e :UE 637 ]
+}
+"33
+[; ;RC552.c: 33: unsigned char PCD_ReadRegister(unsigned char addr) {
+[v _PCD_ReadRegister `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _PCD_ReadRegister ]
+[v _addr `uc ~T0 @X0 1 r1 ]
+[f ]
+"34
+[; ;RC552.c: 34:         unsigned char value;
+[v _value `uc ~T0 @X0 1 a ]
+"35
+[; ;RC552.c: 35:         do { LATCbits.LATC4 = 0; } while(0);
+[e :U 651 ]
+{
+[e = . . _LATCbits 0 4 -> -> 0 `i `uc ]
+}
+[e :U 650 ]
+"36
+[; ;RC552.c: 36:         readData = spi_exchangeByte(((addr<<1)&0x7E)|0x80);
+[e = _readData ( _spi_exchangeByte (1 -> | & << -> _addr `i -> 1 `i -> 126 `i -> 128 `i `uc ]
+"37
+[; ;RC552.c: 37:         value = spi_exchangeByte(0x00);
+[e = _value ( _spi_exchangeByte (1 -> -> 0 `i `uc ]
+"38
+[; ;RC552.c: 38:         do { LATCbits.LATC4 = 1; } while(0);
+[e :U 654 ]
+{
+[e = . . _LATCbits 0 4 -> -> 1 `i `uc ]
+}
+[e :U 653 ]
+"39
+[; ;RC552.c: 39:  return value;
+[e ) _value ]
+[e $UE 648  ]
+"40
+[; ;RC552.c: 40: }
+[e :UE 648 ]
+}
+"42
+[; ;RC552.c: 42: void PCD_ReadRegisters( unsigned char addr,
+[v _PCD_ReadRegisters `(v ~T0 @X0 1 ef4`uc`uc`*uc`uc ]
+"46
+[; ;RC552.c: 46:         ) {
+{
+[e :U _PCD_ReadRegisters ]
+"42
+[; ;RC552.c: 42: void PCD_ReadRegisters( unsigned char addr,
+[v _addr `uc ~T0 @X0 1 r1 ]
+"43
+[; ;RC552.c: 43:                         unsigned char count,
+[v _count `uc ~T0 @X0 1 r2 ]
+"44
+[; ;RC552.c: 44:       unsigned char *values,
+[v _values `*uc ~T0 @X0 1 r3 ]
+"45
+[; ;RC552.c: 45:                         unsigned char rxAlign
+[v _rxAlign `uc ~T0 @X0 1 r4 ]
+"46
+[; ;RC552.c: 46:         ) {
+[f ]
+"47
+[; ;RC552.c: 47:  if (count == 0) {
+[e $ ! == -> _count `i -> 0 `i 656  ]
+{
+"48
+[; ;RC552.c: 48:   return;
+[e $UE 655  ]
+"49
+[; ;RC552.c: 49:  }
+}
+[e :U 656 ]
+"51
+[; ;RC552.c: 51:     unsigned char index = 0;
+[v _index `uc ~T0 @X0 1 a ]
+[e = _index -> -> 0 `i `uc ]
+"53
+[; ;RC552.c: 53:     do { LATCbits.LATC4 = 0; } while(0);
+[e :U 659 ]
+{
+[e = . . _LATCbits 0 4 -> -> 0 `i `uc ]
+}
+[e :U 658 ]
+"54
+[; ;RC552.c: 54:  count--;
+[e -- _count -> -> 1 `i `uc ]
+"55
+[; ;RC552.c: 55:  readData = spi_exchangeByte(((addr<<1)&0x7E)|0x80);
+[e = _readData ( _spi_exchangeByte (1 -> | & << -> _addr `i -> 1 `i -> 126 `i -> 128 `i `uc ]
+"56
+[; ;RC552.c: 56:  if (rxAlign) {
+[e $ ! != -> _rxAlign `i -> 0 `i 660  ]
+{
+"58
+[; ;RC552.c: 58:   unsigned char mask = (0xFF << rxAlign) & 0xFF;
+[v _mask `uc ~T0 @X0 1 a ]
+[e = _mask -> & << -> 255 `i -> _rxAlign `i -> 255 `i `uc ]
+"60
+[; ;RC552.c: 60:   unsigned char value = spi_exchangeByte(((addr<<1)&0x7E)|0x80);
+[v _value `uc ~T0 @X0 1 a ]
+[e = _value ( _spi_exchangeByte (1 -> | & << -> _addr `i -> 1 `i -> 126 `i -> 128 `i `uc ]
+"62
+[; ;RC552.c: 62:   values[0] = (values[0] & ~mask) | (value & mask);
+[e = *U + _values * -> -> 0 `i `x -> -> # *U _values `i `x -> | & -> *U + _values * -> -> 0 `i `x -> -> # *U _values `i `x `i ~ -> _mask `i & -> _value `i -> _mask `i `uc ]
+"63
+[; ;RC552.c: 63:   index++;
+[e ++ _index -> -> 1 `i `uc ]
+"64
+[; ;RC552.c: 64:  }
+}
+[e :U 660 ]
+"65
+[; ;RC552.c: 65:  while (index < count) {
+[e $U 661  ]
+[e :U 662 ]
+{
+"66
+[; ;RC552.c: 66:   values[index] = spi_exchangeByte(((addr<<1)&0x7E)|0x80);
+[e = *U + _values * -> _index `ux -> -> # *U _values `ui `ux ( _spi_exchangeByte (1 -> | & << -> _addr `i -> 1 `i -> 126 `i -> 128 `i `uc ]
+"67
+[; ;RC552.c: 67:   index++;
+[e ++ _index -> -> 1 `i `uc ]
+"68
+[; ;RC552.c: 68:  }
+}
+[e :U 661 ]
+"65
+[; ;RC552.c: 65:  while (index < count) {
+[e $ < -> _index `i -> _count `i 662  ]
+[e :U 663 ]
+"69
+[; ;RC552.c: 69:  values[index] = spi_exchangeByte(0x00);
+[e = *U + _values * -> _index `ux -> -> # *U _values `ui `ux ( _spi_exchangeByte (1 -> -> 0 `i `uc ]
+"71
+[; ;RC552.c: 71:     do { LATCbits.LATC4 = 1; } while(0);
+[e :U 666 ]
+{
+[e = . . _LATCbits 0 4 -> -> 1 `i `uc ]
+}
+[e :U 665 ]
+"72
+[; ;RC552.c: 72: }
+[e :UE 655 ]
+}
+"74
+[; ;RC552.c: 74: void PCD_SetRegisterBitMask( unsigned char reg,
+[v _PCD_SetRegisterBitMask `(v ~T0 @X0 1 ef2`uc`uc ]
+"76
+[; ;RC552.c: 76:          ) {
+{
+[e :U _PCD_SetRegisterBitMask ]
+"74
+[; ;RC552.c: 74: void PCD_SetRegisterBitMask( unsigned char reg,
+[v _reg `uc ~T0 @X0 1 r1 ]
+"75
+[; ;RC552.c: 75:           unsigned char mask
+[v _mask `uc ~T0 @X0 1 r2 ]
+"76
+[; ;RC552.c: 76:          ) {
+[f ]
+"77
+[; ;RC552.c: 77:  unsigned char tmp;
+[v _tmp `uc ~T0 @X0 1 a ]
+"78
+[; ;RC552.c: 78:  tmp = PCD_ReadRegister(reg);
+[e = _tmp ( _PCD_ReadRegister (1 _reg ]
+"79
+[; ;RC552.c: 79:  PCD_WriteRegister(reg, tmp | mask);
+[e ( _PCD_WriteRegister (2 , _reg -> | -> _tmp `i -> _mask `i `uc ]
+"80
+[; ;RC552.c: 80: }
+[e :UE 667 ]
+}
+"83
+[; ;RC552.c: 83: void PCD_ClearRegisterBitMask( unsigned char reg,
+[v _PCD_ClearRegisterBitMask `(v ~T0 @X0 1 ef2`uc`uc ]
+"85
+[; ;RC552.c: 85:            ) {
+{
+[e :U _PCD_ClearRegisterBitMask ]
+"83
+[; ;RC552.c: 83: void PCD_ClearRegisterBitMask( unsigned char reg,
+[v _reg `uc ~T0 @X0 1 r1 ]
+"84
+[; ;RC552.c: 84:         unsigned char mask
+[v _mask `uc ~T0 @X0 1 r2 ]
+"85
+[; ;RC552.c: 85:            ) {
+[f ]
+"86
+[; ;RC552.c: 86:  unsigned char tmp;
+[v _tmp `uc ~T0 @X0 1 a ]
+"87
+[; ;RC552.c: 87:  tmp = PCD_ReadRegister(reg);
+[e = _tmp ( _PCD_ReadRegister (1 _reg ]
+"88
+[; ;RC552.c: 88:  PCD_WriteRegister(reg,(tmp&(~mask)));
+[e ( _PCD_WriteRegister (2 , _reg -> & -> _tmp `i ~ -> _mask `i `uc ]
+"89
+[; ;RC552.c: 89: }
+[e :UE 668 ]
+}
+"91
+[; ;RC552.c: 91: unsigned char PCD_CalculateCRC( unsigned char *data,
+[v _PCD_CalculateCRC `(uc ~T0 @X0 1 ef3`*uc`uc`*uc ]
+"94
+[; ;RC552.c: 94:       ) {
+{
+[e :U _PCD_CalculateCRC ]
+"91
+[; ;RC552.c: 91: unsigned char PCD_CalculateCRC( unsigned char *data,
+[v _data `*uc ~T0 @X0 1 r1 ]
+"92
+[; ;RC552.c: 92:       unsigned char length,
+[v _length `uc ~T0 @X0 1 r2 ]
+"93
+[; ;RC552.c: 93:       unsigned char *result
+[v _result `*uc ~T0 @X0 1 r3 ]
+"94
+[; ;RC552.c: 94:       ) {
+[f ]
+"95
+[; ;RC552.c: 95:  PCD_WriteRegister(0x01, 0x00);
+[e ( _PCD_WriteRegister (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
+"96
+[; ;RC552.c: 96:  PCD_WriteRegister(0x05, 0x04);
+[e ( _PCD_WriteRegister (2 , -> -> 5 `i `uc -> -> 4 `i `uc ]
+"97
+[; ;RC552.c: 97:  PCD_WriteRegister(0x0A, 0x80);
+[e ( _PCD_WriteRegister (2 , -> -> 10 `i `uc -> -> 128 `i `uc ]
+"98
+[; ;RC552.c: 98:  PCD_WriteRegisters(0x09, length, data);
+[e ( _PCD_WriteRegisters (3 , , -> -> 9 `i `uc _length _data ]
+"99
+[; ;RC552.c: 99:  PCD_WriteRegister(0x01, 0x03);
+[e ( _PCD_WriteRegister (2 , -> -> 1 `i `uc -> -> 3 `i `uc ]
+"105
+[; ;RC552.c: 105:  for (uint16_t i = 5000; i > 0; i--) {
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 5000 `i `us ]
+[e $ > -> _i `ui -> -> 0 `i `ui 670  ]
+[e $U 671  ]
+[e :U 670 ]
+{
+"107
+[; ;RC552.c: 107:   unsigned char n = PCD_ReadRegister(0x05);
+[v _n `uc ~T0 @X0 1 a ]
+[e = _n ( _PCD_ReadRegister (1 -> -> 5 `i `uc ]
+"108
+[; ;RC552.c: 108:   if (n & 0x04) {
+[e $ ! != & -> _n `i -> 4 `i -> 0 `i 673  ]
+{
+"109
+[; ;RC552.c: 109:    PCD_WriteRegister(0x01, 0x00);
+[e ( _PCD_WriteRegister (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
+"111
+[; ;RC552.c: 111:    result[0] = PCD_ReadRegister(0x22);
+[e = *U + _result * -> -> 0 `i `x -> -> # *U _result `i `x ( _PCD_ReadRegister (1 -> -> 34 `i `uc ]
+"112
+[; ;RC552.c: 112:    result[1] = PCD_ReadRegister(0x21);
+[e = *U + _result * -> -> 1 `i `x -> -> # *U _result `i `x ( _PCD_ReadRegister (1 -> -> 33 `i `uc ]
+"113
+[; ;RC552.c: 113:    return 0x00;
+[e ) -> -> 0 `i `uc ]
+[e $UE 669  ]
+"114
+[; ;RC552.c: 114:   }
+}
+[e :U 673 ]
+"115
+[; ;RC552.c: 115:  }
+}
+[e -- _i -> -> 1 `i `us ]
+[e $ > -> _i `ui -> -> 0 `i `ui 670  ]
+[e :U 671 ]
+}
+"117
+[; ;RC552.c: 117:  return 0x03;
+[e ) -> -> 3 `i `uc ]
+[e $UE 669  ]
+"118
+[; ;RC552.c: 118: }
+[e :UE 669 ]
+}
+"120
+[; ;RC552.c: 120: void PCD_Init(void) {
+[v _PCD_Init `(v ~T0 @X0 1 ef ]
+{
+[e :U _PCD_Init ]
+[f ]
+"122
+[; ;RC552.c: 122:     _Bool hardReset;
+[v _hardReset `a ~T0 @X0 1 a ]
+"123
+[; ;RC552.c: 123:     spi_master_open(SPI_CUSTOM0);
+[e ( _spi_master_open . `E638 0 ]
+"124
+[; ;RC552.c: 124:     do { LATCbits.LATC4 = 1; } while(0);
+[e :U 677 ]
+{
+[e = . . _LATCbits 0 4 -> -> 1 `i `uc ]
+}
+[e :U 676 ]
+"126
+[; ;RC552.c: 126:     do { TRISCbits.TRISC3 = 1; } while(0);
+[e :U 680 ]
+{
+[e = . . _TRISCbits 0 3 -> -> 1 `i `uc ]
+}
+[e :U 679 ]
+"127
+[; ;RC552.c: 127:     if (PORTCbits.RC3 == 0) {
+[e $ ! == -> . . _PORTCbits 0 3 `i -> 0 `i 681  ]
+{
+"128
+[; ;RC552.c: 128:     do { TRISCbits.TRISC3 = 0; } while(0);
+[e :U 684 ]
+{
+[e = . . _TRISCbits 0 3 -> -> 0 `i `uc ]
+}
+[e :U 683 ]
+"129
+[; ;RC552.c: 129:     do { LATCbits.LATC3 = 0; } while(0);
+[e :U 687 ]
+{
+[e = . . _LATCbits 0 3 -> -> 0 `i `uc ]
+}
+[e :U 686 ]
+"130
+[; ;RC552.c: 130:     _delay((unsigned long)((20)*(32000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 20 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
+"131
+[; ;RC552.c: 131:     do { LATCbits.LATC3 = 1; } while(0);
+[e :U 690 ]
+{
+[e = . . _LATCbits 0 3 -> -> 1 `i `uc ]
+}
+[e :U 689 ]
+"132
+[; ;RC552.c: 132:     _delay((unsigned long)((50)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"133
+[; ;RC552.c: 133:  hardReset = 1;
+[e = _hardReset -> -> 1 `i `a ]
+"134
+[; ;RC552.c: 134:     }
+}
+[e :U 681 ]
+"135
+[; ;RC552.c: 135:     if(!hardReset){
+[e $ ! ! != -> _hardReset `i -> 0 `i 691  ]
+{
+"136
+[; ;RC552.c: 136:  PCD_Reset();
+[e ( _PCD_Reset ..  ]
+"137
+[; ;RC552.c: 137:     }
+}
+[e :U 691 ]
+"139
+[; ;RC552.c: 139:  PCD_WriteRegister(0x12, 0x00);
+[e ( _PCD_WriteRegister (2 , -> -> 18 `i `uc -> -> 0 `i `uc ]
+"140
+[; ;RC552.c: 140:  PCD_WriteRegister(0x13, 0x00);
+[e ( _PCD_WriteRegister (2 , -> -> 19 `i `uc -> -> 0 `i `uc ]
+"142
+[; ;RC552.c: 142:  PCD_WriteRegister(0x24, 0x26);
+[e ( _PCD_WriteRegister (2 , -> -> 36 `i `uc -> -> 38 `i `uc ]
+"146
+[; ;RC552.c: 146:  PCD_WriteRegister(0x2A, 0x80);
+[e ( _PCD_WriteRegister (2 , -> -> 42 `i `uc -> -> 128 `i `uc ]
+"147
+[; ;RC552.c: 147:  PCD_WriteRegister(0x2B, 0xA9);
+[e ( _PCD_WriteRegister (2 , -> -> 43 `i `uc -> -> 169 `i `uc ]
+"148
+[; ;RC552.c: 148:  PCD_WriteRegister(0x2C, 0x03);
+[e ( _PCD_WriteRegister (2 , -> -> 44 `i `uc -> -> 3 `i `uc ]
+"149
+[; ;RC552.c: 149:  PCD_WriteRegister(0x2D, 0xE8);
+[e ( _PCD_WriteRegister (2 , -> -> 45 `i `uc -> -> 232 `i `uc ]
+"151
+[; ;RC552.c: 151:  PCD_WriteRegister(0x15, 0x40);
+[e ( _PCD_WriteRegister (2 , -> -> 21 `i `uc -> -> 64 `i `uc ]
+"152
+[; ;RC552.c: 152:  PCD_WriteRegister(0x11, 0x3D);
+[e ( _PCD_WriteRegister (2 , -> -> 17 `i `uc -> -> 61 `i `uc ]
+"153
+[; ;RC552.c: 153:  PCD_AntennaOn();
+[e ( _PCD_AntennaOn ..  ]
+"154
+[; ;RC552.c: 154: }
+[e :UE 674 ]
+}
+"156
+[; ;RC552.c: 156: void PCD_Reset(void){
+[v _PCD_Reset `(v ~T0 @X0 1 ef ]
+{
+[e :U _PCD_Reset ]
+[f ]
+"157
+[; ;RC552.c: 157:  PCD_WriteRegister(0x01, 0x0F);
+[e ( _PCD_WriteRegister (2 , -> -> 1 `i `uc -> -> 15 `i `uc ]
+"161
+[; ;RC552.c: 161:  unsigned char count = 0;
+[v _count `uc ~T0 @X0 1 a ]
+[e = _count -> -> 0 `i `uc ]
+"162
+[; ;RC552.c: 162:  do {
+[e :U 695 ]
+{
+"164
+[; ;RC552.c: 164:   _delay((unsigned long)((50)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"165
+[; ;RC552.c: 165:  } while ((PCD_ReadRegister(0x01) & (1 << 4)) && (++count) < 3);
+}
+[e $ && != & -> ( _PCD_ReadRegister (1 -> -> 1 `i `uc `i << -> 1 `i -> 4 `i -> 0 `i < -> =+ _count -> -> 1 `i `uc `i -> 3 `i 695  ]
+[e :U 694 ]
+"166
+[; ;RC552.c: 166: }
+[e :UE 692 ]
+}
+"168
+[; ;RC552.c: 168: void PCD_AntennaOn(void) {
+[v _PCD_AntennaOn `(v ~T0 @X0 1 ef ]
+{
+[e :U _PCD_AntennaOn ]
+[f ]
+"169
+[; ;RC552.c: 169:  unsigned char value = PCD_ReadRegister(0x14);
+[v _value `uc ~T0 @X0 1 a ]
+[e = _value ( _PCD_ReadRegister (1 -> -> 20 `i `uc ]
+"170
+[; ;RC552.c: 170:  if ((value & 0x03) != 0x03) {
+[e $ ! != & -> _value `i -> 3 `i -> 3 `i 697  ]
+{
+"171
+[; ;RC552.c: 171:   PCD_WriteRegister(0x14, value | 0x03);
+[e ( _PCD_WriteRegister (2 , -> -> 20 `i `uc -> | -> _value `i -> 3 `i `uc ]
+"172
+[; ;RC552.c: 172:  }
+}
+[e :U 697 ]
+"173
+[; ;RC552.c: 173: }
+[e :UE 696 ]
+}
+"175
+[; ;RC552.c: 175: void PCD_AntennaOff(void) {
+[v _PCD_AntennaOff `(v ~T0 @X0 1 ef ]
+{
+[e :U _PCD_AntennaOff ]
+[f ]
+"176
+[; ;RC552.c: 176:  PCD_ClearRegisterBitMask(0x14, 0x03);
+[e ( _PCD_ClearRegisterBitMask (2 , -> -> 20 `i `uc -> -> 3 `i `uc ]
+"177
+[; ;RC552.c: 177: }
+[e :UE 698 ]
+}
+"179
+[; ;RC552.c: 179: unsigned char PCD_GetAntennaGain() {
+[v _PCD_GetAntennaGain `(uc ~T0 @X0 1 ef ]
+{
+[e :U _PCD_GetAntennaGain ]
+[f ]
+"180
+[; ;RC552.c: 180:  return PCD_ReadRegister(0x26) & (0x07<<4);
+[e ) -> & -> ( _PCD_ReadRegister (1 -> -> 38 `i `uc `i << -> 7 `i -> 4 `i `uc ]
+[e $UE 699  ]
+"181
+[; ;RC552.c: 181: }
+[e :UE 699 ]
+}
+"183
+[; ;RC552.c: 183: void PCD_SetAntennaGain(unsigned char mask) {
+[v _PCD_SetAntennaGain `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _PCD_SetAntennaGain ]
+[v _mask `uc ~T0 @X0 1 r1 ]
+[f ]
+"184
+[; ;RC552.c: 184:  if (PCD_GetAntennaGain() != mask) {
+[e $ ! != -> ( _PCD_GetAntennaGain ..  `i -> _mask `i 701  ]
+{
+"185
+[; ;RC552.c: 185:   PCD_ClearRegisterBitMask(0x26, (0x07<<4));
+[e ( _PCD_ClearRegisterBitMask (2 , -> -> 38 `i `uc -> << -> 7 `i -> 4 `i `uc ]
+"186
+[; ;RC552.c: 186:   PCD_SetRegisterBitMask(0x26, mask & (0x07<<4));
+[e ( _PCD_SetRegisterBitMask (2 , -> -> 38 `i `uc -> & -> _mask `i << -> 7 `i -> 4 `i `uc ]
+"187
+[; ;RC552.c: 187:  }
+}
+[e :U 701 ]
+"188
+[; ;RC552.c: 188: }
+[e :UE 700 ]
+}
+"190
+[; ;RC552.c: 190: _Bool PCD_PerformSelfTest(void) {
+[v _PCD_PerformSelfTest `(a ~T0 @X0 1 ef ]
+{
+[e :U _PCD_PerformSelfTest ]
+[f ]
+"193
+[; ;RC552.c: 193:  PCD_Reset();
+[e ( _PCD_Reset ..  ]
+[v F5053 `uc ~T0 @X0 -> 25 `i s ]
+[i F5053
+:U ..
+"195
+[; ;RC552.c: 195:  unsigned char ZEROES[25] = {0x00};
+-> -> 0 `i `uc
+..
+]
+[v _ZEROES `uc ~T0 @X0 -> 25 `i a ]
+[e = _ZEROES F5053 ]
+"196
+[; ;RC552.c: 196:  PCD_WriteRegister(0x0A, 0x80);
+[e ( _PCD_WriteRegister (2 , -> -> 10 `i `uc -> -> 128 `i `uc ]
+"197
+[; ;RC552.c: 197:  PCD_WriteRegisters(0x09, 25, ZEROES);
+[e ( _PCD_WriteRegisters (3 , , -> -> 9 `i `uc -> -> 25 `i `uc &U _ZEROES ]
+"198
+[; ;RC552.c: 198:  PCD_WriteRegister(0x01, 0x01);
+[e ( _PCD_WriteRegister (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+"201
+[; ;RC552.c: 201:  PCD_WriteRegister(0x36, 0x09);
+[e ( _PCD_WriteRegister (2 , -> -> 54 `i `uc -> -> 9 `i `uc ]
+"204
+[; ;RC552.c: 204:  PCD_WriteRegister(0x09, 0x00);
+[e ( _PCD_WriteRegister (2 , -> -> 9 `i `uc -> -> 0 `i `uc ]
+"207
+[; ;RC552.c: 207:  PCD_WriteRegister(0x01, 0x03);
+[e ( _PCD_WriteRegister (2 , -> -> 1 `i `uc -> -> 3 `i `uc ]
+"210
+[; ;RC552.c: 210:  unsigned char n;
+[v _n `uc ~T0 @X0 1 a ]
+"211
+[; ;RC552.c: 211:  for (uint8_t i = 0; i < 0xFF; i++) {
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 255 `i 703  ]
+[e $U 704  ]
+[e :U 703 ]
+{
+"219
+[; ;RC552.c: 219:   n = PCD_ReadRegister(0x0A);
+[e = _n ( _PCD_ReadRegister (1 -> -> 10 `i `uc ]
+"220
+[; ;RC552.c: 220:   if (n >= 64) {
+[e $ ! >= -> _n `i -> 64 `i 706  ]
+{
+"221
+[; ;RC552.c: 221:    break;
+[e $U 704  ]
+"222
+[; ;RC552.c: 222:   }
+}
+[e :U 706 ]
+"223
+[; ;RC552.c: 223:  }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 255 `i 703  ]
+[e :U 704 ]
+}
+"224
+[; ;RC552.c: 224:  PCD_WriteRegister(0x01, 0x00);
+[e ( _PCD_WriteRegister (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
+"227
+[; ;RC552.c: 227:  unsigned char result[64];
+[v _result `uc ~T0 @X0 -> 64 `i a ]
+"228
+[; ;RC552.c: 228:  PCD_ReadRegisters(0x09, 64, result, 0);
+[e ( _PCD_ReadRegisters (4 , , , -> -> 9 `i `uc -> -> 64 `i `uc &U _result -> -> 0 `i `uc ]
+"232
+[; ;RC552.c: 232:  PCD_WriteRegister(0x36, 0x00);
+[e ( _PCD_WriteRegister (2 , -> -> 54 `i `uc -> -> 0 `i `uc ]
+"235
+[; ;RC552.c: 235:  unsigned char version = PCD_ReadRegister(0x37);
+[v _version `uc ~T0 @X0 1 a ]
+[e = _version ( _PCD_ReadRegister (1 -> -> 55 `i `uc ]
+"238
+[; ;RC552.c: 238:  const unsigned char *reference;
+[v _reference `*Cuc ~T0 @X0 1 a ]
+"239
+[; ;RC552.c: 239:  switch (version) {
+[e $U 708  ]
+{
+"240
+[; ;RC552.c: 240:   case 0x88:
+[e :U 709 ]
+"241
+[; ;RC552.c: 241:    reference = FM17522_firmware_reference;
+[e = _reference &U _FM17522_firmware_reference ]
+"242
+[; ;RC552.c: 242:    break;
+[e $U 707  ]
+"243
+[; ;RC552.c: 243:   case 0x90:
+[e :U 710 ]
+"244
+[; ;RC552.c: 244:    reference = MFRC522_firmware_referenceV0_0;
+[e = _reference &U _MFRC522_firmware_referenceV0_0 ]
+"245
+[; ;RC552.c: 245:    break;
+[e $U 707  ]
+"246
+[; ;RC552.c: 246:   case 0x91:
+[e :U 711 ]
+"247
+[; ;RC552.c: 247:    reference = MFRC522_firmware_referenceV1_0;
+[e = _reference &U _MFRC522_firmware_referenceV1_0 ]
+"248
+[; ;RC552.c: 248:    break;
+[e $U 707  ]
+"249
+[; ;RC552.c: 249:   case 0x92:
+[e :U 712 ]
+"250
+[; ;RC552.c: 250:    reference = MFRC522_firmware_referenceV2_0;
+[e = _reference &U _MFRC522_firmware_referenceV2_0 ]
+"251
+[; ;RC552.c: 251:    break;
+[e $U 707  ]
+"252
+[; ;RC552.c: 252:   default:
+[e :U 713 ]
+"253
+[; ;RC552.c: 253:    return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 702  ]
+"254
+[; ;RC552.c: 254:  }
+}
+[e $U 707  ]
+[e :U 708 ]
+[e [\ -> _version `i , $ -> 136 `i 709
+ , $ -> 144 `i 710
+ , $ -> 145 `i 711
+ , $ -> 146 `i 712
+ 713 ]
+[e :U 707 ]
+"257
+[; ;RC552.c: 257:  return 1;
+[e ) -> -> 1 `i `a ]
+[e $UE 702  ]
+"258
+[; ;RC552.c: 258: }
+[e :UE 702 ]
+}
+"261
+[; ;RC552.c: 261: void PCD_SoftPowerDown(void){
+[v _PCD_SoftPowerDown `(v ~T0 @X0 1 ef ]
+{
+[e :U _PCD_SoftPowerDown ]
+[f ]
+"262
+[; ;RC552.c: 262:  unsigned char val = PCD_ReadRegister(0x01);
+[v _val `uc ~T0 @X0 1 a ]
+[e = _val ( _PCD_ReadRegister (1 -> -> 1 `i `uc ]
+"263
+[; ;RC552.c: 263:  val |= (1<<4);
+[e =| _val -> << -> 1 `i -> 4 `i `uc ]
+"264
+[; ;RC552.c: 264:  PCD_WriteRegister(0x01, val);
+[e ( _PCD_WriteRegister (2 , -> -> 1 `i `uc _val ]
+"265
+[; ;RC552.c: 265: }
+[e :UE 714 ]
+}
+"267
+[; ;RC552.c: 267: void PCD_SoftPowerUp(void){
+[v _PCD_SoftPowerUp `(v ~T0 @X0 1 ef ]
+{
+[e :U _PCD_SoftPowerUp ]
+[f ]
+"268
+[; ;RC552.c: 268:  unsigned char val = PCD_ReadRegister(0x01);
+[v _val `uc ~T0 @X0 1 a ]
+[e = _val ( _PCD_ReadRegister (1 -> -> 1 `i `uc ]
+"269
+[; ;RC552.c: 269:  val &= ~(1<<4);
+[e =& _val -> ~ << -> 1 `i -> 4 `i `uc ]
+"270
+[; ;RC552.c: 270:  PCD_WriteRegister(0x01, val);
+[e ( _PCD_WriteRegister (2 , -> -> 1 `i `uc _val ]
+"272
+[; ;RC552.c: 272:  uint16_t i=0;
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `us ]
+"273
+[; ;RC552.c: 273:  while(i<=500){
+[e $U 716  ]
+[e :U 717 ]
+{
+"274
+[; ;RC552.c: 274:   val = PCD_ReadRegister(0x01);
+[e = _val ( _PCD_ReadRegister (1 -> -> 1 `i `uc ]
+"275
+[; ;RC552.c: 275:   if(!(val & (1<<4))){
+[e $ ! ! != & -> _val `i << -> 1 `i -> 4 `i -> 0 `i 719  ]
+{
+"276
+[; ;RC552.c: 276:    break;
+[e $U 718  ]
+"277
+[; ;RC552.c: 277:   }
+}
+[e :U 719 ]
+"278
+[; ;RC552.c: 278:         i=i+1;
+[e = _i -> + -> _i `ui -> -> 1 `i `ui `us ]
+"279
+[; ;RC552.c: 279:         _delay((unsigned long)((1)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"280
+[; ;RC552.c: 280:  }
+}
+[e :U 716 ]
+"273
+[; ;RC552.c: 273:  while(i<=500){
+[e $ <= -> _i `ui -> -> 500 `i `ui 717  ]
+[e :U 718 ]
+"281
+[; ;RC552.c: 281: }
+[e :UE 715 ]
+}
+"283
+[; ;RC552.c: 283: unsigned char PCD_TransceiveData(unsigned char *sendData,
+[v _PCD_TransceiveData `(uc ~T0 @X0 1 ef7`*uc`uc`*uc`*uc`*uc`uc`a ]
+"290
+[; ;RC552.c: 290:          ) {
+{
+[e :U _PCD_TransceiveData ]
+"283
+[; ;RC552.c: 283: unsigned char PCD_TransceiveData(unsigned char *sendData,
+[v _sendData `*uc ~T0 @X0 1 r1 ]
+"284
+[; ;RC552.c: 284:                                 unsigned char sendLen,
+[v _sendLen `uc ~T0 @X0 1 r2 ]
+"285
+[; ;RC552.c: 285:         unsigned char *backData,
+[v _backData `*uc ~T0 @X0 1 r3 ]
+"286
+[; ;RC552.c: 286:         unsigned char *backLen,
+[v _backLen `*uc ~T0 @X0 1 r4 ]
+"287
+[; ;RC552.c: 287:         unsigned char *validBits,
+[v _validBits `*uc ~T0 @X0 1 r5 ]
+"288
+[; ;RC552.c: 288:         unsigned char rxAlign,
+[v _rxAlign `uc ~T0 @X0 1 r6 ]
+"289
+[; ;RC552.c: 289:         _Bool checkCRC
+[v _checkCRC `a ~T0 @X0 1 r7 ]
+"290
+[; ;RC552.c: 290:          ) {
+[f ]
+"291
+[; ;RC552.c: 291:  unsigned char waitIRq = 0x30;
+[v _waitIRq `uc ~T0 @X0 1 a ]
+[e = _waitIRq -> -> 48 `i `uc ]
+"292
+[; ;RC552.c: 292:  return PCD_CommunicateWithPICC(0x0C, waitIRq, sendData, sendLen, backData, backLen, validBits, rxAlign, checkCRC);
+[e ) ( _PCD_CommunicateWithPICC (4 , , , , , , , , -> -> 12 `i `uc _waitIRq _sendData _sendLen _backData _backLen _validBits _rxAlign _checkCRC ]
+[e $UE 720  ]
+"293
+[; ;RC552.c: 293: }
+[e :UE 720 ]
+}
+"295
+[; ;RC552.c: 295: unsigned char PCD_CommunicateWithPICC( unsigned char command,
+[v _PCD_CommunicateWithPICC `(uc ~T0 @X0 1 ef9`uc`uc`*uc`uc`*uc`*uc`*uc`uc`a ]
+"304
+[; ;RC552.c: 304:           ) {
+{
+[e :U _PCD_CommunicateWithPICC ]
+"295
+[; ;RC552.c: 295: unsigned char PCD_CommunicateWithPICC( unsigned char command,
+[v _command `uc ~T0 @X0 1 r1 ]
+"296
+[; ;RC552.c: 296:               unsigned char waitIRq,
+[v _waitIRq `uc ~T0 @X0 1 r2 ]
+"297
+[; ;RC552.c: 297:               unsigned char *sendData,
+[v _sendData `*uc ~T0 @X0 1 r3 ]
+"298
+[; ;RC552.c: 298:               unsigned char sendLen,
+[v _sendLen `uc ~T0 @X0 1 r4 ]
+"299
+[; ;RC552.c: 299:               unsigned char *backData,
+[v _backData `*uc ~T0 @X0 1 r5 ]
+"300
+[; ;RC552.c: 300:               unsigned char *backLen,
+[v _backLen `*uc ~T0 @X0 1 r6 ]
+"301
+[; ;RC552.c: 301:               unsigned char *validBits,
+[v _validBits `*uc ~T0 @X0 1 r7 ]
+"302
+[; ;RC552.c: 302:               unsigned char rxAlign,
+[v _rxAlign `uc ~T0 @X0 1 r8 ]
+"303
+[; ;RC552.c: 303:               _Bool checkCRC
+[v _checkCRC `a ~T0 @X0 1 r9 ]
+"304
+[; ;RC552.c: 304:           ) {
+[f ]
+"306
+[; ;RC552.c: 306:  unsigned char txLastBits = validBits ? *validBits : 0;
+[v _txLastBits `uc ~T0 @X0 1 a ]
+[e = _txLastBits -> ? != _validBits -> -> 0 `i `*uc : -> *U _validBits `i -> 0 `i `uc ]
+"307
+[; ;RC552.c: 307:  unsigned char bitFraming = (rxAlign << 4) + txLastBits;
+[v _bitFraming `uc ~T0 @X0 1 a ]
+[e = _bitFraming -> + << -> _rxAlign `i -> 4 `i -> _txLastBits `i `uc ]
+"309
+[; ;RC552.c: 309:  PCD_WriteRegister(0x01, 0x00);
+[e ( _PCD_WriteRegister (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
+"310
+[; ;RC552.c: 310:  PCD_WriteRegister(0x04, 0x7F);
+[e ( _PCD_WriteRegister (2 , -> -> 4 `i `uc -> -> 127 `i `uc ]
+"311
+[; ;RC552.c: 311:  PCD_WriteRegister(0x0A, 0x80);
+[e ( _PCD_WriteRegister (2 , -> -> 10 `i `uc -> -> 128 `i `uc ]
+"312
+[; ;RC552.c: 312:  PCD_WriteRegisters(0x09, sendLen, sendData);
+[e ( _PCD_WriteRegisters (3 , , -> -> 9 `i `uc _sendLen _sendData ]
+"313
+[; ;RC552.c: 313:  PCD_WriteRegister(0x0D, bitFraming);
+[e ( _PCD_WriteRegister (2 , -> -> 13 `i `uc _bitFraming ]
+"314
+[; ;RC552.c: 314:  PCD_WriteRegister(0x01, command);
+[e ( _PCD_WriteRegister (2 , -> -> 1 `i `uc _command ]
+"315
+[; ;RC552.c: 315:  if (command == 0x0C) {
+[e $ ! == -> _command `i -> 12 `i 722  ]
+{
+"316
+[; ;RC552.c: 316:   PCD_SetRegisterBitMask(0x0D, 0x80);
+[e ( _PCD_SetRegisterBitMask (2 , -> -> 13 `i `uc -> -> 128 `i `uc ]
+"317
+[; ;RC552.c: 317:  }
+}
+[e :U 722 ]
+"323
+[; ;RC552.c: 323:  uint16_t i;
+[v _i `us ~T0 @X0 1 a ]
+"324
+[; ;RC552.c: 324:     unsigned char n;
+[v _n `uc ~T0 @X0 1 a ]
+"325
+[; ;RC552.c: 325:  for (i = 2000; i > 0; i--) {
+{
+[e = _i -> -> 2000 `i `us ]
+[e $ > -> _i `ui -> -> 0 `i `ui 723  ]
+[e $U 724  ]
+[e :U 723 ]
+{
+"326
+[; ;RC552.c: 326:   n = PCD_ReadRegister(0x04);
+[e = _n ( _PCD_ReadRegister (1 -> -> 4 `i `uc ]
+"327
+[; ;RC552.c: 327:   if (n == 0x64) {
+[e $ ! == -> _n `i -> 100 `i 726  ]
+{
+"328
+[; ;RC552.c: 328:             break;
+[e $U 724  ]
+"329
+[; ;RC552.c: 329:   }
+}
+[e :U 726 ]
+"330
+[; ;RC552.c: 330:   if (n & 0x01) {
+[e $ ! != & -> _n `i -> 1 `i -> 0 `i 727  ]
+{
+"331
+[; ;RC552.c: 331:    return 0x03;
+[e ) -> -> 3 `i `uc ]
+[e $UE 721  ]
+"332
+[; ;RC552.c: 332:   }
+}
+[e :U 727 ]
+"333
+[; ;RC552.c: 333:  }
+}
+[e -- _i -> -> 1 `i `us ]
+[e $ > -> _i `ui -> -> 0 `i `ui 723  ]
+[e :U 724 ]
+}
+"335
+[; ;RC552.c: 335:  if (i == 0) {
+[e $ ! == -> _i `ui -> -> 0 `i `ui 728  ]
+{
+"336
+[; ;RC552.c: 336:   return 0x03;
+[e ) -> -> 3 `i `uc ]
+[e $UE 721  ]
+"337
+[; ;RC552.c: 337:  }
+}
+[e :U 728 ]
+"340
+[; ;RC552.c: 340:  unsigned char errorRegValue = PCD_ReadRegister(0x06);
+[v _errorRegValue `uc ~T0 @X0 1 a ]
+[e = _errorRegValue ( _PCD_ReadRegister (1 -> -> 6 `i `uc ]
+"341
+[; ;RC552.c: 341:  if (errorRegValue & 0x13) {
+[e $ ! != & -> _errorRegValue `i -> 19 `i -> 0 `i 729  ]
+{
+"342
+[; ;RC552.c: 342:   return 0x01;
+[e ) -> -> 1 `i `uc ]
+[e $UE 721  ]
+"343
+[; ;RC552.c: 343:  }
+}
+[e :U 729 ]
+"345
+[; ;RC552.c: 345:  unsigned char _validBits = 0;
+[v __validBits `uc ~T0 @X0 1 a ]
+[e = __validBits -> -> 0 `i `uc ]
+"348
+[; ;RC552.c: 348:  if (backData && backLen) {
+[e $ ! && != _backData -> -> 0 `i `*uc != _backLen -> -> 0 `i `*uc 730  ]
+{
+"349
+[; ;RC552.c: 349:   unsigned char n = PCD_ReadRegister(0x0A);
+[v _n `uc ~T0 @X0 1 a ]
+[e = _n ( _PCD_ReadRegister (1 -> -> 10 `i `uc ]
+"350
+[; ;RC552.c: 350:   if (n > *backLen) {
+[e $ ! > -> _n `i -> *U _backLen `i 731  ]
+{
+"351
+[; ;RC552.c: 351:    return 0x04;
+[e ) -> -> 4 `i `uc ]
+[e $UE 721  ]
+"352
+[; ;RC552.c: 352:   }
+}
+[e :U 731 ]
+"353
+[; ;RC552.c: 353:   *backLen = n;
+[e = *U _backLen _n ]
+"354
+[; ;RC552.c: 354:   PCD_ReadRegisters(0x09, n, backData, rxAlign);
+[e ( _PCD_ReadRegisters (4 , , , -> -> 9 `i `uc _n _backData _rxAlign ]
+"355
+[; ;RC552.c: 355:   _validBits = PCD_ReadRegister(0x0C) & 0x07;
+[e = __validBits -> & -> ( _PCD_ReadRegister (1 -> -> 12 `i `uc `i -> 7 `i `uc ]
+"356
+[; ;RC552.c: 356:   if (validBits) {
+[e $ ! != _validBits -> -> 0 `i `*uc 732  ]
+{
+"357
+[; ;RC552.c: 357:    *validBits = _validBits;
+[e = *U _validBits __validBits ]
+"358
+[; ;RC552.c: 358:   }
+}
+[e :U 732 ]
+"359
+[; ;RC552.c: 359:  }
+}
+[e :U 730 ]
+"362
+[; ;RC552.c: 362:  if (errorRegValue & 0x08) {
+[e $ ! != & -> _errorRegValue `i -> 8 `i -> 0 `i 733  ]
+{
+"363
+[; ;RC552.c: 363:   return 0x02;
+[e ) -> -> 2 `i `uc ]
+[e $UE 721  ]
+"364
+[; ;RC552.c: 364:  }
+}
+[e :U 733 ]
+"367
+[; ;RC552.c: 367:  if (backData && backLen && checkCRC) {
+[e $ ! && && != _backData -> -> 0 `i `*uc != _backLen -> -> 0 `i `*uc != -> _checkCRC `i -> 0 `i 734  ]
+{
+"369
+[; ;RC552.c: 369:   if (*backLen == 1 && _validBits == 4) {
+[e $ ! && == -> *U _backLen `i -> 1 `i == -> __validBits `i -> 4 `i 735  ]
+{
+"370
+[; ;RC552.c: 370:    return 0xFF;
+[e ) -> -> 255 `i `uc ]
+[e $UE 721  ]
+"371
+[; ;RC552.c: 371:   }
+}
+[e :U 735 ]
+"373
+[; ;RC552.c: 373:   if (*backLen < 2 || _validBits != 0) {
+[e $ ! || < -> *U _backLen `i -> 2 `i != -> __validBits `i -> 0 `i 736  ]
+{
+"374
+[; ;RC552.c: 374:    return 0x07;
+[e ) -> -> 7 `i `uc ]
+[e $UE 721  ]
+"375
+[; ;RC552.c: 375:   }
+}
+[e :U 736 ]
+"377
+[; ;RC552.c: 377:   unsigned char controlBuffer[2];
+[v _controlBuffer `uc ~T0 @X0 -> 2 `i a ]
+"378
+[; ;RC552.c: 378:   unsigned char status = PCD_CalculateCRC(&backData[0], *backLen - 2, &controlBuffer[0]);
+[v _status `uc ~T0 @X0 1 a ]
+[e = _status ( _PCD_CalculateCRC (3 , , &U *U + _backData * -> -> 0 `i `x -> -> # *U _backData `i `x -> - -> *U _backLen `i -> 2 `i `uc &U *U + &U _controlBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _controlBuffer `ui `ux ]
+"379
+[; ;RC552.c: 379:   if (status != 0x00) {
+[e $ ! != -> _status `i -> 0 `i 737  ]
+{
+"380
+[; ;RC552.c: 380:    return status;
+[e ) _status ]
+[e $UE 721  ]
+"381
+[; ;RC552.c: 381:   }
+}
+[e :U 737 ]
+"382
+[; ;RC552.c: 382:   if ((backData[*backLen - 2] != controlBuffer[0]) || (backData[*backLen - 1] != controlBuffer[1])) {
+[e $ ! || != -> *U + _backData * -> - -> *U _backLen `i -> 2 `i `x -> -> # *U _backData `i `x `i -> *U + &U _controlBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _controlBuffer `ui `ux `i != -> *U + _backData * -> - -> *U _backLen `i -> 1 `i `x -> -> # *U _backData `i `x `i -> *U + &U _controlBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _controlBuffer `ui `ux `i 738  ]
+{
+"383
+[; ;RC552.c: 383:    return 0x07;
+[e ) -> -> 7 `i `uc ]
+[e $UE 721  ]
+"384
+[; ;RC552.c: 384:   }
+}
+[e :U 738 ]
+"385
+[; ;RC552.c: 385:  }
+}
+[e :U 734 ]
+"387
+[; ;RC552.c: 387:  return 0x00;
+[e ) -> -> 0 `i `uc ]
+[e $UE 721  ]
+"388
+[; ;RC552.c: 388: }
+[e :UE 721 ]
+}
+"391
+[; ;RC552.c: 391: unsigned char PICC_RequestA( unsigned char *bufferATQA,
+[v _PICC_RequestA `(uc ~T0 @X0 1 ef2`*uc`*uc ]
+"393
+[; ;RC552.c: 393:           ) {
+{
+[e :U _PICC_RequestA ]
+"391
+[; ;RC552.c: 391: unsigned char PICC_RequestA( unsigned char *bufferATQA,
+[v _bufferATQA `*uc ~T0 @X0 1 r1 ]
+"392
+[; ;RC552.c: 392:         unsigned char *bufferSize
+[v _bufferSize `*uc ~T0 @X0 1 r2 ]
+"393
+[; ;RC552.c: 393:           ) {
+[f ]
+"394
+[; ;RC552.c: 394:  return PICC_REQA_or_WUPA(0x26, bufferATQA, bufferSize);
+[e ) ( _PICC_REQA_or_WUPA (3 , , -> -> 38 `i `uc _bufferATQA _bufferSize ]
+[e $UE 739  ]
+"395
+[; ;RC552.c: 395: }
+[e :UE 739 ]
+}
+"397
+[; ;RC552.c: 397: unsigned char PICC_WakeupA( unsigned char *bufferATQA,
+[v _PICC_WakeupA `(uc ~T0 @X0 1 ef2`*uc`*uc ]
+"399
+[; ;RC552.c: 399:           ) {
+{
+[e :U _PICC_WakeupA ]
+"397
+[; ;RC552.c: 397: unsigned char PICC_WakeupA( unsigned char *bufferATQA,
+[v _bufferATQA `*uc ~T0 @X0 1 r1 ]
+"398
+[; ;RC552.c: 398:        unsigned char *bufferSize
+[v _bufferSize `*uc ~T0 @X0 1 r2 ]
+"399
+[; ;RC552.c: 399:           ) {
+[f ]
+"400
+[; ;RC552.c: 400:  return PICC_REQA_or_WUPA(0x52, bufferATQA, bufferSize);
+[e ) ( _PICC_REQA_or_WUPA (3 , , -> -> 82 `i `uc _bufferATQA _bufferSize ]
+[e $UE 740  ]
+"401
+[; ;RC552.c: 401: }
+[e :UE 740 ]
+}
+"403
+[; ;RC552.c: 403: unsigned char PICC_REQA_or_WUPA( unsigned char command,
+[v _PICC_REQA_or_WUPA `(uc ~T0 @X0 1 ef3`uc`*uc`*uc ]
+"406
+[; ;RC552.c: 406:            ) {
+{
+[e :U _PICC_REQA_or_WUPA ]
+"403
+[; ;RC552.c: 403: unsigned char PICC_REQA_or_WUPA( unsigned char command,
+[v _command `uc ~T0 @X0 1 r1 ]
+"404
+[; ;RC552.c: 404:          unsigned char *bufferATQA,
+[v _bufferATQA `*uc ~T0 @X0 1 r2 ]
+"405
+[; ;RC552.c: 405:          unsigned char *bufferSize
+[v _bufferSize `*uc ~T0 @X0 1 r3 ]
+"406
+[; ;RC552.c: 406:            ) {
+[f ]
+"407
+[; ;RC552.c: 407:  unsigned char validBits;
+[v _validBits `uc ~T0 @X0 1 a ]
+"408
+[; ;RC552.c: 408:  unsigned char status;
+[v _status `uc ~T0 @X0 1 a ]
+"410
+[; ;RC552.c: 410:  if (bufferATQA == ((void*)0) || (*bufferSize < 2)) {
+[e $ ! || == _bufferATQA -> -> -> 0 `i `*v `*uc < -> *U _bufferSize `i -> 2 `i 742  ]
+{
+"411
+[; ;RC552.c: 411:   return 0x04;
+[e ) -> -> 4 `i `uc ]
+[e $UE 741  ]
+"412
+[; ;RC552.c: 412:  }
+}
+[e :U 742 ]
+"413
+[; ;RC552.c: 413:  PCD_ClearRegisterBitMask(0x0E, 0x80);
+[e ( _PCD_ClearRegisterBitMask (2 , -> -> 14 `i `uc -> -> 128 `i `uc ]
+"414
+[; ;RC552.c: 414:  validBits = 7;
+[e = _validBits -> -> 7 `i `uc ]
+"415
+[; ;RC552.c: 415:  status = PCD_TransceiveData(&command, 1, bufferATQA, bufferSize, &validBits, 0x0 ,0);
+[e = _status ( _PCD_TransceiveData (4 , , , , , , &U _command -> -> 1 `i `uc _bufferATQA _bufferSize &U _validBits -> -> 0 `i `uc -> -> 0 `i `a ]
+"416
+[; ;RC552.c: 416:  if (status != 0x00) {
+[e $ ! != -> _status `i -> 0 `i 743  ]
+{
+"417
+[; ;RC552.c: 417:   return status;
+[e ) _status ]
+[e $UE 741  ]
+"418
+[; ;RC552.c: 418:  }
+}
+[e :U 743 ]
+"419
+[; ;RC552.c: 419:  if (*bufferSize != 2 || validBits != 0) {
+[e $ ! || != -> *U _bufferSize `i -> 2 `i != -> _validBits `i -> 0 `i 744  ]
+{
+"420
+[; ;RC552.c: 420:   return 0x01;
+[e ) -> -> 1 `i `uc ]
+[e $UE 741  ]
+"421
+[; ;RC552.c: 421:  }
+}
+[e :U 744 ]
+"422
+[; ;RC552.c: 422:  return 0x00;
+[e ) -> -> 0 `i `uc ]
+[e $UE 741  ]
+"423
+[; ;RC552.c: 423: }
+[e :UE 741 ]
+}
+"427
+[; ;RC552.c: 427: unsigned char PICC_Select( Uid *uid,
+[v _PICC_Select `(uc ~T0 @X0 1 ef2`*S4`uc ]
+"429
+[; ;RC552.c: 429:            ) {
+{
+[e :U _PICC_Select ]
+"427
+[; ;RC552.c: 427: unsigned char PICC_Select( Uid *uid,
+[v _uid `*S4 ~T0 @X0 1 r1 ]
+"428
+[; ;RC552.c: 428:            unsigned char validBits
+[v _validBits `uc ~T0 @X0 1 r2 ]
+"429
+[; ;RC552.c: 429:            ) {
+[f ]
+"430
+[; ;RC552.c: 430:  _Bool uidComplete;
+[v _uidComplete `a ~T0 @X0 1 a ]
+"431
+[; ;RC552.c: 431:  _Bool selectDone;
+[v _selectDone `a ~T0 @X0 1 a ]
+"432
+[; ;RC552.c: 432:  _Bool useCascadeTag;
+[v _useCascadeTag `a ~T0 @X0 1 a ]
+"433
+[; ;RC552.c: 433:  unsigned char cascadeLevel = 1;
+[v _cascadeLevel `uc ~T0 @X0 1 a ]
+[e = _cascadeLevel -> -> 1 `i `uc ]
+"434
+[; ;RC552.c: 434:  unsigned char result;
+[v _result `uc ~T0 @X0 1 a ]
+"435
+[; ;RC552.c: 435:  unsigned char count;
+[v _count `uc ~T0 @X0 1 a ]
+"436
+[; ;RC552.c: 436:  unsigned char checkBit;
+[v _checkBit `uc ~T0 @X0 1 a ]
+"437
+[; ;RC552.c: 437:  unsigned char index;
+[v _index `uc ~T0 @X0 1 a ]
+"438
+[; ;RC552.c: 438:     unsigned char uidIndex;
+[v _uidIndex `uc ~T0 @X0 1 a ]
+"439
+[; ;RC552.c: 439:  int8_t currentLevelKnownBits;
+[v _currentLevelKnownBits `c ~T0 @X0 1 a ]
+"440
+[; ;RC552.c: 440:  unsigned char buffer[9];
+[v _buffer `uc ~T0 @X0 -> 9 `i a ]
+"441
+[; ;RC552.c: 441:  unsigned char bufferUsed;
+[v _bufferUsed `uc ~T0 @X0 1 a ]
+"442
+[; ;RC552.c: 442:  unsigned char rxAlign;
+[v _rxAlign `uc ~T0 @X0 1 a ]
+"443
+[; ;RC552.c: 443:  unsigned char txLastBits;
+[v _txLastBits `uc ~T0 @X0 1 a ]
+"444
+[; ;RC552.c: 444:  unsigned char *responseBuffer;
+[v _responseBuffer `*uc ~T0 @X0 1 a ]
+"445
+[; ;RC552.c: 445:  unsigned char responseLength;
+[v _responseLength `uc ~T0 @X0 1 a ]
+"470
+[; ;RC552.c: 470:  if (validBits > 80) {
+[e $ ! > -> _validBits `i -> 80 `i 746  ]
+{
+"471
+[; ;RC552.c: 471:   return 0x06;
+[e ) -> -> 6 `i `uc ]
+[e $UE 745  ]
+"472
+[; ;RC552.c: 472:  }
+}
+[e :U 746 ]
+"475
+[; ;RC552.c: 475:  PCD_ClearRegisterBitMask(0x0E, 0x80);
+[e ( _PCD_ClearRegisterBitMask (2 , -> -> 14 `i `uc -> -> 128 `i `uc ]
+"478
+[; ;RC552.c: 478:  uidComplete = 0;
+[e = _uidComplete -> -> 0 `i `a ]
+"479
+[; ;RC552.c: 479:  while (!uidComplete) {
+[e $U 747  ]
+[e :U 748 ]
+{
+"481
+[; ;RC552.c: 481:   switch (cascadeLevel) {
+[e $U 751  ]
+{
+"482
+[; ;RC552.c: 482:    case 1:
+[e :U 752 ]
+"483
+[; ;RC552.c: 483:     buffer[0] = 0x93;
+[e = *U + &U _buffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> -> 147 `i `uc ]
+"484
+[; ;RC552.c: 484:     uidIndex = 0;
+[e = _uidIndex -> -> 0 `i `uc ]
+"485
+[; ;RC552.c: 485:     useCascadeTag = validBits && uid->size > 4;
+[e = _useCascadeTag -> -> && != -> _validBits `i -> 0 `i > -> . *U _uid 0 `i -> 4 `i `i `a ]
+"486
+[; ;RC552.c: 486:     break;
+[e $U 750  ]
+"488
+[; ;RC552.c: 488:    case 2:
+[e :U 753 ]
+"489
+[; ;RC552.c: 489:     buffer[0] = 0x95;
+[e = *U + &U _buffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> -> 149 `i `uc ]
+"490
+[; ;RC552.c: 490:     uidIndex = 3;
+[e = _uidIndex -> -> 3 `i `uc ]
+"491
+[; ;RC552.c: 491:     useCascadeTag = validBits && uid->size > 7;
+[e = _useCascadeTag -> -> && != -> _validBits `i -> 0 `i > -> . *U _uid 0 `i -> 7 `i `i `a ]
+"492
+[; ;RC552.c: 492:     break;
+[e $U 750  ]
+"494
+[; ;RC552.c: 494:    case 3:
+[e :U 754 ]
+"495
+[; ;RC552.c: 495:     buffer[0] = 0x97;
+[e = *U + &U _buffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> -> 151 `i `uc ]
+"496
+[; ;RC552.c: 496:     uidIndex = 6;
+[e = _uidIndex -> -> 6 `i `uc ]
+"497
+[; ;RC552.c: 497:     useCascadeTag = 0;
+[e = _useCascadeTag -> -> 0 `i `a ]
+"498
+[; ;RC552.c: 498:     break;
+[e $U 750  ]
+"500
+[; ;RC552.c: 500:    default:
+[e :U 755 ]
+"501
+[; ;RC552.c: 501:     return 0x05;
+[e ) -> -> 5 `i `uc ]
+[e $UE 745  ]
+"502
+[; ;RC552.c: 502:     break;
+[e $U 750  ]
+"503
+[; ;RC552.c: 503:   }
+}
+[e $U 750  ]
+[e :U 751 ]
+[e [\ -> _cascadeLevel `i , $ -> 1 `i 752
+ , $ -> 2 `i 753
+ , $ -> 3 `i 754
+ 755 ]
+[e :U 750 ]
+"506
+[; ;RC552.c: 506:   currentLevelKnownBits = validBits - (8 * uidIndex);
+[e = _currentLevelKnownBits -> - -> _validBits `i * -> 8 `i -> _uidIndex `i `c ]
+"507
+[; ;RC552.c: 507:   if (currentLevelKnownBits < 0) {
+[e $ ! < -> _currentLevelKnownBits `i -> 0 `i 756  ]
+{
+"508
+[; ;RC552.c: 508:    currentLevelKnownBits = 0;
+[e = _currentLevelKnownBits -> -> 0 `i `c ]
+"509
+[; ;RC552.c: 509:   }
+}
+[e :U 756 ]
+"511
+[; ;RC552.c: 511:   index = 2;
+[e = _index -> -> 2 `i `uc ]
+"512
+[; ;RC552.c: 512:   if (useCascadeTag) {
+[e $ ! != -> _useCascadeTag `i -> 0 `i 757  ]
+{
+"513
+[; ;RC552.c: 513:    buffer[index++] = 0x88;
+[e = *U + &U _buffer * -> ++ _index -> -> 1 `i `uc `ux -> -> # *U &U _buffer `ui `ux -> -> 136 `i `uc ]
+"514
+[; ;RC552.c: 514:   }
+}
+[e :U 757 ]
+"515
+[; ;RC552.c: 515:   unsigned char bytesToCopy = currentLevelKnownBits / 8 + (currentLevelKnownBits % 8 ? 1 : 0);
+[v _bytesToCopy `uc ~T0 @X0 1 a ]
+[e = _bytesToCopy -> + / -> _currentLevelKnownBits `i -> 8 `i ? != % -> _currentLevelKnownBits `i -> 8 `i -> 0 `i : -> 1 `i -> 0 `i `uc ]
+"516
+[; ;RC552.c: 516:   if (bytesToCopy) {
+[e $ ! != -> _bytesToCopy `i -> 0 `i 758  ]
+{
+"517
+[; ;RC552.c: 517:    unsigned char maxBytes = useCascadeTag ? 3 : 4;
+[v _maxBytes `uc ~T0 @X0 1 a ]
+[e = _maxBytes -> ? != -> _useCascadeTag `i -> 0 `i : -> 3 `i -> 4 `i `uc ]
+"518
+[; ;RC552.c: 518:    if (bytesToCopy > maxBytes) {
+[e $ ! > -> _bytesToCopy `i -> _maxBytes `i 759  ]
+{
+"519
+[; ;RC552.c: 519:     bytesToCopy = maxBytes;
+[e = _bytesToCopy _maxBytes ]
+"520
+[; ;RC552.c: 520:    }
+}
+[e :U 759 ]
+"521
+[; ;RC552.c: 521:    for (count = 0; count < bytesToCopy; count++) {
+{
+[e = _count -> -> 0 `i `uc ]
+[e $U 763  ]
+[e :U 760 ]
+{
+"522
+[; ;RC552.c: 522:     buffer[index++] = uid->uidByte[uidIndex + count];
+[e = *U + &U _buffer * -> ++ _index -> -> 1 `i `uc `ux -> -> # *U &U _buffer `ui `ux *U + &U . *U _uid 1 * -> -> + -> _uidIndex `i -> _count `i `ui `ux -> -> # *U &U . *U _uid 1 `ui `ux ]
+"523
+[; ;RC552.c: 523:    }
+}
+[e ++ _count -> -> 1 `i `uc ]
+[e :U 763 ]
+[e $ < -> _count `i -> _bytesToCopy `i 760  ]
+[e :U 761 ]
+}
+"524
+[; ;RC552.c: 524:   }
+}
+[e :U 758 ]
+"526
+[; ;RC552.c: 526:   if (useCascadeTag) {
+[e $ ! != -> _useCascadeTag `i -> 0 `i 764  ]
+{
+"527
+[; ;RC552.c: 527:    currentLevelKnownBits += 8;
+[e =+ _currentLevelKnownBits -> -> 8 `i `c ]
+"528
+[; ;RC552.c: 528:   }
+}
+[e :U 764 ]
+"531
+[; ;RC552.c: 531:   selectDone = 0;
+[e = _selectDone -> -> 0 `i `a ]
+"532
+[; ;RC552.c: 532:   while (!selectDone) {
+[e $U 765  ]
+[e :U 766 ]
+{
+"534
+[; ;RC552.c: 534:    if (currentLevelKnownBits >= 32) {
+[e $ ! >= -> _currentLevelKnownBits `i -> 32 `i 768  ]
+{
+"536
+[; ;RC552.c: 536:     buffer[1] = 0x70;
+[e = *U + &U _buffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> -> 112 `i `uc ]
+"538
+[; ;RC552.c: 538:     buffer[6] = buffer[2] ^ buffer[3] ^ buffer[4] ^ buffer[5];
+[e = *U + &U _buffer * -> -> -> 6 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> ^ ^ ^ -> *U + &U _buffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _buffer `ui `ux `i -> *U + &U _buffer * -> -> -> 3 `i `ui `ux -> -> # *U &U _buffer `ui `ux `i -> *U + &U _buffer * -> -> -> 4 `i `ui `ux -> -> # *U &U _buffer `ui `ux `i -> *U + &U _buffer * -> -> -> 5 `i `ui `ux -> -> # *U &U _buffer `ui `ux `i `uc ]
+"540
+[; ;RC552.c: 540:     result = PCD_CalculateCRC(buffer, 7, &buffer[7]);
+[e = _result ( _PCD_CalculateCRC (3 , , &U _buffer -> -> 7 `i `uc &U *U + &U _buffer * -> -> -> 7 `i `ui `ux -> -> # *U &U _buffer `ui `ux ]
+"541
+[; ;RC552.c: 541:     if (result != 0x00) {
+[e $ ! != -> _result `i -> 0 `i 769  ]
+{
+"542
+[; ;RC552.c: 542:      return result;
+[e ) _result ]
+[e $UE 745  ]
+"543
+[; ;RC552.c: 543:     }
+}
+[e :U 769 ]
+"544
+[; ;RC552.c: 544:     txLastBits = 0;
+[e = _txLastBits -> -> 0 `i `uc ]
+"545
+[; ;RC552.c: 545:     bufferUsed = 9;
+[e = _bufferUsed -> -> 9 `i `uc ]
+"547
+[; ;RC552.c: 547:     responseBuffer = &buffer[6];
+[e = _responseBuffer &U *U + &U _buffer * -> -> -> 6 `i `ui `ux -> -> # *U &U _buffer `ui `ux ]
+"548
+[; ;RC552.c: 548:     responseLength = 3;
+[e = _responseLength -> -> 3 `i `uc ]
+"549
+[; ;RC552.c: 549:    }
+}
+[e $U 770  ]
+"550
+[; ;RC552.c: 550:    else {
+[e :U 768 ]
+{
+"552
+[; ;RC552.c: 552:     txLastBits = currentLevelKnownBits % 8;
+[e = _txLastBits -> % -> _currentLevelKnownBits `i -> 8 `i `uc ]
+"553
+[; ;RC552.c: 553:     count = currentLevelKnownBits / 8;
+[e = _count -> / -> _currentLevelKnownBits `i -> 8 `i `uc ]
+"554
+[; ;RC552.c: 554:     index = 2 + count;
+[e = _index -> + -> 2 `i -> _count `i `uc ]
+"555
+[; ;RC552.c: 555:     buffer[1] = (index << 4) + txLastBits;
+[e = *U + &U _buffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> + << -> _index `i -> 4 `i -> _txLastBits `i `uc ]
+"556
+[; ;RC552.c: 556:     bufferUsed = index + (txLastBits ? 1 : 0);
+[e = _bufferUsed -> + -> _index `i ? != -> _txLastBits `i -> 0 `i : -> 1 `i -> 0 `i `uc ]
+"558
+[; ;RC552.c: 558:     responseBuffer = &buffer[index];
+[e = _responseBuffer &U *U + &U _buffer * -> _index `ux -> -> # *U &U _buffer `ui `ux ]
+"559
+[; ;RC552.c: 559:     responseLength = sizeof(buffer) - index;
+[e = _responseLength -> - -> # _buffer `ui -> _index `ui `uc ]
+"560
+[; ;RC552.c: 560:    }
+}
+[e :U 770 ]
+"563
+[; ;RC552.c: 563:    rxAlign = txLastBits;
+[e = _rxAlign _txLastBits ]
+"564
+[; ;RC552.c: 564:    PCD_WriteRegister(0x0D, (rxAlign << 4) + txLastBits);
+[e ( _PCD_WriteRegister (2 , -> -> 13 `i `uc -> + << -> _rxAlign `i -> 4 `i -> _txLastBits `i `uc ]
+"567
+[; ;RC552.c: 567:    result = PCD_TransceiveData(buffer, bufferUsed, responseBuffer, &responseLength, &txLastBits, rxAlign,0);
+[e = _result ( _PCD_TransceiveData (4 , , , , , , &U _buffer _bufferUsed _responseBuffer &U _responseLength &U _txLastBits _rxAlign -> -> 0 `i `a ]
+"568
+[; ;RC552.c: 568:    if (result == 0x02) {
+[e $ ! == -> _result `i -> 2 `i 771  ]
+{
+"569
+[; ;RC552.c: 569:     unsigned char valueOfCollReg = PCD_ReadRegister(0x0E);
+[v _valueOfCollReg `uc ~T0 @X0 1 a ]
+[e = _valueOfCollReg ( _PCD_ReadRegister (1 -> -> 14 `i `uc ]
+"570
+[; ;RC552.c: 570:     if (valueOfCollReg & 0x20) {
+[e $ ! != & -> _valueOfCollReg `i -> 32 `i -> 0 `i 772  ]
+{
+"571
+[; ;RC552.c: 571:      return 0x02;
+[e ) -> -> 2 `i `uc ]
+[e $UE 745  ]
+"572
+[; ;RC552.c: 572:     }
+}
+[e :U 772 ]
+"573
+[; ;RC552.c: 573:     unsigned char collisionPos = valueOfCollReg & 0x1F;
+[v _collisionPos `uc ~T0 @X0 1 a ]
+[e = _collisionPos -> & -> _valueOfCollReg `i -> 31 `i `uc ]
+"574
+[; ;RC552.c: 574:     if (collisionPos == 0) {
+[e $ ! == -> _collisionPos `i -> 0 `i 773  ]
+{
+"575
+[; ;RC552.c: 575:      collisionPos = 32;
+[e = _collisionPos -> -> 32 `i `uc ]
+"576
+[; ;RC552.c: 576:     }
+}
+[e :U 773 ]
+"577
+[; ;RC552.c: 577:     if (collisionPos <= currentLevelKnownBits) {
+[e $ ! <= -> _collisionPos `i -> _currentLevelKnownBits `i 774  ]
+{
+"578
+[; ;RC552.c: 578:      return 0x05;
+[e ) -> -> 5 `i `uc ]
+[e $UE 745  ]
+"579
+[; ;RC552.c: 579:     }
+}
+[e :U 774 ]
+"581
+[; ;RC552.c: 581:     currentLevelKnownBits = collisionPos;
+[e = _currentLevelKnownBits -> _collisionPos `c ]
+"582
+[; ;RC552.c: 582:     count = currentLevelKnownBits % 8;
+[e = _count -> % -> _currentLevelKnownBits `i -> 8 `i `uc ]
+"583
+[; ;RC552.c: 583:     checkBit = (currentLevelKnownBits - 1) % 8;
+[e = _checkBit -> % - -> _currentLevelKnownBits `i -> 1 `i -> 8 `i `uc ]
+"584
+[; ;RC552.c: 584:     index = 1 + (currentLevelKnownBits / 8) + (count ? 1 : 0);
+[e = _index -> + + -> 1 `i / -> _currentLevelKnownBits `i -> 8 `i ? != -> _count `i -> 0 `i : -> 1 `i -> 0 `i `uc ]
+"585
+[; ;RC552.c: 585:     buffer[index] |= (1 << checkBit);
+[e =| *U + &U _buffer * -> _index `ux -> -> # *U &U _buffer `ui `ux -> << -> 1 `i -> _checkBit `i `uc ]
+"586
+[; ;RC552.c: 586:    }
+}
+[e $U 775  ]
+"587
+[; ;RC552.c: 587:    else if (result != 0x00) {
+[e :U 771 ]
+[e $ ! != -> _result `i -> 0 `i 776  ]
+{
+"588
+[; ;RC552.c: 588:     return result;
+[e ) _result ]
+[e $UE 745  ]
+"589
+[; ;RC552.c: 589:    }
+}
+[e $U 777  ]
+"590
+[; ;RC552.c: 590:    else {
+[e :U 776 ]
+{
+"591
+[; ;RC552.c: 591:     if (currentLevelKnownBits >= 32) {
+[e $ ! >= -> _currentLevelKnownBits `i -> 32 `i 778  ]
+{
+"592
+[; ;RC552.c: 592:      selectDone = 1;
+[e = _selectDone -> -> 1 `i `a ]
+"594
+[; ;RC552.c: 594:     }
+}
+[e $U 779  ]
+"595
+[; ;RC552.c: 595:     else {
+[e :U 778 ]
+{
+"597
+[; ;RC552.c: 597:      currentLevelKnownBits = 32;
+[e = _currentLevelKnownBits -> -> 32 `i `c ]
+"599
+[; ;RC552.c: 599:     }
+}
+[e :U 779 ]
+"600
+[; ;RC552.c: 600:    }
+}
+[e :U 777 ]
+[e :U 775 ]
+"601
+[; ;RC552.c: 601:   }
+}
+[e :U 765 ]
+"532
+[; ;RC552.c: 532:   while (!selectDone) {
+[e $ ! != -> _selectDone `i -> 0 `i 766  ]
+[e :U 767 ]
+"606
+[; ;RC552.c: 606:   index = (buffer[2] == 0x88) ? 3 : 2;
+[e = _index -> ? == -> *U + &U _buffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _buffer `ui `ux `i -> 136 `i : -> 3 `i -> 2 `i `uc ]
+"607
+[; ;RC552.c: 607:   bytesToCopy = (buffer[2] == 0x88) ? 3 : 4;
+[e = _bytesToCopy -> ? == -> *U + &U _buffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _buffer `ui `ux `i -> 136 `i : -> 3 `i -> 4 `i `uc ]
+"608
+[; ;RC552.c: 608:   for (count = 0; count < bytesToCopy; count++) {
+{
+[e = _count -> -> 0 `i `uc ]
+[e $U 783  ]
+[e :U 780 ]
+{
+"609
+[; ;RC552.c: 609:    uid->uidByte[uidIndex + count] = buffer[index++];
+[e = *U + &U . *U _uid 1 * -> -> + -> _uidIndex `i -> _count `i `ui `ux -> -> # *U &U . *U _uid 1 `ui `ux *U + &U _buffer * -> ++ _index -> -> 1 `i `uc `ux -> -> # *U &U _buffer `ui `ux ]
+"610
+[; ;RC552.c: 610:   }
+}
+[e ++ _count -> -> 1 `i `uc ]
+[e :U 783 ]
+[e $ < -> _count `i -> _bytesToCopy `i 780  ]
+[e :U 781 ]
+}
+"613
+[; ;RC552.c: 613:   if (responseLength != 3 || txLastBits != 0) {
+[e $ ! || != -> _responseLength `i -> 3 `i != -> _txLastBits `i -> 0 `i 784  ]
+{
+"614
+[; ;RC552.c: 614:    return 0x01;
+[e ) -> -> 1 `i `uc ]
+[e $UE 745  ]
+"615
+[; ;RC552.c: 615:   }
+}
+[e :U 784 ]
+"617
+[; ;RC552.c: 617:   result = PCD_CalculateCRC(responseBuffer, 1, &buffer[2]);
+[e = _result ( _PCD_CalculateCRC (3 , , _responseBuffer -> -> 1 `i `uc &U *U + &U _buffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _buffer `ui `ux ]
+"618
+[; ;RC552.c: 618:   if (result != 0x00) {
+[e $ ! != -> _result `i -> 0 `i 785  ]
+{
+"619
+[; ;RC552.c: 619:    return result;
+[e ) _result ]
+[e $UE 745  ]
+"620
+[; ;RC552.c: 620:   }
+}
+[e :U 785 ]
+"621
+[; ;RC552.c: 621:   if ((buffer[2] != responseBuffer[1]) || (buffer[3] != responseBuffer[2])) {
+[e $ ! || != -> *U + &U _buffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _buffer `ui `ux `i -> *U + _responseBuffer * -> -> 1 `i `x -> -> # *U _responseBuffer `i `x `i != -> *U + &U _buffer * -> -> -> 3 `i `ui `ux -> -> # *U &U _buffer `ui `ux `i -> *U + _responseBuffer * -> -> 2 `i `x -> -> # *U _responseBuffer `i `x `i 786  ]
+{
+"622
+[; ;RC552.c: 622:    return 0x07;
+[e ) -> -> 7 `i `uc ]
+[e $UE 745  ]
+"623
+[; ;RC552.c: 623:   }
+}
+[e :U 786 ]
+"624
+[; ;RC552.c: 624:   if (responseBuffer[0] & 0x04) {
+[e $ ! != & -> *U + _responseBuffer * -> -> 0 `i `x -> -> # *U _responseBuffer `i `x `i -> 4 `i -> 0 `i 787  ]
+{
+"625
+[; ;RC552.c: 625:    cascadeLevel++;
+[e ++ _cascadeLevel -> -> 1 `i `uc ]
+"626
+[; ;RC552.c: 626:   }
+}
+[e $U 788  ]
+"627
+[; ;RC552.c: 627:   else {
+[e :U 787 ]
+{
+"628
+[; ;RC552.c: 628:    uidComplete = 1;
+[e = _uidComplete -> -> 1 `i `a ]
+"629
+[; ;RC552.c: 629:    uid->sak = responseBuffer[0];
+[e = . *U _uid 2 *U + _responseBuffer * -> -> 0 `i `x -> -> # *U _responseBuffer `i `x ]
+"630
+[; ;RC552.c: 630:   }
+}
+[e :U 788 ]
+"631
+[; ;RC552.c: 631:  }
+}
+[e :U 747 ]
+"479
+[; ;RC552.c: 479:  while (!uidComplete) {
+[e $ ! != -> _uidComplete `i -> 0 `i 748  ]
+[e :U 749 ]
+"634
+[; ;RC552.c: 634:  uid->size = 3 * cascadeLevel + 1;
+[e = . *U _uid 0 -> + * -> 3 `i -> _cascadeLevel `i -> 1 `i `uc ]
+"636
+[; ;RC552.c: 636:  return 0x00;
+[e ) -> -> 0 `i `uc ]
+[e $UE 745  ]
+"637
+[; ;RC552.c: 637: }
+[e :UE 745 ]
+}
+"639
+[; ;RC552.c: 639: unsigned char PICC_HaltA(void) {
+[v _PICC_HaltA `(uc ~T0 @X0 1 ef ]
+{
+[e :U _PICC_HaltA ]
+[f ]
+"640
+[; ;RC552.c: 640:  unsigned char result;
+[v _result `uc ~T0 @X0 1 a ]
+"641
+[; ;RC552.c: 641:  unsigned char buffer[4];
+[v _buffer `uc ~T0 @X0 -> 4 `i a ]
+"644
+[; ;RC552.c: 644:  buffer[0] = 0x50;
+[e = *U + &U _buffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> -> 80 `i `uc ]
+"645
+[; ;RC552.c: 645:  buffer[1] = 0;
+[e = *U + &U _buffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> -> 0 `i `uc ]
+"647
+[; ;RC552.c: 647:  result = PCD_CalculateCRC(buffer, 2, &buffer[2]);
+[e = _result ( _PCD_CalculateCRC (3 , , &U _buffer -> -> 2 `i `uc &U *U + &U _buffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _buffer `ui `ux ]
+"648
+[; ;RC552.c: 648:  if (result != 0x00) {
+[e $ ! != -> _result `i -> 0 `i 790  ]
+{
+"649
+[; ;RC552.c: 649:   return result;
+[e ) _result ]
+[e $UE 789  ]
+"650
+[; ;RC552.c: 650:  }
+}
+[e :U 790 ]
+"657
+[; ;RC552.c: 657:  result = PCD_TransceiveData(buffer, sizeof(buffer), ((void*)0), 0,((void*)0),0,0);
+[e = _result ( _PCD_TransceiveData (4 , , , , , , &U _buffer -> -> # _buffer `ui `uc -> -> -> 0 `i `*v `*uc -> -> 0 `i `*uc -> -> -> 0 `i `*v `*uc -> -> 0 `i `uc -> -> 0 `i `a ]
+"658
+[; ;RC552.c: 658:  if (result == 0x03) {
+[e $ ! == -> _result `i -> 3 `i 791  ]
+{
+"659
+[; ;RC552.c: 659:   return 0x00;
+[e ) -> -> 0 `i `uc ]
+[e $UE 789  ]
+"660
+[; ;RC552.c: 660:  }
+}
+[e :U 791 ]
+"661
+[; ;RC552.c: 661:  if (result == 0x00) {
+[e $ ! == -> _result `i -> 0 `i 792  ]
+{
+"662
+[; ;RC552.c: 662:   return 0x01;
+[e ) -> -> 1 `i `uc ]
+[e $UE 789  ]
+"663
+[; ;RC552.c: 663:  }
+}
+[e :U 792 ]
+"664
+[; ;RC552.c: 664:  return result;
+[e ) _result ]
+[e $UE 789  ]
+"665
+[; ;RC552.c: 665: }
+[e :UE 789 ]
+}
+"667
+[; ;RC552.c: 667: unsigned char PCD_Authenticate(unsigned char command,
+[v _PCD_Authenticate `(uc ~T0 @X0 1 ef4`uc`uc`*S5`*S4 ]
+"671
+[; ;RC552.c: 671:            ) {
+{
+[e :U _PCD_Authenticate ]
+"667
+[; ;RC552.c: 667: unsigned char PCD_Authenticate(unsigned char command,
+[v _command `uc ~T0 @X0 1 r1 ]
+"668
+[; ;RC552.c: 668:            unsigned char blockAddr,
+[v _blockAddr `uc ~T0 @X0 1 r2 ]
+"669
+[; ;RC552.c: 669:            MIFARE_Key *key,
+[v _key `*S5 ~T0 @X0 1 r3 ]
+"670
+[; ;RC552.c: 670:            Uid *uid
+[v _uid `*S4 ~T0 @X0 1 r4 ]
+"671
+[; ;RC552.c: 671:            ) {
+[f ]
+"672
+[; ;RC552.c: 672:  unsigned char waitIRq = 0x10;
+[v _waitIRq `uc ~T0 @X0 1 a ]
+[e = _waitIRq -> -> 16 `i `uc ]
+"675
+[; ;RC552.c: 675:  unsigned char sendData[12];
+[v _sendData `uc ~T0 @X0 -> 12 `i a ]
+"676
+[; ;RC552.c: 676:  sendData[0] = command;
+[e = *U + &U _sendData * -> -> -> 0 `i `ui `ux -> -> # *U &U _sendData `ui `ux _command ]
+"677
+[; ;RC552.c: 677:  sendData[1] = blockAddr;
+[e = *U + &U _sendData * -> -> -> 1 `i `ui `ux -> -> # *U &U _sendData `ui `ux _blockAddr ]
+"678
+[; ;RC552.c: 678:  for (unsigned char i = 0; i < 6; i++) {
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 6 `i 794  ]
+[e $U 795  ]
+[e :U 794 ]
+{
+"679
+[; ;RC552.c: 679:   sendData[2+i] = key->keyByte[i];
+[e = *U + &U _sendData * -> -> + -> 2 `i -> _i `i `ui `ux -> -> # *U &U _sendData `ui `ux *U + &U . *U _key 0 * -> _i `ux -> -> # *U &U . *U _key 0 `ui `ux ]
+"680
+[; ;RC552.c: 680:  }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 6 `i 794  ]
+[e :U 795 ]
+}
+"685
+[; ;RC552.c: 685:  for (unsigned char i = 0; i < 4; i++) {
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 797  ]
+[e $U 798  ]
+[e :U 797 ]
+{
+"686
+[; ;RC552.c: 686:   sendData[8+i] = uid->uidByte[i+uid->size-4];
+[e = *U + &U _sendData * -> -> + -> 8 `i -> _i `i `ui `ux -> -> # *U &U _sendData `ui `ux *U + &U . *U _uid 1 * -> -> - + -> _i `i -> . *U _uid 0 `i -> 4 `i `ui `ux -> -> # *U &U . *U _uid 1 `ui `ux ]
+"687
+[; ;RC552.c: 687:  }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 797  ]
+[e :U 798 ]
+}
+"690
+[; ;RC552.c: 690:  return PCD_CommunicateWithPICC(0x0E, waitIRq, &sendData[0], sizeof(sendData),((void*)0),((void*)0),((void*)0),0,0);
+[e ) ( _PCD_CommunicateWithPICC (4 , , , , , , , , -> -> 14 `i `uc _waitIRq &U *U + &U _sendData * -> -> -> 0 `i `ui `ux -> -> # *U &U _sendData `ui `ux -> -> # _sendData `ui `uc -> -> -> 0 `i `*v `*uc -> -> -> 0 `i `*v `*uc -> -> -> 0 `i `*v `*uc -> -> 0 `i `uc -> -> 0 `i `a ]
+[e $UE 793  ]
+"691
+[; ;RC552.c: 691: }
+[e :UE 793 ]
+}
+"694
+[; ;RC552.c: 694: void PCD_StopCrypto1(void) {
+[v _PCD_StopCrypto1 `(v ~T0 @X0 1 ef ]
+{
+[e :U _PCD_StopCrypto1 ]
+[f ]
+"696
+[; ;RC552.c: 696:  PCD_ClearRegisterBitMask(0x08, 0x08);
+[e ( _PCD_ClearRegisterBitMask (2 , -> -> 8 `i `uc -> -> 8 `i `uc ]
+"697
+[; ;RC552.c: 697: }
+[e :UE 800 ]
+}
+"700
+[; ;RC552.c: 700: unsigned char MIFARE_Read( unsigned char blockAddr,
+[v _MIFARE_Read `(uc ~T0 @X0 1 ef3`uc`*uc`*uc ]
+"703
+[; ;RC552.c: 703:           ) {
+{
+[e :U _MIFARE_Read ]
+"700
+[; ;RC552.c: 700: unsigned char MIFARE_Read( unsigned char blockAddr,
+[v _blockAddr `uc ~T0 @X0 1 r1 ]
+"701
+[; ;RC552.c: 701:        unsigned char *buffer,
+[v _buffer `*uc ~T0 @X0 1 r2 ]
+"702
+[; ;RC552.c: 702:                             unsigned char *bufferSize
+[v _bufferSize `*uc ~T0 @X0 1 r3 ]
+"703
+[; ;RC552.c: 703:           ) {
+[f ]
+"704
+[; ;RC552.c: 704:  unsigned char result;
+[v _result `uc ~T0 @X0 1 a ]
+"707
+[; ;RC552.c: 707:  if (buffer == ((void*)0) || *bufferSize < 18) {
+[e $ ! || == _buffer -> -> -> 0 `i `*v `*uc < -> *U _bufferSize `i -> 18 `i 802  ]
+{
+"708
+[; ;RC552.c: 708:   return 0x04;
+[e ) -> -> 4 `i `uc ]
+[e $UE 801  ]
+"709
+[; ;RC552.c: 709:  }
+}
+[e :U 802 ]
+"712
+[; ;RC552.c: 712:  buffer[0] = 0x30;
+[e = *U + _buffer * -> -> 0 `i `x -> -> # *U _buffer `i `x -> -> 48 `i `uc ]
+"713
+[; ;RC552.c: 713:  buffer[1] = blockAddr;
+[e = *U + _buffer * -> -> 1 `i `x -> -> # *U _buffer `i `x _blockAddr ]
+"715
+[; ;RC552.c: 715:  result = PCD_CalculateCRC(buffer, 2, &buffer[2]);
+[e = _result ( _PCD_CalculateCRC (3 , , _buffer -> -> 2 `i `uc &U *U + _buffer * -> -> 2 `i `x -> -> # *U _buffer `i `x ]
+"716
+[; ;RC552.c: 716:  if (result != 0x00) {
+[e $ ! != -> _result `i -> 0 `i 803  ]
+{
+"717
+[; ;RC552.c: 717:   return result;
+[e ) _result ]
+[e $UE 801  ]
+"718
+[; ;RC552.c: 718:  }
+}
+[e :U 803 ]
+"721
+[; ;RC552.c: 721:  return PCD_TransceiveData(buffer, 4, buffer, bufferSize, ((void*)0), 0, 1);
+[e ) ( _PCD_TransceiveData (4 , , , , , , _buffer -> -> 4 `i `uc _buffer _bufferSize -> -> -> 0 `i `*v `*uc -> -> 0 `i `uc -> -> 1 `i `a ]
+[e $UE 801  ]
+"722
+[; ;RC552.c: 722: }
+[e :UE 801 ]
+}
+"725
+[; ;RC552.c: 725: unsigned char MIFARE_Write( unsigned char blockAddr,
+[v _MIFARE_Write `(uc ~T0 @X0 1 ef3`uc`*uc`uc ]
+"728
+[; ;RC552.c: 728:           ) {
+{
+[e :U _MIFARE_Write ]
+"725
+[; ;RC552.c: 725: unsigned char MIFARE_Write( unsigned char blockAddr,
+[v _blockAddr `uc ~T0 @X0 1 r1 ]
+"726
+[; ;RC552.c: 726:        unsigned char *buffer,
+[v _buffer `*uc ~T0 @X0 1 r2 ]
+"727
+[; ;RC552.c: 727:        unsigned char bufferSize
+[v _bufferSize `uc ~T0 @X0 1 r3 ]
+"728
+[; ;RC552.c: 728:           ) {
+[f ]
+"729
+[; ;RC552.c: 729:  unsigned char result;
+[v _result `uc ~T0 @X0 1 a ]
+"732
+[; ;RC552.c: 732:  if (buffer == ((void*)0) || bufferSize < 16) {
+[e $ ! || == _buffer -> -> -> 0 `i `*v `*uc < -> _bufferSize `i -> 16 `i 805  ]
+{
+"733
+[; ;RC552.c: 733:   return 0x06;
+[e ) -> -> 6 `i `uc ]
+[e $UE 804  ]
+"734
+[; ;RC552.c: 734:  }
+}
+[e :U 805 ]
+"738
+[; ;RC552.c: 738:  unsigned char cmdBuffer[2];
+[v _cmdBuffer `uc ~T0 @X0 -> 2 `i a ]
+"739
+[; ;RC552.c: 739:  cmdBuffer[0] = 0xA0;
+[e = *U + &U _cmdBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _cmdBuffer `ui `ux -> -> 160 `i `uc ]
+"740
+[; ;RC552.c: 740:  cmdBuffer[1] = blockAddr;
+[e = *U + &U _cmdBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _cmdBuffer `ui `ux _blockAddr ]
+"741
+[; ;RC552.c: 741:  result = PCD_MIFARE_Transceive(cmdBuffer, 2,0);
+[e = _result ( _PCD_MIFARE_Transceive (3 , , &U _cmdBuffer -> -> 2 `i `uc -> -> 0 `i `a ]
+"742
+[; ;RC552.c: 742:  if (result != 0x00) {
+[e $ ! != -> _result `i -> 0 `i 806  ]
+{
+"743
+[; ;RC552.c: 743:   return result;
+[e ) _result ]
+[e $UE 804  ]
+"744
+[; ;RC552.c: 744:  }
+}
+[e :U 806 ]
+"747
+[; ;RC552.c: 747:  result = PCD_MIFARE_Transceive(buffer, bufferSize,0);
+[e = _result ( _PCD_MIFARE_Transceive (3 , , _buffer _bufferSize -> -> 0 `i `a ]
+"748
+[; ;RC552.c: 748:  if (result != 0x00) {
+[e $ ! != -> _result `i -> 0 `i 807  ]
+{
+"749
+[; ;RC552.c: 749:   return result;
+[e ) _result ]
+[e $UE 804  ]
+"750
+[; ;RC552.c: 750:  }
+}
+[e :U 807 ]
+"752
+[; ;RC552.c: 752:  return 0x00;
+[e ) -> -> 0 `i `uc ]
+[e $UE 804  ]
+"753
+[; ;RC552.c: 753: }
+[e :UE 804 ]
+}
+"756
+[; ;RC552.c: 756: unsigned char MIFARE_Ultralight_Write( unsigned char page,
+[v _MIFARE_Ultralight_Write `(uc ~T0 @X0 1 ef3`uc`*uc`uc ]
+"759
+[; ;RC552.c: 759:              ) {
+{
+[e :U _MIFARE_Ultralight_Write ]
+"756
+[; ;RC552.c: 756: unsigned char MIFARE_Ultralight_Write( unsigned char page,
+[v _page `uc ~T0 @X0 1 r1 ]
+"757
+[; ;RC552.c: 757:           unsigned char *buffer,
+[v _buffer `*uc ~T0 @X0 1 r2 ]
+"758
+[; ;RC552.c: 758:           unsigned char bufferSize
+[v _bufferSize `uc ~T0 @X0 1 r3 ]
+"759
+[; ;RC552.c: 759:              ) {
+[f ]
+"760
+[; ;RC552.c: 760:  unsigned char result;
+[v _result `uc ~T0 @X0 1 a ]
+"763
+[; ;RC552.c: 763:  if (buffer == ((void*)0) || bufferSize < 4) {
+[e $ ! || == _buffer -> -> -> 0 `i `*v `*uc < -> _bufferSize `i -> 4 `i 809  ]
+{
+"764
+[; ;RC552.c: 764:   return 0x06;
+[e ) -> -> 6 `i `uc ]
+[e $UE 808  ]
+"765
+[; ;RC552.c: 765:  }
+}
+[e :U 809 ]
+"768
+[; ;RC552.c: 768:  unsigned char cmdBuffer[6];
+[v _cmdBuffer `uc ~T0 @X0 -> 6 `i a ]
+"769
+[; ;RC552.c: 769:  cmdBuffer[0] = 0xA2;
+[e = *U + &U _cmdBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _cmdBuffer `ui `ux -> -> 162 `i `uc ]
+"770
+[; ;RC552.c: 770:  cmdBuffer[1] = page;
+[e = *U + &U _cmdBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _cmdBuffer `ui `ux _page ]
+"771
+[; ;RC552.c: 771:  memcpy(&cmdBuffer[2], buffer, 4);
+[e ( _memcpy (3 , , -> &U *U + &U _cmdBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _cmdBuffer `ui `ux `*v -> _buffer `*Cv -> -> 4 `i `ui ]
+"774
+[; ;RC552.c: 774:  result = PCD_MIFARE_Transceive(cmdBuffer, 6,0);
+[e = _result ( _PCD_MIFARE_Transceive (3 , , &U _cmdBuffer -> -> 6 `i `uc -> -> 0 `i `a ]
+"775
+[; ;RC552.c: 775:  if (result != 0x00) {
+[e $ ! != -> _result `i -> 0 `i 810  ]
+{
+"776
+[; ;RC552.c: 776:   return result;
+[e ) _result ]
+[e $UE 808  ]
+"777
+[; ;RC552.c: 777:  }
+}
+[e :U 810 ]
+"778
+[; ;RC552.c: 778:  return 0x00;
+[e ) -> -> 0 `i `uc ]
+[e $UE 808  ]
+"779
+[; ;RC552.c: 779: }
+[e :UE 808 ]
+}
+"781
+[; ;RC552.c: 781: unsigned char MIFARE_Decrement( unsigned char blockAddr,
+[v _MIFARE_Decrement `(uc ~T0 @X0 1 ef2`uc`ul ]
+"783
+[; ;RC552.c: 783:            ) {
+{
+[e :U _MIFARE_Decrement ]
+"781
+[; ;RC552.c: 781: unsigned char MIFARE_Decrement( unsigned char blockAddr,
+[v _blockAddr `uc ~T0 @X0 1 r1 ]
+"782
+[; ;RC552.c: 782:         uint32_t delta
+[v _delta `ul ~T0 @X0 1 r2 ]
+"783
+[; ;RC552.c: 783:            ) {
+[f ]
+"784
+[; ;RC552.c: 784:  return MIFARE_TwoStepHelper(0xC0, blockAddr, delta);
+[e ) ( _MIFARE_TwoStepHelper (3 , , -> -> 192 `i `uc _blockAddr _delta ]
+[e $UE 811  ]
+"785
+[; ;RC552.c: 785: }
+[e :UE 811 ]
+}
+"787
+[; ;RC552.c: 787: unsigned char MIFARE_Increment( unsigned char blockAddr,
+[v _MIFARE_Increment `(uc ~T0 @X0 1 ef2`uc`ul ]
+"789
+[; ;RC552.c: 789:            ) {
+{
+[e :U _MIFARE_Increment ]
+"787
+[; ;RC552.c: 787: unsigned char MIFARE_Increment( unsigned char blockAddr,
+[v _blockAddr `uc ~T0 @X0 1 r1 ]
+"788
+[; ;RC552.c: 788:         uint32_t delta
+[v _delta `ul ~T0 @X0 1 r2 ]
+"789
+[; ;RC552.c: 789:            ) {
+[f ]
+"790
+[; ;RC552.c: 790:  return MIFARE_TwoStepHelper(0xC1, blockAddr, delta);
+[e ) ( _MIFARE_TwoStepHelper (3 , , -> -> 193 `i `uc _blockAddr _delta ]
+[e $UE 812  ]
+"791
+[; ;RC552.c: 791: }
+[e :UE 812 ]
+}
+"794
+[; ;RC552.c: 794: unsigned char MIFARE_Restore( unsigned char blockAddr
+[v _MIFARE_Restore `(uc ~T0 @X0 1 ef1`uc ]
+"795
+[; ;RC552.c: 795: ) {
+{
+[e :U _MIFARE_Restore ]
+"794
+[; ;RC552.c: 794: unsigned char MIFARE_Restore( unsigned char blockAddr
+[v _blockAddr `uc ~T0 @X0 1 r1 ]
+"795
+[; ;RC552.c: 795: ) {
+[f ]
+"798
+[; ;RC552.c: 798:  return MIFARE_TwoStepHelper(0xC2, blockAddr, 0L);
+[e ) ( _MIFARE_TwoStepHelper (3 , , -> -> 194 `i `uc _blockAddr -> -> 0 `l `ul ]
+[e $UE 813  ]
+"799
+[; ;RC552.c: 799: }
+[e :UE 813 ]
+}
+"802
+[; ;RC552.c: 802: unsigned char MIFARE_TwoStepHelper( unsigned char command,
+[v _MIFARE_TwoStepHelper `(uc ~T0 @X0 1 ef3`uc`uc`ul ]
+"805
+[; ;RC552.c: 805:              ) {
+{
+[e :U _MIFARE_TwoStepHelper ]
+"802
+[; ;RC552.c: 802: unsigned char MIFARE_TwoStepHelper( unsigned char command,
+[v _command `uc ~T0 @X0 1 r1 ]
+"803
+[; ;RC552.c: 803:          unsigned char blockAddr,
+[v _blockAddr `uc ~T0 @X0 1 r2 ]
+"804
+[; ;RC552.c: 804:          uint32_t data
+[v _data `ul ~T0 @X0 1 r3 ]
+"805
+[; ;RC552.c: 805:              ) {
+[f ]
+"806
+[; ;RC552.c: 806:  unsigned char result;
+[v _result `uc ~T0 @X0 1 a ]
+"807
+[; ;RC552.c: 807:  unsigned char cmdBuffer[2];
+[v _cmdBuffer `uc ~T0 @X0 -> 2 `i a ]
+"810
+[; ;RC552.c: 810:  cmdBuffer[0] = command;
+[e = *U + &U _cmdBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _cmdBuffer `ui `ux _command ]
+"811
+[; ;RC552.c: 811:  cmdBuffer[1] = blockAddr;
+[e = *U + &U _cmdBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _cmdBuffer `ui `ux _blockAddr ]
+"812
+[; ;RC552.c: 812:  result = PCD_MIFARE_Transceive( cmdBuffer, 2, 0);
+[e = _result ( _PCD_MIFARE_Transceive (3 , , &U _cmdBuffer -> -> 2 `i `uc -> -> 0 `i `a ]
+"813
+[; ;RC552.c: 813:  if (result != 0x00) {
+[e $ ! != -> _result `i -> 0 `i 815  ]
+{
+"814
+[; ;RC552.c: 814:   return result;
+[e ) _result ]
+[e $UE 814  ]
+"815
+[; ;RC552.c: 815:  }
+}
+[e :U 815 ]
+"817
+[; ;RC552.c: 817:  result = PCD_MIFARE_Transceive( (unsigned char *)&data, 4, 1);
+[e = _result ( _PCD_MIFARE_Transceive (3 , , -> &U _data `*uc -> -> 4 `i `uc -> -> 1 `i `a ]
+"818
+[; ;RC552.c: 818:  if (result != 0x00) {
+[e $ ! != -> _result `i -> 0 `i 816  ]
+{
+"819
+[; ;RC552.c: 819:   return result;
+[e ) _result ]
+[e $UE 814  ]
+"820
+[; ;RC552.c: 820:  }
+}
+[e :U 816 ]
+"822
+[; ;RC552.c: 822:  return 0x00;
+[e ) -> -> 0 `i `uc ]
+[e $UE 814  ]
+"823
+[; ;RC552.c: 823: }
+[e :UE 814 ]
+}
+"826
+[; ;RC552.c: 826: unsigned char MIFARE_Transfer( unsigned char blockAddr
+[v _MIFARE_Transfer `(uc ~T0 @X0 1 ef1`uc ]
+"827
+[; ;RC552.c: 827:            ) {
+{
+[e :U _MIFARE_Transfer ]
+"826
+[; ;RC552.c: 826: unsigned char MIFARE_Transfer( unsigned char blockAddr
+[v _blockAddr `uc ~T0 @X0 1 r1 ]
+"827
+[; ;RC552.c: 827:            ) {
+[f ]
+"828
+[; ;RC552.c: 828:  unsigned char result;
+[v _result `uc ~T0 @X0 1 a ]
+"829
+[; ;RC552.c: 829:  unsigned char cmdBuffer[2];
+[v _cmdBuffer `uc ~T0 @X0 -> 2 `i a ]
+"832
+[; ;RC552.c: 832:  cmdBuffer[0] = 0xB0;
+[e = *U + &U _cmdBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _cmdBuffer `ui `ux -> -> 176 `i `uc ]
+"833
+[; ;RC552.c: 833:  cmdBuffer[1] = blockAddr;
+[e = *U + &U _cmdBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _cmdBuffer `ui `ux _blockAddr ]
+"834
+[; ;RC552.c: 834:  result = PCD_MIFARE_Transceive( cmdBuffer, 2, 0);
+[e = _result ( _PCD_MIFARE_Transceive (3 , , &U _cmdBuffer -> -> 2 `i `uc -> -> 0 `i `a ]
+"835
+[; ;RC552.c: 835:  if (result != 0x00) {
+[e $ ! != -> _result `i -> 0 `i 818  ]
+{
+"836
+[; ;RC552.c: 836:   return result;
+[e ) _result ]
+[e $UE 817  ]
+"837
+[; ;RC552.c: 837:  }
+}
+[e :U 818 ]
+"838
+[; ;RC552.c: 838:  return 0x00;
+[e ) -> -> 0 `i `uc ]
+[e $UE 817  ]
+"839
+[; ;RC552.c: 839: }
+[e :UE 817 ]
+}
+"841
+[; ;RC552.c: 841: unsigned char MIFARE_GetValue(unsigned char blockAddr, uint32_t *value) {
+[v _MIFARE_GetValue `(uc ~T0 @X0 1 ef2`uc`*ul ]
+{
+[e :U _MIFARE_GetValue ]
+[v _blockAddr `uc ~T0 @X0 1 r1 ]
+[v _value `*ul ~T0 @X0 1 r2 ]
+[f ]
+"842
+[; ;RC552.c: 842:  unsigned char status;
+[v _status `uc ~T0 @X0 1 a ]
+"843
+[; ;RC552.c: 843:  unsigned char buffer[18];
+[v _buffer `uc ~T0 @X0 -> 18 `i a ]
+"844
+[; ;RC552.c: 844:  unsigned char size = sizeof(buffer);
+[v _size `uc ~T0 @X0 1 a ]
+[e = _size -> -> # _buffer `ui `uc ]
+"847
+[; ;RC552.c: 847:  status = MIFARE_Read(blockAddr, buffer, &size);
+[e = _status ( _MIFARE_Read (3 , , _blockAddr &U _buffer &U _size ]
+"848
+[; ;RC552.c: 848:  if (status == 0x00) {
+[e $ ! == -> _status `i -> 0 `i 820  ]
+{
+"850
+[; ;RC552.c: 850:         uint32_t aux;
+[v _aux `ul ~T0 @X0 1 a ]
+"851
+[; ;RC552.c: 851:         aux=(uint32_t)(buffer[3]<<8);
+[e = _aux -> << -> *U + &U _buffer * -> -> -> 3 `i `ui `ux -> -> # *U &U _buffer `ui `ux `i -> 8 `i `ul ]
+"852
+[; ;RC552.c: 852:         aux= (uint32_t)((buffer[2]|aux)<<8);
+[e = _aux << | -> *U + &U _buffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _buffer `ui `ux `ul _aux -> 8 `i ]
+"853
+[; ;RC552.c: 853:         aux= (uint32_t)((buffer[1]|aux)<<8);
+[e = _aux << | -> *U + &U _buffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _buffer `ui `ux `ul _aux -> 8 `i ]
+"854
+[; ;RC552.c: 854:   *value = aux | buffer[0];
+[e = *U _value | _aux -> *U + &U _buffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _buffer `ui `ux `ul ]
+"855
+[; ;RC552.c: 855:  }
+}
+[e :U 820 ]
+"856
+[; ;RC552.c: 856:  return status;
+[e ) _status ]
+[e $UE 819  ]
+"857
+[; ;RC552.c: 857: }
+[e :UE 819 ]
+}
+"860
+[; ;RC552.c: 860: unsigned char MIFARE_SetValue(unsigned char blockAddr, uint32_t value) {
+[v _MIFARE_SetValue `(uc ~T0 @X0 1 ef2`uc`ul ]
+{
+[e :U _MIFARE_SetValue ]
+[v _blockAddr `uc ~T0 @X0 1 r1 ]
+[v _value `ul ~T0 @X0 1 r2 ]
+[f ]
+"861
+[; ;RC552.c: 861:  unsigned char buffer[18];
+[v _buffer `uc ~T0 @X0 -> 18 `i a ]
+"863
+[; ;RC552.c: 863:  buffer[0] = buffer[ 8] = (value & 0xFF);
+[e = *U + &U _buffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _buffer `ui `ux = *U + &U _buffer * -> -> -> 8 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> & _value -> -> -> 255 `i `l `ul `uc ]
+"864
+[; ;RC552.c: 864:  buffer[1] = buffer[ 9] = (value & 0xFF00) >> 8;
+[e = *U + &U _buffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _buffer `ui `ux = *U + &U _buffer * -> -> -> 9 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> >> & _value -> -> 65280 `ui `ul -> 8 `i `uc ]
+"865
+[; ;RC552.c: 865:  buffer[2] = buffer[10] = (value & 0xFF0000) >> 16;
+[e = *U + &U _buffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _buffer `ui `ux = *U + &U _buffer * -> -> -> 10 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> >> & _value -> -> 16711680 `l `ul -> 16 `i `uc ]
+"866
+[; ;RC552.c: 866:  buffer[3] = buffer[11] = (value & 0xFF000000) >> 24;
+[e = *U + &U _buffer * -> -> -> 3 `i `ui `ux -> -> # *U &U _buffer `ui `ux = *U + &U _buffer * -> -> -> 11 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> >> & _value -> 4278190080 `ul -> 24 `i `uc ]
+"868
+[; ;RC552.c: 868:  buffer[4] = ~buffer[0];
+[e = *U + &U _buffer * -> -> -> 4 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> ~ -> *U + &U _buffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _buffer `ui `ux `i `uc ]
+"869
+[; ;RC552.c: 869:  buffer[5] = ~buffer[1];
+[e = *U + &U _buffer * -> -> -> 5 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> ~ -> *U + &U _buffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _buffer `ui `ux `i `uc ]
+"870
+[; ;RC552.c: 870:  buffer[6] = ~buffer[2];
+[e = *U + &U _buffer * -> -> -> 6 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> ~ -> *U + &U _buffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _buffer `ui `ux `i `uc ]
+"871
+[; ;RC552.c: 871:  buffer[7] = ~buffer[3];
+[e = *U + &U _buffer * -> -> -> 7 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> ~ -> *U + &U _buffer * -> -> -> 3 `i `ui `ux -> -> # *U &U _buffer `ui `ux `i `uc ]
+"873
+[; ;RC552.c: 873:  buffer[12] = buffer[14] = blockAddr;
+[e = *U + &U _buffer * -> -> -> 12 `i `ui `ux -> -> # *U &U _buffer `ui `ux = *U + &U _buffer * -> -> -> 14 `i `ui `ux -> -> # *U &U _buffer `ui `ux _blockAddr ]
+"874
+[; ;RC552.c: 874:  buffer[13] = buffer[15] = ~blockAddr;
+[e = *U + &U _buffer * -> -> -> 13 `i `ui `ux -> -> # *U &U _buffer `ui `ux = *U + &U _buffer * -> -> -> 15 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> ~ -> _blockAddr `i `uc ]
+"877
+[; ;RC552.c: 877:  return MIFARE_Write(blockAddr, buffer, 16);
+[e ) ( _MIFARE_Write (3 , , _blockAddr &U _buffer -> -> 16 `i `uc ]
+[e $UE 821  ]
+"878
+[; ;RC552.c: 878: }
+[e :UE 821 ]
+}
+"880
+[; ;RC552.c: 880: unsigned char PCD_NTAG216_AUTH(unsigned char *passWord, unsigned char pACK[])
+[v _PCD_NTAG216_AUTH `(uc ~T0 @X0 1 ef2`*uc`*uc ]
+"881
+[; ;RC552.c: 881: {
+{
+[e :U _PCD_NTAG216_AUTH ]
+"880
+[; ;RC552.c: 880: unsigned char PCD_NTAG216_AUTH(unsigned char *passWord, unsigned char pACK[])
+[v _passWord `*uc ~T0 @X0 1 r1 ]
+[v _pACK `*uc ~T0 @X0 1 r2 ]
+"881
+[; ;RC552.c: 881: {
+[f ]
+"885
+[; ;RC552.c: 885:  unsigned char result;
+[v _result `uc ~T0 @X0 1 a ]
+"886
+[; ;RC552.c: 886:  unsigned char cmdBuffer[18];
+[v _cmdBuffer `uc ~T0 @X0 -> 18 `i a ]
+"888
+[; ;RC552.c: 888:  cmdBuffer[0] = 0x1B;
+[e = *U + &U _cmdBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _cmdBuffer `ui `ux -> -> 27 `i `uc ]
+"890
+[; ;RC552.c: 890:  for (unsigned char i = 0; i<4; i++)
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 823  ]
+[e $U 824  ]
+[e :U 823 ]
+"891
+[; ;RC552.c: 891:   cmdBuffer[i+1] = passWord[i];
+[e = *U + &U _cmdBuffer * -> -> + -> _i `i -> 1 `i `ui `ux -> -> # *U &U _cmdBuffer `ui `ux *U + _passWord * -> _i `ux -> -> # *U _passWord `ui `ux ]
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 823  ]
+[e :U 824 ]
+}
+"893
+[; ;RC552.c: 893:  result = PCD_CalculateCRC(cmdBuffer, 5, &cmdBuffer[5]);
+[e = _result ( _PCD_CalculateCRC (3 , , &U _cmdBuffer -> -> 5 `i `uc &U *U + &U _cmdBuffer * -> -> -> 5 `i `ui `ux -> -> # *U &U _cmdBuffer `ui `ux ]
+"895
+[; ;RC552.c: 895:  if (result!=0x00) {
+[e $ ! != -> _result `i -> 0 `i 826  ]
+{
+"896
+[; ;RC552.c: 896:   return result;
+[e ) _result ]
+[e $UE 822  ]
+"897
+[; ;RC552.c: 897:  }
+}
+[e :U 826 ]
+"899
+[; ;RC552.c: 899:  unsigned char waitIRq = 0x30;
+[v _waitIRq `uc ~T0 @X0 1 a ]
+[e = _waitIRq -> -> 48 `i `uc ]
+"901
+[; ;RC552.c: 901:  unsigned char validBits = 0;
+[v _validBits `uc ~T0 @X0 1 a ]
+[e = _validBits -> -> 0 `i `uc ]
+"902
+[; ;RC552.c: 902:  unsigned char rxlength = 5;
+[v _rxlength `uc ~T0 @X0 1 a ]
+[e = _rxlength -> -> 5 `i `uc ]
+"903
+[; ;RC552.c: 903:  result = PCD_CommunicateWithPICC(0x0C, waitIRq, cmdBuffer, 7, cmdBuffer, &rxlength, &validBits,0,0);
+[e = _result ( _PCD_CommunicateWithPICC (4 , , , , , , , , -> -> 12 `i `uc _waitIRq &U _cmdBuffer -> -> 7 `i `uc &U _cmdBuffer &U _rxlength &U _validBits -> -> 0 `i `uc -> -> 0 `i `a ]
+"905
+[; ;RC552.c: 905:  pACK[0] = cmdBuffer[0];
+[e = *U + _pACK * -> -> 0 `i `x -> -> # *U _pACK `i `x *U + &U _cmdBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _cmdBuffer `ui `ux ]
+"906
+[; ;RC552.c: 906:  pACK[1] = cmdBuffer[1];
+[e = *U + _pACK * -> -> 1 `i `x -> -> # *U _pACK `i `x *U + &U _cmdBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _cmdBuffer `ui `ux ]
+"908
+[; ;RC552.c: 908:  if (result!=0x00) {
+[e $ ! != -> _result `i -> 0 `i 827  ]
+{
+"909
+[; ;RC552.c: 909:   return result;
+[e ) _result ]
+[e $UE 822  ]
+"910
+[; ;RC552.c: 910:  }
+}
+[e :U 827 ]
+"912
+[; ;RC552.c: 912:  return 0x00;
+[e ) -> -> 0 `i `uc ]
+[e $UE 822  ]
+"913
+[; ;RC552.c: 913: }
+[e :UE 822 ]
+}
+"915
+[; ;RC552.c: 915: unsigned char PCD_MIFARE_Transceive( unsigned char *sendData,
+[v _PCD_MIFARE_Transceive `(uc ~T0 @X0 1 ef3`*uc`uc`a ]
+"918
+[; ;RC552.c: 918:             ) {
+{
+[e :U _PCD_MIFARE_Transceive ]
+"915
+[; ;RC552.c: 915: unsigned char PCD_MIFARE_Transceive( unsigned char *sendData,
+[v _sendData `*uc ~T0 @X0 1 r1 ]
+"916
+[; ;RC552.c: 916:           unsigned char sendLen,
+[v _sendLen `uc ~T0 @X0 1 r2 ]
+"917
+[; ;RC552.c: 917:           _Bool acceptTimeout
+[v _acceptTimeout `a ~T0 @X0 1 r3 ]
+"918
+[; ;RC552.c: 918:             ) {
+[f ]
+"919
+[; ;RC552.c: 919:  unsigned char result;
+[v _result `uc ~T0 @X0 1 a ]
+"920
+[; ;RC552.c: 920:  unsigned char cmdBuffer[18];
+[v _cmdBuffer `uc ~T0 @X0 -> 18 `i a ]
+"923
+[; ;RC552.c: 923:  if (sendData == ((void*)0) || sendLen > 16) {
+[e $ ! || == _sendData -> -> -> 0 `i `*v `*uc > -> _sendLen `i -> 16 `i 829  ]
+{
+"924
+[; ;RC552.c: 924:   return 0x06;
+[e ) -> -> 6 `i `uc ]
+[e $UE 828  ]
+"925
+[; ;RC552.c: 925:  }
+}
+[e :U 829 ]
+"928
+[; ;RC552.c: 928:  memcpy(cmdBuffer, sendData, sendLen);
+[e ( _memcpy (3 , , -> &U _cmdBuffer `*v -> _sendData `*Cv -> _sendLen `ui ]
+"929
+[; ;RC552.c: 929:  result = PCD_CalculateCRC(cmdBuffer, sendLen, &cmdBuffer[sendLen]);
+[e = _result ( _PCD_CalculateCRC (3 , , &U _cmdBuffer _sendLen &U *U + &U _cmdBuffer * -> _sendLen `ux -> -> # *U &U _cmdBuffer `ui `ux ]
+"930
+[; ;RC552.c: 930:  if (result != 0x00) {
+[e $ ! != -> _result `i -> 0 `i 830  ]
+{
+"931
+[; ;RC552.c: 931:   return result;
+[e ) _result ]
+[e $UE 828  ]
+"932
+[; ;RC552.c: 932:  }
+}
+[e :U 830 ]
+"933
+[; ;RC552.c: 933:  sendLen += 2;
+[e =+ _sendLen -> -> 2 `i `uc ]
+"936
+[; ;RC552.c: 936:  unsigned char waitIRq = 0x30;
+[v _waitIRq `uc ~T0 @X0 1 a ]
+[e = _waitIRq -> -> 48 `i `uc ]
+"937
+[; ;RC552.c: 937:  unsigned char cmdBufferSize = sizeof(cmdBuffer);
+[v _cmdBufferSize `uc ~T0 @X0 1 a ]
+[e = _cmdBufferSize -> -> # _cmdBuffer `ui `uc ]
+"938
+[; ;RC552.c: 938:  unsigned char validBits = 0;
+[v _validBits `uc ~T0 @X0 1 a ]
+[e = _validBits -> -> 0 `i `uc ]
+"939
+[; ;RC552.c: 939:  result = PCD_CommunicateWithPICC(0x0C, waitIRq, cmdBuffer, sendLen, cmdBuffer, &cmdBufferSize, &validBits,0,0);
+[e = _result ( _PCD_CommunicateWithPICC (4 , , , , , , , , -> -> 12 `i `uc _waitIRq &U _cmdBuffer _sendLen &U _cmdBuffer &U _cmdBufferSize &U _validBits -> -> 0 `i `uc -> -> 0 `i `a ]
+"940
+[; ;RC552.c: 940:  if (acceptTimeout && result == 0x03) {
+[e $ ! && != -> _acceptTimeout `i -> 0 `i == -> _result `i -> 3 `i 831  ]
+{
+"941
+[; ;RC552.c: 941:   return 0x00;
+[e ) -> -> 0 `i `uc ]
+[e $UE 828  ]
+"942
+[; ;RC552.c: 942:  }
+}
+[e :U 831 ]
+"943
+[; ;RC552.c: 943:  if (result != 0x00) {
+[e $ ! != -> _result `i -> 0 `i 832  ]
+{
+"944
+[; ;RC552.c: 944:   return result;
+[e ) _result ]
+[e $UE 828  ]
+"945
+[; ;RC552.c: 945:  }
+}
+[e :U 832 ]
+"947
+[; ;RC552.c: 947:  if (cmdBufferSize != 1 || validBits != 4) {
+[e $ ! || != -> _cmdBufferSize `i -> 1 `i != -> _validBits `i -> 4 `i 833  ]
+{
+"948
+[; ;RC552.c: 948:   return 0x01;
+[e ) -> -> 1 `i `uc ]
+[e $UE 828  ]
+"949
+[; ;RC552.c: 949:  }
+}
+[e :U 833 ]
+"950
+[; ;RC552.c: 950:  if (cmdBuffer[0] != 0xA) {
+[e $ ! != -> *U + &U _cmdBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _cmdBuffer `ui `ux `i -> 10 `i 834  ]
+{
+"951
+[; ;RC552.c: 951:   return 0xFF;
+[e ) -> -> 255 `i `uc ]
+[e $UE 828  ]
+"952
+[; ;RC552.c: 952:  }
+}
+[e :U 834 ]
+"953
+[; ;RC552.c: 953:  return 0x00;
+[e ) -> -> 0 `i `uc ]
+[e $UE 828  ]
+"954
+[; ;RC552.c: 954: }
+[e :UE 828 ]
+}
+"957
+[; ;RC552.c: 957: _Bool PICC_IsNewCardPresent(void) {
+[v _PICC_IsNewCardPresent `(a ~T0 @X0 1 ef ]
+{
+[e :U _PICC_IsNewCardPresent ]
+[f ]
+"958
+[; ;RC552.c: 958:  unsigned char bufferATQA[2];
+[v _bufferATQA `uc ~T0 @X0 -> 2 `i a ]
+"959
+[; ;RC552.c: 959:  unsigned char bufferSize = sizeof(bufferATQA);
+[v _bufferSize `uc ~T0 @X0 1 a ]
+[e = _bufferSize -> -> # _bufferATQA `ui `uc ]
+"961
+[; ;RC552.c: 961:  PCD_WriteRegister(0x12, 0x00);
+[e ( _PCD_WriteRegister (2 , -> -> 18 `i `uc -> -> 0 `i `uc ]
+"962
+[; ;RC552.c: 962:  PCD_WriteRegister(0x13, 0x00);
+[e ( _PCD_WriteRegister (2 , -> -> 19 `i `uc -> -> 0 `i `uc ]
+"964
+[; ;RC552.c: 964:  PCD_WriteRegister(0x24, 0x26);
+[e ( _PCD_WriteRegister (2 , -> -> 36 `i `uc -> -> 38 `i `uc ]
+"966
+[; ;RC552.c: 966:  unsigned char result = PICC_RequestA(bufferATQA, &bufferSize);
+[v _result `uc ~T0 @X0 1 a ]
+[e = _result ( _PICC_RequestA (2 , &U _bufferATQA &U _bufferSize ]
+"968
+[; ;RC552.c: 968:     if((result == 0x00 || result == 0x02)){
+[e $ ! || == -> _result `i -> 0 `i == -> _result `i -> 2 `i 836  ]
+{
+"969
+[; ;RC552.c: 969:         return 1;
+[e ) -> -> 1 `i `a ]
+[e $UE 835  ]
+"970
+[; ;RC552.c: 970:     }else{
+}
+[e $U 837  ]
+[e :U 836 ]
+{
+"971
+[; ;RC552.c: 971:         return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 835  ]
+"972
+[; ;RC552.c: 972:     }
+}
+[e :U 837 ]
+"973
+[; ;RC552.c: 973: }
+[e :UE 835 ]
+}
+"975
+[; ;RC552.c: 975: _Bool PICC_ReadCardSerial(void) {
+[v _PICC_ReadCardSerial `(a ~T0 @X0 1 ef ]
+{
+[e :U _PICC_ReadCardSerial ]
+[f ]
+"976
+[; ;RC552.c: 976:  unsigned char result = PICC_Select(&uid,0);
+[v _result `uc ~T0 @X0 1 a ]
+[e = _result ( _PICC_Select (2 , &U _uid -> -> 0 `i `uc ]
+"977
+[; ;RC552.c: 977:  return (result == 0x00);
+[e ) -> -> == -> _result `i -> 0 `i `i `a ]
+[e $UE 838  ]
+"978
+[; ;RC552.c: 978: }
+[e :UE 838 ]
+}
