@@ -14,7 +14,7 @@
     This header file provides APIs for driver for .
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.65.2
-        Device            :  PIC16F1709
+        Device            :  PIC16F1769
         Driver Version    :  2.11
     The generated drivers are tested against the following:
         Compiler          :  XC8 1.45
@@ -59,29 +59,49 @@
 #define PULL_UP_ENABLED      1
 #define PULL_UP_DISABLED     0
 
-// get/set RC1 procedures
-#define RC1_SetHigh()            do { LATCbits.LATC1 = 1; } while(0)
-#define RC1_SetLow()             do { LATCbits.LATC1 = 0; } while(0)
-#define RC1_Toggle()             do { LATCbits.LATC1 = ~LATCbits.LATC1; } while(0)
-#define RC1_GetValue()              PORTCbits.RC1
-#define RC1_SetDigitalInput()    do { TRISCbits.TRISC1 = 1; } while(0)
-#define RC1_SetDigitalOutput()   do { TRISCbits.TRISC1 = 0; } while(0)
-#define RC1_SetPullup()             do { WPUCbits.WPUC1 = 1; } while(0)
-#define RC1_ResetPullup()           do { WPUCbits.WPUC1 = 0; } while(0)
-#define RC1_SetAnalogMode()         do { ANSELCbits.ANSC1 = 1; } while(0)
-#define RC1_SetDigitalMode()        do { ANSELCbits.ANSC1 = 0; } while(0)
+// get/set RA0 procedures
+#define RA0_SetHigh()            do { LATAbits.LATA0 = 1; } while(0)
+#define RA0_SetLow()             do { LATAbits.LATA0 = 0; } while(0)
+#define RA0_Toggle()             do { LATAbits.LATA0 = ~LATAbits.LATA0; } while(0)
+#define RA0_GetValue()              PORTAbits.RA0
+#define RA0_SetDigitalInput()    do { TRISAbits.TRISA0 = 1; } while(0)
+#define RA0_SetDigitalOutput()   do { TRISAbits.TRISA0 = 0; } while(0)
+#define RA0_SetPullup()             do { WPUAbits.WPUA0 = 1; } while(0)
+#define RA0_ResetPullup()           do { WPUAbits.WPUA0 = 0; } while(0)
+#define RA0_SetAnalogMode()         do { ANSELAbits.ANSA0 = 1; } while(0)
+#define RA0_SetDigitalMode()        do { ANSELAbits.ANSA0 = 0; } while(0)
 
-// get/set RC2 procedures
-#define RC2_SetHigh()            do { LATCbits.LATC2 = 1; } while(0)
-#define RC2_SetLow()             do { LATCbits.LATC2 = 0; } while(0)
-#define RC2_Toggle()             do { LATCbits.LATC2 = ~LATCbits.LATC2; } while(0)
-#define RC2_GetValue()              PORTCbits.RC2
-#define RC2_SetDigitalInput()    do { TRISCbits.TRISC2 = 1; } while(0)
-#define RC2_SetDigitalOutput()   do { TRISCbits.TRISC2 = 0; } while(0)
-#define RC2_SetPullup()             do { WPUCbits.WPUC2 = 1; } while(0)
-#define RC2_ResetPullup()           do { WPUCbits.WPUC2 = 0; } while(0)
-#define RC2_SetAnalogMode()         do { ANSELCbits.ANSC2 = 1; } while(0)
-#define RC2_SetDigitalMode()        do { ANSELCbits.ANSC2 = 0; } while(0)
+// get/set RA1 procedures
+#define RA1_SetHigh()            do { LATAbits.LATA1 = 1; } while(0)
+#define RA1_SetLow()             do { LATAbits.LATA1 = 0; } while(0)
+#define RA1_Toggle()             do { LATAbits.LATA1 = ~LATAbits.LATA1; } while(0)
+#define RA1_GetValue()              PORTAbits.RA1
+#define RA1_SetDigitalInput()    do { TRISAbits.TRISA1 = 1; } while(0)
+#define RA1_SetDigitalOutput()   do { TRISAbits.TRISA1 = 0; } while(0)
+#define RA1_SetPullup()             do { WPUAbits.WPUA1 = 1; } while(0)
+#define RA1_ResetPullup()           do { WPUAbits.WPUA1 = 0; } while(0)
+#define RA1_SetAnalogMode()         do { ANSELAbits.ANSA1 = 1; } while(0)
+#define RA1_SetDigitalMode()        do { ANSELAbits.ANSA1 = 0; } while(0)
+
+// get/set SDO aliases
+#define SDO_TRIS                 TRISCbits.TRISC1
+#define SDO_LAT                  LATCbits.LATC1
+#define SDO_PORT                 PORTCbits.RC1
+#define SDO_WPU                  WPUCbits.WPUC1
+#define SDO_OD                   ODCONCbits.ODC1
+#define SDO_ANS                  ANSELCbits.ANSC1
+#define SDO_SetHigh()            do { LATCbits.LATC1 = 1; } while(0)
+#define SDO_SetLow()             do { LATCbits.LATC1 = 0; } while(0)
+#define SDO_Toggle()             do { LATCbits.LATC1 = ~LATCbits.LATC1; } while(0)
+#define SDO_GetValue()           PORTCbits.RC1
+#define SDO_SetDigitalInput()    do { TRISCbits.TRISC1 = 1; } while(0)
+#define SDO_SetDigitalOutput()   do { TRISCbits.TRISC1 = 0; } while(0)
+#define SDO_SetPullup()          do { WPUCbits.WPUC1 = 1; } while(0)
+#define SDO_ResetPullup()        do { WPUCbits.WPUC1 = 0; } while(0)
+#define SDO_SetPushPull()        do { ODCONCbits.ODC1 = 0; } while(0)
+#define SDO_SetOpenDrain()       do { ODCONCbits.ODC1 = 1; } while(0)
+#define SDO_SetAnalogMode()      do { ANSELCbits.ANSC1 = 1; } while(0)
+#define SDO_SetDigitalMode()     do { ANSELCbits.ANSC1 = 0; } while(0)
 
 // get/set RST aliases
 #define RST_TRIS                 TRISCbits.TRISC3
@@ -119,23 +139,6 @@
 #define SS_ResetPullup()        do { WPUCbits.WPUC4 = 0; } while(0)
 #define SS_SetPushPull()        do { ODCONCbits.ODC4 = 0; } while(0)
 #define SS_SetOpenDrain()       do { ODCONCbits.ODC4 = 1; } while(0)
-
-// get/set SDO aliases
-#define SDO_TRIS                 TRISCbits.TRISC5
-#define SDO_LAT                  LATCbits.LATC5
-#define SDO_PORT                 PORTCbits.RC5
-#define SDO_WPU                  WPUCbits.WPUC5
-#define SDO_OD                   ODCONCbits.ODC5
-#define SDO_SetHigh()            do { LATCbits.LATC5 = 1; } while(0)
-#define SDO_SetLow()             do { LATCbits.LATC5 = 0; } while(0)
-#define SDO_Toggle()             do { LATCbits.LATC5 = ~LATCbits.LATC5; } while(0)
-#define SDO_GetValue()           PORTCbits.RC5
-#define SDO_SetDigitalInput()    do { TRISCbits.TRISC5 = 1; } while(0)
-#define SDO_SetDigitalOutput()   do { TRISCbits.TRISC5 = 0; } while(0)
-#define SDO_SetPullup()          do { WPUCbits.WPUC5 = 1; } while(0)
-#define SDO_ResetPullup()        do { WPUCbits.WPUC5 = 0; } while(0)
-#define SDO_SetPushPull()        do { ODCONCbits.ODC5 = 0; } while(0)
-#define SDO_SetOpenDrain()       do { ODCONCbits.ODC5 = 1; } while(0)
 
 // get/set SDI aliases
 #define SDI_TRIS                 TRISCbits.TRISC6

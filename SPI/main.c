@@ -1,6 +1,7 @@
 
 
 #include <stdio.h>
+#include <string.h>
 #include "RC522.h"
 #include "mcc_generated_files/mcc.h"
 
@@ -14,10 +15,15 @@ void main(void)
 {
     // initialize the device
     SYSTEM_Initialize();
+    PCD_Init();
+    EUSART_Initialize();
+    sprintf(phrase,"Te encontramos alelulla\n");
 
 
     while (1)
-    {        
+    {   
+        EUSART_PrintString(phrase,0);
+        /*
         if (PICC_IsNewCardPresent()){
             sprintf(phrase,"Te encontramos alelulla\n");
             //enviaDebug(phrase,0);
@@ -39,7 +45,8 @@ void main(void)
             sprintf(phrase,"\n No Detectada\r\n"); 
             //enviaDebug(phrase,0);  
         }
-        __delay_ms(100);	
+        __delay_ms(1000);	*/
+        __delay_ms(1000);
     }
 }
 /**

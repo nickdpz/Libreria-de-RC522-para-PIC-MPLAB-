@@ -14,7 +14,7 @@
     This header file provides APIs for driver for EUSART.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.65.2
-        Device            :  PIC16F1709
+        Device            :  PIC16F1769
         Driver Version    :  2.01
     The generated drivers are tested against the following:
         Compiler          :  XC8 1.45
@@ -257,7 +257,7 @@ bool EUSART_is_tx_done(void);
   @Returns
     A data byte received by the driver.
 */
-uint8_t EUSART_Read(void);
+char EUSART_Read(void);
 
  /**
   @Summary
@@ -277,10 +277,28 @@ uint8_t EUSART_Read(void);
   @Returns
     None
 */
-void EUSART_Write(uint8_t txData);
+void EUSART_Write(char txData);
 
 
+ /**
+  @Summary
+    Writes a byte of data to the EUSART.
 
+  @Description
+    This routine writes a byte of data to the EUSART.
+
+  @Preconditions
+    EUSART_Initialize() function should have been called
+    before calling this function. The transfer status should be checked to see
+    if transmitter is not busy before calling this function.
+
+  @Param
+    txData  - Data byte to write to the EUSART
+
+  @Returns
+    None
+*/
+void EUSART_PrintString(char *txBuffer, char txLength);
 
 
 #ifdef __cplusplus  // Provide C++ Compatibility

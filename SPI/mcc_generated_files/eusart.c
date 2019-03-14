@@ -48,7 +48,7 @@
   Section: Included Files
 */
 #include "eusart.h"
-
+#include <string.h>
 
 /**
   Section: EUSART APIs
@@ -90,7 +90,7 @@ bool EUSART_is_tx_done(void)
     return TX1STAbits.TRMT;
 }
 
-uint8_t EUSART_Read(void)
+char EUSART_Read(void)
 {
     while(!PIR1bits.RCIF)
     {
@@ -108,13 +108,24 @@ uint8_t EUSART_Read(void)
     return RC1REG;
 }
 
-void EUSART_Write(uint8_t txData)
+void EUSART_Write(char txData)
 {
     while(0 == PIR1bits.TXIF)
     {
     }
 
     TX1REG = txData;    // Write the data byte to the USART.
+}
+
+void EUSART_PrintString(char *txBuffer, char txLength)
+{
+    char aux=0;
+    if (!txLength){
+        txLength=strlen(txBuffer);}
+
+    while (aux<txLength){
+            EUSART_Write(*(txBuffer+(aux++)));}
+            
 }
 
 

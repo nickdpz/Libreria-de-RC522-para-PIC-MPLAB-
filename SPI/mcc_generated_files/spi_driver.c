@@ -46,21 +46,18 @@ __bit spi_master_open(spi_modes spiUniqueConfiguration)
     if(!SSP1CON1bits.SSPEN)
     {
         //setup PPS pins
-        SSPDATPPS = 0x11;   //RC1->MSSP:SDI;    
-        RA2PPS = 0x10;   //RA2->MSSP:SCK;    
-        RC5PPS = 0x12;   //RC5->MSSP:SDO;    
-        SSPCLKPPS = 0x02;   //RA2->MSSP:SCK;    
+        SSPCLKPPS = 23;
+        SSPDATPPS = 22;
+        RC7PPS = 16;
+        RC1PPS = 20;
 
         //setup SPI
         SSP1STAT = spi_configuration[spiUniqueConfiguration].stat;
         SSP1CON1 = (uint8_t) (spi_configuration[spiUniqueConfiguration].con1 | 0x2A);
         SSP1CON2 = 0x00;
         SSP1ADD  = (uint8_t) (spi_configuration[spiUniqueConfiguration].add | 0);
-        TRISCbits.TRISC2=0;//RST
-        TRISCbits.TRISC0=0;//SS
-        TRISCbits.TRISC1 = 1;//SDI
-        TRISCbits.TRISC5 = 0;//SDO
-        TRISAbits.TRISA2 = 0;//SCK
+
+        TRISCbits.TRISC7 = 0;
         return true;
     }
     return false;
@@ -72,17 +69,17 @@ __bit spi_slave_open(spi_modes spiUniqueConfiguration)
     if(!SSP1CON1bits.SSPEN)
     {
         //setup PPS pins
-        SSPCLKPPS = 2;
-        SSPDATPPS = 17;
-        RA2PPS = 16;
-        RC5PPS = 18;
+        SSPCLKPPS = 23;
+        SSPDATPPS = 22;
+        RC7PPS = 16;
+        RC1PPS = 20;
 
         SSP1STAT = spi_configuration[spiUniqueConfiguration].stat;
         SSP1CON1 = (uint8_t) (spi_configuration[spiUniqueConfiguration].con1 | 0x25);
         SSP1CON2 = 0x00;
         SSP1ADD  = (uint8_t) (spi_configuration[spiUniqueConfiguration].add | 0);
         
-        TRISAbits.TRISA2 = 1;
+        TRISCbits.TRISC7 = 1;
         return true;
     }
     return false;

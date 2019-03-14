@@ -1,36 +1,66 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"50 mcc_generated_files/device_config.c
+"76 mcc_generated_files/device_config.c
 [p x FOSC = INTOSC ]
-"51
+"77
 [p x WDTE = OFF ]
-"52
+"78
 [p x PWRTE = OFF ]
-"53
+"79
 [p x MCLRE = ON ]
-"54
+"80
 [p x CP = OFF ]
-"55
+"81
 [p x BOREN = ON ]
-"56
+"82
 [p x CLKOUTEN = OFF ]
-"57
+"83
 [p x IESO = ON ]
-"58
+"84
 [p x FCMEN = ON ]
-"61
+"87
 [p x WRT = OFF ]
-"62
+"88
 [p x PPS1WAY = ON ]
-"63
-[p x ZCDDIS = ON ]
-"64
+"89
 [p x PLLEN = ON ]
-"65
+"90
 [p x STVREN = ON ]
-"66
+"91
 [p x BORV = LO ]
-"67
+"92
 [p x LPBOR = OFF ]
-"68
-[; ;mcc_generated_files/device_config.c: 68: 
+"93
+[p x LVP = ON ]
+"97
+[p x FOSC = INTOSC ]
+"98
+[p x WDTE = OFF ]
+"99
+[p x PWRTE = OFF ]
+"100
+[p x MCLRE = ON ]
+"101
+[p x CP = OFF ]
+"102
+[p x BOREN = ON ]
+"103
+[p x CLKOUTEN = OFF ]
+"104
+[p x IESO = ON ]
+"105
+[p x FCMEN = ON ]
+"108
+[p x WRT = OFF ]
+"109
+[p x PPS1WAY = ON ]
+"111
+[p x PLLEN = ON ]
+"112
+[p x STVREN = ON ]
+"113
+[p x BORV = LO ]
+"114
+[p x LPBOR = OFF ]
+"115
+[; ;mcc_generated_files/device_config.c: 115: 
 [p x LVP = ON ]
