@@ -3,20 +3,38 @@
 [d edition pro ]
 [d chip 16F1769 ]
 [d frameptr 6 ]
-"44 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\mcc_generated_files/spi_driver.c
+"44 C:\Users\nikod\Documents\RFID\SPI\mcc_generated_files/spi_driver.c
 [e E9206 . `uc
 SPI_CUSTOM0 0
 ]
-"123 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\RC552.c
+"123 C:\Users\nikod\Documents\RFID\SPI\RC552.c
 [e E638 . `uc
 SPI_CUSTOM0 0
 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
 "5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
-"670 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\doprnt.c
+"72 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+"546
+[v _stoa stoa `(i  1 s 2 stoa ]
+"623
+[v _xtoa xtoa `(i  1 s 2 xtoa ]
+"670
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 "1368
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\isalpha.c
+[v _isalpha isalpha `(i  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\islower.c
+[v _islower islower `(i  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\isupper.c
+[v _isupper isupper `(i  1 e 2 0 ]
 "4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\memcpy.c
 [v _memcpy memcpy `(*.4v  1 e 1 0 ]
 "8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\nf_fputc.c
@@ -31,15 +49,17 @@ SPI_CUSTOM0 0
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "12 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\strlen.c
 [v _strlen strlen `(ui  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\toupper.c
+[v _toupper toupper `(i  1 e 2 0 ]
 "15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 "4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8.c
 [v ___bmul __bmul `(uc  1 e 1 0 ]
 "4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"14 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\main.c
+"14 C:\Users\nikod\Documents\RFID\SPI\main.c
 [v _main main `(v  1 e 1 0 ]
-"56 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\mcc_generated_files/eusart.c
+"56 C:\Users\nikod\Documents\RFID\SPI\mcc_generated_files/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
 "78
 [v _EUSART_is_tx_ready EUSART_is_tx_ready `(a  1 e 1 0 ]
@@ -53,19 +73,19 @@ SPI_CUSTOM0 0
 [v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
 "120
 [v _EUSART_PrintString EUSART_PrintString `(v  1 e 1 0 ]
-"50 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\mcc_generated_files/mcc.c
+"50 C:\Users\nikod\Documents\RFID\SPI\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "59
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "75
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
-"57 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\mcc_generated_files/pin_manager.c
+"57 C:\Users\nikod\Documents\RFID\SPI\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"44 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\mcc_generated_files/spi_driver.c
+"44 C:\Users\nikod\Documents\RFID\SPI\mcc_generated_files/spi_driver.c
 [v _spi_master_open spi_master_open `(b  1 e 0 0 ]
 "89
 [v _spi_exchangeByte spi_exchangeByte `(uc  1 e 1 0 ]
-"17 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\RC552.c
+"17 C:\Users\nikod\Documents\RFID\SPI\RC552.c
 [v _PCD_WriteRegister PCD_WriteRegister `(v  1 e 1 0 ]
 "23
 [v _PCD_WriteRegisters PCD_WriteRegisters `(v  1 e 1 0 ]
@@ -97,6 +117,8 @@ SPI_CUSTOM0 0
 [v _PICC_REQA_or_WUPA PICC_REQA_or_WUPA `(uc  1 e 1 0 ]
 "427
 [v _PICC_Select PICC_Select `(uc  1 e 1 0 ]
+"639
+[v _PICC_HaltA PICC_HaltA `(uc  1 e 1 0 ]
 "700
 [v _MIFARE_Read MIFARE_Read `(uc  1 e 1 0 ]
 "725
@@ -105,7 +127,11 @@ SPI_CUSTOM0 0
 [v _MIFARE_TwoStepHelper MIFARE_TwoStepHelper `(uc  1 e 1 0 ]
 "915
 [v _PCD_MIFARE_Transceive PCD_MIFARE_Transceive `(uc  1 e 1 0 ]
-"16 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI/RC522.h
+"957
+[v _PICC_IsNewCardPresent PICC_IsNewCardPresent `(a  1 e 1 0 ]
+"975
+[v _PICC_ReadCardSerial PICC_ReadCardSerial `(a  1 e 1 0 ]
+"16 C:\Users\nikod\Documents\RFID\SPI/RC522.h
 [v _MFRC522_firmware_referenceV0_0 MFRC522_firmware_referenceV0_0 `DC[64]uc  1 e 64 0 ]
 "28
 [v _MFRC522_firmware_referenceV1_0 MFRC522_firmware_referenceV1_0 `DC[64]uc  1 e 64 0 ]
@@ -116,7 +142,7 @@ SPI_CUSTOM0 0
 [s S395 . 12 `uc 1 size 1 0 `[10]uc 1 uidByte 10 1 `uc 1 sak 1 11 ]
 "69
 [v _uid uid `S395  1 e 12 0 ]
-[s S476 . 1 `uc 1 RC0 1 0 :1:0 
+[s S497 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 RC3 1 0 :1:3 
@@ -126,8 +152,8 @@ SPI_CUSTOM0 0
 `uc 1 RC7 1 0 :1:7 
 ]
 "535 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1769.h
-[u S485 . 1 `S476 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES485  1 e 1 @14 ]
+[u S506 . 1 `S497 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES506  1 e 1 @14 ]
 [s S137 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
@@ -192,7 +218,7 @@ SPI_CUSTOM0 0
 [v _LATB LATB `VEuc  1 e 1 @269 ]
 "2811
 [v _LATC LATC `VEuc  1 e 1 @270 ]
-[s S439 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S460 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -202,8 +228,8 @@ SPI_CUSTOM0 0
 `uc 1 LATC7 1 0 :1:7 
 ]
 "2828
-[u S448 . 1 `S439 1 . 1 0 ]
-[v _LATCbits LATCbits `VES448  1 e 1 @270 ]
+[u S469 . 1 `S460 1 . 1 0 ]
+[v _LATCbits LATCbits `VES469  1 e 1 @270 ]
 "4051
 [v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
 "4090
@@ -214,10 +240,10 @@ SPI_CUSTOM0 0
 [v _RC1REG RC1REG `VEuc  1 e 1 @409 ]
 "4425
 [v _TX1REG TX1REG `VEuc  1 e 1 @410 ]
-"4486
-[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @411 ]
-"4556
-[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @412 ]
+"4499
+[v _SPBRGL SPBRGL `VEuc  1 e 1 @411 ]
+"4561
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
 "4610
 [v _RC1STA RC1STA `VEuc  1 e 1 @413 ]
 [s S339 . 1 `uc 1 RX9D 1 0 :1:0 
@@ -298,87 +324,202 @@ SPI_CUSTOM0 0
 [v _SSPDATPPS SSPDATPPS `VEuc  1 e 1 @3617 ]
 "23546
 [v _RXPPS RXPPS `VEuc  1 e 1 @3620 ]
-"23886
-[v _RA1PPS RA1PPS `VEuc  1 e 1 @3729 ]
-"24066
-[v _RC1PPS RC1PPS `VEuc  1 e 1 @3745 ]
-"24186
-[v _RC7PPS RC7PPS `VEuc  1 e 1 @3751 ]
+"23866
+[v _RA0PPS RA0PPS `VEuc  1 e 1 @3728 ]
+"23906
+[v _RA2PPS RA2PPS `VEuc  1 e 1 @3730 ]
+"24046
+[v _RC0PPS RC0PPS `VEuc  1 e 1 @3744 ]
 "30446
 [v _PLLR PLLR `VEb  1 e 0 @1238 ]
 "55 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\doprnt.c
 [v _flags flags `i  1 s 2 flags ]
 [v _prec prec `i  1 s 2 prec ]
 [v _width width `i  1 s 2 width ]
+"66
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
 "69
 [v _nout nout `i  1 s 2 nout ]
-"9 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\main.c
+"9 C:\Users\nikod\Documents\RFID\SPI\main.c
 [v _phrase phrase `[30]uc  1 e 30 0 ]
 [s S101 . 3 `uc 1 con1 1 0 `uc 1 stat 1 1 `uc 1 add 1 2 ]
-"39 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\mcc_generated_files/spi_driver.c
+"39 C:\Users\nikod\Documents\RFID\SPI\mcc_generated_files/spi_driver.c
 [v _spi_configuration spi_configuration `DC[1]S101  1 s 3 spi_configuration ]
-"14 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\RC552.c
+"14 C:\Users\nikod\Documents\RFID\SPI\RC552.c
 [v _readData readData `uc  1 e 1 0 ]
 "15
 [v _readDummy readDummy `uc  1 e 1 0 ]
-"14 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\main.c
+"14 C:\Users\nikod\Documents\RFID\SPI\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"51
+"37
+[v main@i i `uc  1 a 1 79 ]
+"52
 } 0
 "9 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
-[v sprintf@s s `*.4uc  1 a 1 wreg ]
-[s S1124 _IO_FILE 5 `*.4uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v sprintf@s s `*.5uc  1 a 1 wreg ]
+[s S1251 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
 "13
-[v sprintf@f f `S1124  1 a 5 17 ]
+[v sprintf@f f `S1251  1 a 5 4 ]
 "11
-[v sprintf@ret ret `i  1 a 2 13 ]
+[v sprintf@ret ret `i  1 a 2 0 ]
 "12
-[v sprintf@ap ap `[1]*.4v  1 a 1 15 ]
+[v sprintf@ap ap `[1]*.4v  1 a 1 3 ]
 "9
-[v sprintf@s s `*.4uc  1 a 1 wreg ]
-[v sprintf@fmt fmt `*.25DCuc  1 p 2 10 ]
+[v sprintf@s s `*.5uc  1 a 1 wreg ]
+[v sprintf@fmt fmt `*.25DCuc  1 p 2 70 ]
 "15
-[v sprintf@s s `*.4uc  1 a 1 16 ]
+[v sprintf@s s `*.5uc  1 a 1 2 ]
 "23
 } 0
 "1368 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\doprnt.c
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
 {
-[s S803 _IO_FILE 0 ]
-[v vfprintf@fp fp `*.4S803  1 a 1 wreg ]
+[s S824 _IO_FILE 0 ]
+[v vfprintf@fp fp `*.4S824  1 a 1 wreg ]
 "1371
-[v vfprintf@cfmt cfmt `*.25uc  1 a 2 8 ]
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 68 ]
 "1368
-[v vfprintf@fp fp `*.4S803  1 a 1 wreg ]
-[v vfprintf@fmt fmt `*.25DCuc  1 p 2 11 ]
-[v vfprintf@ap ap `*.4*.4v  1 p 1 13 ]
+[v vfprintf@fp fp `*.4S824  1 a 1 wreg ]
+[v vfprintf@fmt fmt `*.25DCuc  1 p 2 62 ]
+[v vfprintf@ap ap `*.4*.4v  1 p 1 64 ]
 "1373
 "1368
-[v vfprintf@fp fp `*.4S803  1 a 1 7 ]
+[v vfprintf@fp fp `*.4S824  1 a 1 67 ]
 "1382
 } 0
 "670
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 {
-[s S803 _IO_FILE 0 ]
-[v vfpfcnvrt@fp fp `*.4S803  1 a 1 wreg ]
-[v vfpfcnvrt@fp fp `*.4S803  1 a 1 wreg ]
-[v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 8 ]
-[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 9 ]
+[s S824 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.4S824  1 a 1 wreg ]
+"675
+[v vfpfcnvrt@llu llu `ul  1 a 4 57 ]
+"673
+[v vfpfcnvrt@done done `i  1 a 2 51 ]
+"677
+[v vfpfcnvrt@vp vp `*.4v  1 a 1 50 ]
+"672
+[v vfpfcnvrt@cp cp `*.4uc  1 a 1 49 ]
+[v vfpfcnvrt@c c `uc  1 a 1 48 ]
+"670
+[v vfpfcnvrt@fp fp `*.4S824  1 a 1 wreg ]
+[v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 40 ]
+[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 41 ]
 "680
 "670
-[v vfpfcnvrt@fp fp `*.4S803  1 a 1 10 ]
+[v vfpfcnvrt@fp fp `*.4S824  1 a 1 61 ]
 "1365
+} 0
+"623
+[v _xtoa xtoa `(i  1 s 2 xtoa ]
+{
+[s S824 _IO_FILE 0 ]
+[v xtoa@fp fp `*.4S824  1 a 1 wreg ]
+"626
+[v xtoa@n n `ul  1 a 4 32 ]
+"625
+[v xtoa@c c `i  1 a 2 38 ]
+[v xtoa@i i `i  1 a 2 36 ]
+[v xtoa@w w `i  1 a 2 30 ]
+[v xtoa@p p `i  1 a 2 28 ]
+"623
+[v xtoa@fp fp `*.4S824  1 a 1 wreg ]
+[v xtoa@d d `ul  1 p 4 12 ]
+[v xtoa@x x `uc  1 p 1 16 ]
+"629
+"623
+[v xtoa@fp fp `*.4S824  1 a 1 27 ]
+"665
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\toupper.c
+[v _toupper toupper `(i  1 e 2 0 ]
+{
+[v toupper@c c `i  1 p 2 6 ]
+"8
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\islower.c
+[v _islower islower `(i  1 e 2 0 ]
+{
+[v islower@c c `i  1 p 2 0 ]
+"8
+} 0
+"72 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+{
+[s S824 _IO_FILE 0 ]
+[v pad@fp fp `*.4S824  1 a 1 wreg ]
+"74
+[v pad@w w `i  1 a 2 9 ]
+[v pad@i i `i  1 a 2 7 ]
+"72
+[v pad@fp fp `*.4S824  1 a 1 wreg ]
+[v pad@buf buf `*.5uc  1 p 1 4 ]
+[v pad@p p `i  1 p 2 5 ]
+"77
+"72
+[v pad@fp fp `*.4S824  1 a 1 11 ]
+"95
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+[v fputs@s s `*.5DCuc  1 a 1 wreg ]
+"11
+[v fputs@i i `i  1 a 2 1 ]
+"10
+[v fputs@c c `uc  1 a 1 0 ]
+"8
+[v fputs@s s `*.5DCuc  1 a 1 wreg ]
+[s S1251 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputs@fp fp `*.4S1251  1 p 1 8 ]
+"13
+[v fputs@s s `*.5DCuc  1 a 1 3 ]
+"19
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\isupper.c
+[v _isupper isupper `(i  1 e 2 0 ]
+{
+[v isupper@c c `i  1 p 2 0 ]
+"8
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\isalpha.c
+[v _isalpha isalpha `(i  1 e 2 0 ]
+{
+[v isalpha@c c `i  1 p 2 0 ]
+"8
+} 0
+"546 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\doprnt.c
+[v _stoa stoa `(i  1 s 2 stoa ]
+{
+[s S824 _IO_FILE 0 ]
+[v stoa@fp fp `*.4S824  1 a 1 wreg ]
+"548
+[v stoa@nuls nuls `[7]uc  1 a 7 0 ]
+"549
+[v stoa@l l `i  1 a 2 15 ]
+[v stoa@p p `i  1 a 2 13 ]
+[v stoa@w w `i  1 a 2 9 ]
+[v stoa@i i `i  1 a 2 7 ]
+"548
+[v stoa@cp cp `*.4uc  1 a 1 12 ]
+"546
+[v stoa@fp fp `*.4S824  1 a 1 wreg ]
+[v stoa@s s `*.4uc  1 p 1 8 ]
+"548
+[v stoa@F1121 F1121 `[7]uc  1 s 7 F1121 ]
+"546
+[v stoa@fp fp `*.4S824  1 a 1 11 ]
+"589
 } 0
 "8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 0 ]
-[s S1124 _IO_FILE 5 `*.4uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
-[v fputc@fp fp `*.4S1124  1 p 1 2 ]
+[s S1251 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputc@fp fp `*.4S1251  1 p 1 2 ]
 "21
 } 0
 "7 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\putch.c
@@ -386,7 +527,29 @@ SPI_CUSTOM0 0
 {
 "9
 } 0
-"50 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\mcc_generated_files/mcc.c
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+{
+"6
+[v atoi@n n `i  1 a 2 7 ]
+[v atoi@neg neg `i  1 a 2 0 ]
+"4
+[v atoi@s s `*.25DCuc  1 p 2 6 ]
+"16
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+{
+[v isspace@c c `i  1 p 2 0 ]
+"8
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+{
+[v isdigit@c c `i  1 p 2 0 ]
+"8
+} 0
+"50 C:\Users\nikod\Documents\RFID\SPI\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "57
@@ -396,29 +559,314 @@ SPI_CUSTOM0 0
 {
 "79
 } 0
-"57 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\mcc_generated_files/pin_manager.c
+"57 C:\Users\nikod\Documents\RFID\SPI\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "121
 } 0
-"59 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\mcc_generated_files/mcc.c
+"59 C:\Users\nikod\Documents\RFID\SPI\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "73
 } 0
-"56 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\mcc_generated_files/eusart.c
+"56 C:\Users\nikod\Documents\RFID\SPI\mcc_generated_files/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
 {
 "76
 } 0
-"120 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\RC552.c
+"975 C:\Users\nikod\Documents\RFID\SPI\RC552.c
+[v _PICC_ReadCardSerial PICC_ReadCardSerial `(a  1 e 1 0 ]
+{
+"976
+[v PICC_ReadCardSerial@result result `uc  1 a 1 50 ]
+"978
+} 0
+"427
+[v _PICC_Select PICC_Select `(uc  1 e 1 0 ]
+{
+[s S395 . 12 `uc 1 size 1 0 `[10]uc 1 uidByte 10 1 `uc 1 sak 1 11 ]
+[v PICC_Select@uid uid `*.4S395  1 a 1 wreg ]
+"573
+[v PICC_Select@collisionPos collisionPos `uc  1 a 1 25 ]
+"569
+[v PICC_Select@valueOfCollReg valueOfCollReg `uc  1 a 1 14 ]
+"517
+[v PICC_Select@maxBytes maxBytes `uc  1 a 1 13 ]
+"515
+[v PICC_Select@bytesToCopy bytesToCopy `uc  1 a 1 29 ]
+"440
+[v PICC_Select@buffer buffer `[9]uc  1 a 9 16 ]
+"439
+[v PICC_Select@currentLevelKnownBits currentLevelKnownBits `c  1 a 1 36 ]
+"437
+[v PICC_Select@index index `uc  1 a 1 35 ]
+"434
+[v PICC_Select@result result `uc  1 a 1 34 ]
+"435
+[v PICC_Select@count count `uc  1 a 1 33 ]
+"443
+[v PICC_Select@txLastBits txLastBits `uc  1 a 1 32 ]
+"444
+[v PICC_Select@responseBuffer responseBuffer `*.4uc  1 a 1 31 ]
+"445
+[v PICC_Select@responseLength responseLength `uc  1 a 1 28 ]
+"438
+[v PICC_Select@uidIndex uidIndex `uc  1 a 1 27 ]
+"432
+[v PICC_Select@useCascadeTag useCascadeTag `a  1 a 1 26 ]
+"433
+[v PICC_Select@cascadeLevel cascadeLevel `uc  1 a 1 15 ]
+"442
+[v PICC_Select@rxAlign rxAlign `uc  1 a 1 12 ]
+"441
+[v PICC_Select@bufferUsed bufferUsed `uc  1 a 1 9 ]
+"431
+[v PICC_Select@selectDone selectDone `a  1 a 1 8 ]
+"430
+[v PICC_Select@uidComplete uidComplete `a  1 a 1 7 ]
+"436
+[v PICC_Select@checkBit checkBit `uc  1 a 1 6 ]
+"427
+[v PICC_Select@uid uid `*.4S395  1 a 1 wreg ]
+"428
+[v PICC_Select@validBits validBits `uc  1 p 1 42 ]
+"433
+"427
+[v PICC_Select@uid uid `*.4S395  1 a 1 30 ]
+"637
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 2 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 3 ]
+"51
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0
+"957 C:\Users\nikod\Documents\RFID\SPI\RC552.c
+[v _PICC_IsNewCardPresent PICC_IsNewCardPresent `(a  1 e 1 0 ]
+{
+"958
+[v PICC_IsNewCardPresent@bufferATQA bufferATQA `[2]uc  1 a 2 57 ]
+"959
+[v PICC_IsNewCardPresent@bufferSize bufferSize `uc  1 a 1 60 ]
+"966
+[v PICC_IsNewCardPresent@result result `uc  1 a 1 59 ]
+"973
+} 0
+"391
+[v _PICC_RequestA PICC_RequestA `(uc  1 e 1 0 ]
+{
+[v PICC_RequestA@bufferATQA bufferATQA `*.4uc  1 a 1 wreg ]
+[v PICC_RequestA@bufferATQA bufferATQA `*.4uc  1 a 1 wreg ]
+"392
+[v PICC_RequestA@bufferSize bufferSize `*.4uc  1 p 1 51 ]
+"394
+[v PICC_RequestA@bufferATQA bufferATQA `*.4uc  1 a 1 54 ]
+"395
+} 0
+"403
+[v _PICC_REQA_or_WUPA PICC_REQA_or_WUPA `(uc  1 e 1 0 ]
+{
+[v PICC_REQA_or_WUPA@command command `uc  1 a 1 wreg ]
+"407
+[v PICC_REQA_or_WUPA@validBits validBits `uc  1 a 1 50 ]
+"408
+[v PICC_REQA_or_WUPA@status status `uc  1 a 1 49 ]
+"403
+[v PICC_REQA_or_WUPA@command command `uc  1 a 1 wreg ]
+"404
+[v PICC_REQA_or_WUPA@bufferATQA bufferATQA `*.4uc  1 p 1 42 ]
+"405
+[v PICC_REQA_or_WUPA@bufferSize bufferSize `*.4uc  1 p 1 43 ]
+"410
+[v PICC_REQA_or_WUPA@command command `uc  1 a 1 48 ]
+"423
+} 0
+"83
+[v _PCD_ClearRegisterBitMask PCD_ClearRegisterBitMask `(v  1 e 1 0 ]
+{
+[v PCD_ClearRegisterBitMask@reg reg `uc  1 a 1 wreg ]
+"86
+[v PCD_ClearRegisterBitMask@tmp tmp `uc  1 a 1 6 ]
+"83
+[v PCD_ClearRegisterBitMask@reg reg `uc  1 a 1 wreg ]
+"84
+[v PCD_ClearRegisterBitMask@mask mask `uc  1 p 1 4 ]
+"87
+[v PCD_ClearRegisterBitMask@reg reg `uc  1 a 1 7 ]
+"89
+} 0
+"639
+[v _PICC_HaltA PICC_HaltA `(uc  1 e 1 0 ]
+{
+"641
+[v PICC_HaltA@buffer buffer `[4]uc  1 a 4 45 ]
+"640
+[v PICC_HaltA@result result `uc  1 a 1 49 ]
+"665
+} 0
+"283
+[v _PCD_TransceiveData PCD_TransceiveData `(uc  1 e 1 0 ]
+{
+[v PCD_TransceiveData@sendData sendData `*.4uc  1 a 1 wreg ]
+"291
+[v PCD_TransceiveData@waitIRq waitIRq `uc  1 a 1 40 ]
+"283
+[v PCD_TransceiveData@sendData sendData `*.4uc  1 a 1 wreg ]
+"284
+[v PCD_TransceiveData@sendLen sendLen `uc  1 p 1 26 ]
+"285
+[v PCD_TransceiveData@backData backData `*.4uc  1 p 1 27 ]
+"286
+[v PCD_TransceiveData@backLen backLen `*.4uc  1 p 1 28 ]
+"287
+[v PCD_TransceiveData@validBits validBits `*.4uc  1 p 1 29 ]
+"288
+[v PCD_TransceiveData@rxAlign rxAlign `uc  1 p 1 30 ]
+"289
+[v PCD_TransceiveData@checkCRC checkCRC `a  1 p 1 31 ]
+"291
+[v PCD_TransceiveData@sendData sendData `*.4uc  1 a 1 41 ]
+"293
+} 0
+"295
+[v _PCD_CommunicateWithPICC PCD_CommunicateWithPICC `(uc  1 e 1 0 ]
+{
+[v PCD_CommunicateWithPICC@command command `uc  1 a 1 wreg ]
+"377
+[v PCD_CommunicateWithPICC@controlBuffer controlBuffer `[2]uc  1 a 2 16 ]
+"378
+[v PCD_CommunicateWithPICC@status status `uc  1 a 1 21 ]
+"349
+[v PCD_CommunicateWithPICC@n_685 n `uc  1 a 1 24 ]
+"323
+[v PCD_CommunicateWithPICC@i i `us  1 a 2 22 ]
+"345
+[v PCD_CommunicateWithPICC@_validBits _validBits `uc  1 a 1 25 ]
+"340
+[v PCD_CommunicateWithPICC@errorRegValue errorRegValue `uc  1 a 1 20 ]
+"324
+[v PCD_CommunicateWithPICC@n n `uc  1 a 1 19 ]
+"307
+[v PCD_CommunicateWithPICC@bitFraming bitFraming `uc  1 a 1 15 ]
+"306
+[v PCD_CommunicateWithPICC@txLastBits txLastBits `uc  1 a 1 14 ]
+"295
+[v PCD_CommunicateWithPICC@command command `uc  1 a 1 wreg ]
+"296
+[v PCD_CommunicateWithPICC@waitIRq waitIRq `uc  1 p 1 4 ]
+"297
+[v PCD_CommunicateWithPICC@sendData sendData `*.4uc  1 p 1 5 ]
+"298
+[v PCD_CommunicateWithPICC@sendLen sendLen `uc  1 p 1 6 ]
+"299
+[v PCD_CommunicateWithPICC@backData backData `*.4uc  1 p 1 7 ]
+"300
+[v PCD_CommunicateWithPICC@backLen backLen `*.4uc  1 p 1 8 ]
+"301
+[v PCD_CommunicateWithPICC@validBits validBits `*.4uc  1 p 1 9 ]
+"302
+[v PCD_CommunicateWithPICC@rxAlign rxAlign `uc  1 p 1 10 ]
+"303
+[v PCD_CommunicateWithPICC@checkCRC checkCRC `a  1 p 1 11 ]
+"306
+[v PCD_CommunicateWithPICC@command command `uc  1 a 1 18 ]
+"388
+} 0
+"74
+[v _PCD_SetRegisterBitMask PCD_SetRegisterBitMask `(v  1 e 1 0 ]
+{
+[v PCD_SetRegisterBitMask@reg reg `uc  1 a 1 wreg ]
+"77
+[v PCD_SetRegisterBitMask@tmp tmp `uc  1 a 1 6 ]
+"74
+[v PCD_SetRegisterBitMask@reg reg `uc  1 a 1 wreg ]
+"75
+[v PCD_SetRegisterBitMask@mask mask `uc  1 p 1 4 ]
+"78
+[v PCD_SetRegisterBitMask@reg reg `uc  1 a 1 7 ]
+"80
+} 0
+"42
+[v _PCD_ReadRegisters PCD_ReadRegisters `(v  1 e 1 0 ]
+{
+[v PCD_ReadRegisters@addr addr `uc  1 a 1 wreg ]
+"58
+[v PCD_ReadRegisters@mask mask `uc  1 a 1 7 ]
+"60
+[v PCD_ReadRegisters@value value `uc  1 a 1 6 ]
+"51
+[v PCD_ReadRegisters@index index `uc  1 a 1 9 ]
+"42
+[v PCD_ReadRegisters@addr addr `uc  1 a 1 wreg ]
+"43
+[v PCD_ReadRegisters@count count `uc  1 p 1 1 ]
+"44
+[v PCD_ReadRegisters@values values `*.4uc  1 p 1 2 ]
+"45
+[v PCD_ReadRegisters@rxAlign rxAlign `uc  1 p 1 3 ]
+"47
+[v PCD_ReadRegisters@addr addr `uc  1 a 1 8 ]
+"72
+} 0
+"91
+[v _PCD_CalculateCRC PCD_CalculateCRC `(uc  1 e 1 0 ]
+{
+[v PCD_CalculateCRC@data data `*.4uc  1 a 1 wreg ]
+"107
+[v PCD_CalculateCRC@n n `uc  1 a 1 0 ]
+"105
+[v PCD_CalculateCRC@i i `us  1 a 2 1 ]
+"91
+[v PCD_CalculateCRC@data data `*.4uc  1 a 1 wreg ]
+"92
+[v PCD_CalculateCRC@length length `uc  1 p 1 7 ]
+"93
+[v PCD_CalculateCRC@result result `*.4uc  1 p 1 8 ]
+"95
+[v PCD_CalculateCRC@data data `*.4uc  1 a 1 3 ]
+"118
+} 0
+"23
+[v _PCD_WriteRegisters PCD_WriteRegisters `(v  1 e 1 0 ]
+{
+[v PCD_WriteRegisters@addr addr `uc  1 a 1 wreg ]
+"27
+[v PCD_WriteRegisters@index index `uc  1 a 1 6 ]
+"23
+[v PCD_WriteRegisters@addr addr `uc  1 a 1 wreg ]
+[v PCD_WriteRegisters@count count `uc  1 p 1 1 ]
+[v PCD_WriteRegisters@values values `*.4uc  1 p 1 2 ]
+[v PCD_WriteRegisters@addr addr `uc  1 a 1 5 ]
+"31
+} 0
+"120
 [v _PCD_Init PCD_Init `(v  1 e 1 0 ]
 {
 "122
 [v PCD_Init@hardReset hardReset `a  1 a 1 13 ]
 "154
 } 0
-"44 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\mcc_generated_files/spi_driver.c
+"44 C:\Users\nikod\Documents\RFID\SPI\mcc_generated_files/spi_driver.c
 [v _spi_master_open spi_master_open `(b  1 e 0 0 ]
 {
 [v spi_master_open@spiUniqueConfiguration spiUniqueConfiguration `E9206  1 a 1 wreg ]
@@ -437,7 +885,7 @@ SPI_CUSTOM0 0
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
 "53
 } 0
-"156 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\RC552.c
+"156 C:\Users\nikod\Documents\RFID\SPI\RC552.c
 [v _PCD_Reset PCD_Reset `(v  1 e 1 0 ]
 {
 "161
@@ -472,7 +920,7 @@ SPI_CUSTOM0 0
 [v PCD_ReadRegister@addr addr `uc  1 a 1 2 ]
 "40
 } 0
-"89 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\mcc_generated_files/spi_driver.c
+"89 C:\Users\nikod\Documents\RFID\SPI\mcc_generated_files/spi_driver.c
 [v _spi_exchangeByte spi_exchangeByte `(uc  1 e 1 0 ]
 {
 [v spi_exchangeByte@b b `uc  1 a 1 wreg ]
@@ -481,32 +929,29 @@ SPI_CUSTOM0 0
 [v spi_exchangeByte@b b `uc  1 a 1 0 ]
 "95
 } 0
-"120 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\mcc_generated_files/eusart.c
+"120 C:\Users\nikod\Documents\RFID\SPI\mcc_generated_files/eusart.c
 [v _EUSART_PrintString EUSART_PrintString `(v  1 e 1 0 ]
 {
-[v EUSART_PrintString@txBuffer txBuffer `*.4uc  1 a 1 wreg ]
+[v EUSART_PrintString@txBuffer txBuffer `*.5uc  1 a 1 wreg ]
 "122
-[v EUSART_PrintString@aux aux `uc  1 a 1 12 ]
+[v EUSART_PrintString@aux aux `uc  1 a 1 9 ]
 "120
-[v EUSART_PrintString@txBuffer txBuffer `*.4uc  1 a 1 wreg ]
-[v EUSART_PrintString@txLength txLength `uc  1 p 1 8 ]
+[v EUSART_PrintString@txBuffer txBuffer `*.5uc  1 a 1 wreg ]
+[v EUSART_PrintString@txLength txLength `uc  1 p 1 6 ]
 "122
-[v EUSART_PrintString@txBuffer txBuffer `*.4uc  1 a 1 11 ]
+[v EUSART_PrintString@txBuffer txBuffer `*.5uc  1 a 1 10 ]
 "129
 } 0
 "12 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\strlen.c
 [v _strlen strlen `(ui  1 e 2 0 ]
 {
-[v strlen@s s `*.4DCuc  1 a 1 wreg ]
 "14
-[v strlen@a a `*.4DCuc  1 a 1 6 ]
+[v strlen@a a `*.39DCuc  1 a 2 4 ]
 "12
-[v strlen@s s `*.4DCuc  1 a 1 wreg ]
-"14
-[v strlen@s s `*.4DCuc  1 a 1 7 ]
+[v strlen@s s `*.39DCuc  1 p 2 0 ]
 "26
 } 0
-"111 C:\Users\Kathe\Documents\Proyecto Contenedor\RC522-PIC-y-MCC-\SPI\mcc_generated_files/eusart.c
+"111 C:\Users\nikod\Documents\RFID\SPI\mcc_generated_files/eusart.c
 [v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
 {
 [v EUSART_Write@txData txData `uc  1 p 1 0 ]

@@ -10,14 +10,23 @@ Version 4.0 HI-TECH Software Intermediate Code
 "235 ./RC522.h
 [; ;./RC522.h: 235: void PCD_Init(void);
 [v _PCD_Init `(v ~T0 @X0 0 ef ]
-"97 ./mcc_generated_files/eusart.h
-[; ;./mcc_generated_files/eusart.h: 97: void EUSART_Initialize(void);
+"98 ./mcc_generated_files/eusart.h
+[; ;./mcc_generated_files/eusart.h: 98: void EUSART_Initialize(void);
 [v _EUSART_Initialize `(v ~T0 @X0 0 ef ]
 "115 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\c99\stdio.h
 [v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
-"301 ./mcc_generated_files/eusart.h
-[; ;./mcc_generated_files/eusart.h: 301: void EUSART_PrintString(char *txBuffer, char txLength);
+"302 ./mcc_generated_files/eusart.h
+[; ;./mcc_generated_files/eusart.h: 302: void EUSART_PrintString(char *txBuffer, char txLength);
 [v _EUSART_PrintString `(v ~T0 @X0 0 ef2`*uc`uc ]
+"319 ./RC522.h
+[; ;./RC522.h: 319:     _Bool PICC_IsNewCardPresent(void) ;
+[v _PICC_IsNewCardPresent `(a ~T0 @X0 0 ef ]
+"320
+[; ;./RC522.h: 320:     _Bool PICC_ReadCardSerial(void);
+[v _PICC_ReadCardSerial `(a ~T0 @X0 0 ef ]
+"276
+[; ;./RC522.h: 276:     unsigned char PICC_HaltA(void);
+[v _PICC_HaltA `(uc ~T0 @X0 0 ef ]
 [v F9486 `(v ~T0 @X0 1 tf1`ul ]
 "92 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic.h
 [v __delay `JF9486 ~T0 @X0 0 e ]
@@ -1628,29 +1637,105 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 19:     EUSART_Initialize();
 [e ( _EUSART_Initialize ..  ]
 "20
-[; ;main.c: 20:     sprintf(phrase,"Te encontramos alelulla\n");
+[; ;main.c: 20:     sprintf(phrase,"Te encontramos alelulla \r\n");
 [e ( _sprintf (1 , &U _phrase :s 1C ]
-"23
-[; ;main.c: 23:     while (1)
+"21
+[; ;main.c: 21:     EUSART_PrintString(phrase,0);
+[e ( _EUSART_PrintString (2 , &U _phrase -> -> 0 `i `uc ]
+"26
+[; ;main.c: 26:     while (1)
 [e :U 1307 ]
-"24
-[; ;main.c: 24:     {
+"27
+[; ;main.c: 27:     {
 {
-"25
-[; ;main.c: 25:         EUSART_PrintString(phrase,0);
+"29
+[; ;main.c: 29:         if (PICC_IsNewCardPresent()){
+[e $ ! != -> ( _PICC_IsNewCardPresent ..  `i -> 0 `i 1309  ]
+{
+"30
+[; ;main.c: 30:             sprintf(phrase,"Te encontramos alelulla r\n");
+[e ( _sprintf (1 , &U _phrase :s 2C ]
+"31
+[; ;main.c: 31:             EUSART_PrintString(phrase,0);
+[e ( _EUSART_PrintString (2 , &U _phrase -> -> 0 `i `uc ]
+"32
+[; ;main.c: 32:              if (PICC_ReadCardSerial() )
+[e $ ! != -> ( _PICC_ReadCardSerial ..  `i -> 0 `i 1310  ]
+"33
+[; ;main.c: 33:             {
+{
+"35
+[; ;main.c: 35:                   sprintf(phrase,"Card UID:");
+[e ( _sprintf (1 , &U _phrase :s 3C ]
+"37
+[; ;main.c: 37:                   for (char i = 0; i < uid.size; i++) {
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $U 1314  ]
+[e :U 1311 ]
+{
+"38
+[; ;main.c: 38:                           sprintf(phrase,uid.uidByte[i] < 0x10 ? " " : " ");
+[e ( _sprintf (1 , &U _phrase -> ? < -> *U + &U . _uid 1 * -> _i `ux -> -> # *U &U . _uid 1 `ui `ux `i -> 16 `i : :s 4C :s 5C `*Cuc ]
+"39
+[; ;main.c: 39:                           EUSART_PrintString(phrase,0);
+[e ( _EUSART_PrintString (2 , &U _phrase -> -> 0 `i `uc ]
+"40
+[; ;main.c: 40:                           sprintf(phrase,"%02X",uid.uidByte[i]);
+[e ( _sprintf (1 , (. , &U _phrase :s 6C -> *U + &U . _uid 1 * -> _i `ux -> -> # *U &U . _uid 1 `ui `ux `i ]
+"41
+[; ;main.c: 41:                           EUSART_PrintString(phrase,0);
+[e ( _EUSART_PrintString (2 , &U _phrase -> -> 0 `i `uc ]
+"42
+[; ;main.c: 42:                   }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 1314 ]
+[e $ < -> _i `i -> . _uid 0 `i 1311  ]
+[e :U 1312 ]
+}
+"44
+[; ;main.c: 44:                   PICC_HaltA();
+[e ( _PICC_HaltA ..  ]
+"45
+[; ;main.c: 45:              }
+}
+[e :U 1310 ]
+"46
+[; ;main.c: 46:         }else{
+}
+[e $U 1315  ]
+[e :U 1309 ]
+{
+"47
+[; ;main.c: 47:             sprintf(phrase,"\n No Detectada\r\n");
+[e ( _sprintf (1 , &U _phrase :s 7C ]
+"48
+[; ;main.c: 48:             EUSART_PrintString(phrase,0);
 [e ( _EUSART_PrintString (2 , &U _phrase -> -> 0 `i `uc ]
 "49
-[; ;main.c: 49:         _delay((unsigned long)((1000)*(32000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+[; ;main.c: 49:         }
+}
+[e :U 1315 ]
 "50
-[; ;main.c: 50:     }
+[; ;main.c: 50:         _delay((unsigned long)((1000)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"51
+[; ;main.c: 51:     }
 }
 [e :U 1306 ]
 [e $U 1307  ]
 [e :U 1308 ]
-"51
-[; ;main.c: 51: }
+"52
+[; ;main.c: 52: }
 [e :UE 1305 ]
 }
-[p f _sprintf 8388608 ]
-[a 1C 84 101 32 101 110 99 111 110 116 114 97 109 111 115 32 97 108 101 108 117 108 108 97 10 0 ]
+[p f _sprintf 11911692 ]
+[a 6C 37 48 50 88 0 ]
+[a 3C 67 97 114 100 32 85 73 68 58 0 ]
+[a 4C 32 0 ]
+[a 5C 32 0 ]
+[a 2C 84 101 32 101 110 99 111 110 116 114 97 109 111 115 32 97 108 101 108 117 108 108 97 32 114 10 0 ]
+[a 7C 10 32 78 111 32 68 101 116 101 99 116 97 100 97 13 10 0 ]
+[a 1C 84 101 32 101 110 99 111 110 116 114 97 109 111 115 32 97 108 101 108 117 108 108 97 32 13 10 0 ]

@@ -62,7 +62,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC12-16F1xxx_DFP" vendor="Microchip" version="0.1.7"/>
+        <pack name="PIC12-16F1xxx_DFP" vendor="Microchip" version="1.0.10"/>
       </packs>
       <compileType>
         <linkerTool>

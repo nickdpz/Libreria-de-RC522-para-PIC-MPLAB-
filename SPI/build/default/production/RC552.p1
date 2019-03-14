@@ -1670,10 +1670,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _value `uc ~T0 @X0 1 r2 ]
 [f ]
 "18
-[; ;RC552.c: 18:         do { LATCbits.LATC4 = 0; } while(0);
+[; ;RC552.c: 18:         do { LATCbits.LATC1 = 0; } while(0);
 [e :U 1308 ]
 {
-[e = . . _LATCbits 0 4 -> -> 0 `i `uc ]
+[e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 1307 ]
 "19
@@ -1683,10 +1683,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;RC552.c: 20:         readDummy = spi_exchangeByte(value);
 [e = _readDummy ( _spi_exchangeByte (1 _value ]
 "21
-[; ;RC552.c: 21:         do { LATCbits.LATC4 = 1; } while(0);
+[; ;RC552.c: 21:         do { LATCbits.LATC1 = 1; } while(0);
 [e :U 1311 ]
 {
-[e = . . _LATCbits 0 4 -> -> 1 `i `uc ]
+[e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 1310 ]
 "22
@@ -1703,10 +1703,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _values `*uc ~T0 @X0 1 r3 ]
 [f ]
 "24
-[; ;RC552.c: 24:     do { LATCbits.LATC4 = 0; } while(0);
+[; ;RC552.c: 24:     do { LATCbits.LATC1 = 0; } while(0);
 [e :U 1315 ]
 {
-[e = . . _LATCbits 0 4 -> -> 0 `i `uc ]
+[e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 1314 ]
 "25
@@ -1732,10 +1732,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 1317 ]
 }
 "30
-[; ;RC552.c: 30:  do { LATCbits.LATC4 = 1; } while(0);
+[; ;RC552.c: 30:  do { LATCbits.LATC1 = 1; } while(0);
 [e :U 1322 ]
 {
-[e = . . _LATCbits 0 4 -> -> 1 `i `uc ]
+[e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 1321 ]
 "31
@@ -1753,10 +1753,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;RC552.c: 34:         unsigned char value;
 [v _value `uc ~T0 @X0 1 a ]
 "35
-[; ;RC552.c: 35:         do { LATCbits.LATC4 = 0; } while(0);
+[; ;RC552.c: 35:         do { LATCbits.LATC1 = 0; } while(0);
 [e :U 1326 ]
 {
-[e = . . _LATCbits 0 4 -> -> 0 `i `uc ]
+[e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 1325 ]
 "36
@@ -1766,10 +1766,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;RC552.c: 37:         value = spi_exchangeByte(0x00);
 [e = _value ( _spi_exchangeByte (1 -> -> 0 `i `uc ]
 "38
-[; ;RC552.c: 38:         do { LATCbits.LATC4 = 1; } while(0);
+[; ;RC552.c: 38:         do { LATCbits.LATC1 = 1; } while(0);
 [e :U 1329 ]
 {
-[e = . . _LATCbits 0 4 -> -> 1 `i `uc ]
+[e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 1328 ]
 "39
@@ -1818,10 +1818,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _index `uc ~T0 @X0 1 a ]
 [e = _index -> -> 0 `i `uc ]
 "53
-[; ;RC552.c: 53:     do { LATCbits.LATC4 = 0; } while(0);
+[; ;RC552.c: 53:     do { LATCbits.LATC1 = 0; } while(0);
 [e :U 1334 ]
 {
-[e = . . _LATCbits 0 4 -> -> 0 `i `uc ]
+[e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 1333 ]
 "54
@@ -1875,10 +1875,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;RC552.c: 69:  values[index] = spi_exchangeByte(0x00);
 [e = *U + _values * -> _index `ux -> -> # *U _values `ui `ux ( _spi_exchangeByte (1 -> -> 0 `i `uc ]
 "71
-[; ;RC552.c: 71:     do { LATCbits.LATC4 = 1; } while(0);
+[; ;RC552.c: 71:     do { LATCbits.LATC1 = 1; } while(0);
 [e :U 1341 ]
 {
-[e = . . _LATCbits 0 4 -> -> 1 `i `uc ]
+[e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 1340 ]
 "72
@@ -2039,45 +2039,45 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;RC552.c: 123:     spi_master_open(SPI_CUSTOM0);
 [e ( _spi_master_open . `E638 0 ]
 "124
-[; ;RC552.c: 124:     do { LATCbits.LATC4 = 1; } while(0);
+[; ;RC552.c: 124:     do { LATCbits.LATC1 = 1; } while(0);
 [e :U 1352 ]
 {
-[e = . . _LATCbits 0 4 -> -> 1 `i `uc ]
+[e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 1351 ]
 "126
-[; ;RC552.c: 126:     do { TRISCbits.TRISC3 = 1; } while(0);
+[; ;RC552.c: 126:     do { TRISCbits.TRISC4 = 1; } while(0);
 [e :U 1355 ]
 {
-[e = . . _TRISCbits 0 3 -> -> 1 `i `uc ]
+[e = . . _TRISCbits 0 4 -> -> 1 `i `uc ]
 }
 [e :U 1354 ]
 "127
-[; ;RC552.c: 127:     if (PORTCbits.RC3 == 0) {
-[e $ ! == -> . . _PORTCbits 0 3 `i -> 0 `i 1356  ]
+[; ;RC552.c: 127:     if (PORTCbits.RC4 == 0) {
+[e $ ! == -> . . _PORTCbits 0 4 `i -> 0 `i 1356  ]
 {
 "128
-[; ;RC552.c: 128:     do { TRISCbits.TRISC3 = 0; } while(0);
+[; ;RC552.c: 128:     do { TRISCbits.TRISC4 = 0; } while(0);
 [e :U 1359 ]
 {
-[e = . . _TRISCbits 0 3 -> -> 0 `i `uc ]
+[e = . . _TRISCbits 0 4 -> -> 0 `i `uc ]
 }
 [e :U 1358 ]
 "129
-[; ;RC552.c: 129:     do { LATCbits.LATC3 = 0; } while(0);
+[; ;RC552.c: 129:     do { LATCbits.LATC4 = 0; } while(0);
 [e :U 1362 ]
 {
-[e = . . _LATCbits 0 3 -> -> 0 `i `uc ]
+[e = . . _LATCbits 0 4 -> -> 0 `i `uc ]
 }
 [e :U 1361 ]
 "130
 [; ;RC552.c: 130:     _delay((unsigned long)((20)*(32000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 20 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
 "131
-[; ;RC552.c: 131:     do { LATCbits.LATC3 = 1; } while(0);
+[; ;RC552.c: 131:     do { LATCbits.LATC4 = 1; } while(0);
 [e :U 1365 ]
 {
-[e = . . _LATCbits 0 3 -> -> 1 `i `uc ]
+[e = . . _LATCbits 0 4 -> -> 1 `i `uc ]
 }
 [e :U 1364 ]
 "132

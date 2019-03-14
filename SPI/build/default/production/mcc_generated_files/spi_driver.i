@@ -14568,9 +14568,9 @@ extern __bank0 __bit __timeout;
 # 50 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/pin_manager.h" 1
-# 193 "mcc_generated_files/pin_manager.h"
+# 190 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 205 "mcc_generated_files/pin_manager.h"
+# 202 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "mcc_generated_files/mcc.h" 2
 
@@ -14601,19 +14601,19 @@ void spi_readBlock(void *block, size_t blockSize);
 # 54 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/eusart.h" 1
-# 97 "mcc_generated_files/eusart.h"
+# 98 "mcc_generated_files/eusart.h"
 void EUSART_Initialize(void);
-# 145 "mcc_generated_files/eusart.h"
+# 146 "mcc_generated_files/eusart.h"
 _Bool EUSART_is_tx_ready(void);
-# 193 "mcc_generated_files/eusart.h"
+# 194 "mcc_generated_files/eusart.h"
 _Bool EUSART_is_rx_ready(void);
-# 240 "mcc_generated_files/eusart.h"
+# 241 "mcc_generated_files/eusart.h"
 _Bool EUSART_is_tx_done(void);
-# 260 "mcc_generated_files/eusart.h"
+# 261 "mcc_generated_files/eusart.h"
 char EUSART_Read(void);
-# 280 "mcc_generated_files/eusart.h"
+# 281 "mcc_generated_files/eusart.h"
 void EUSART_Write(char txData);
-# 301 "mcc_generated_files/eusart.h"
+# 302 "mcc_generated_files/eusart.h"
 void EUSART_PrintString(char *txBuffer, char txLength);
 # 55 "mcc_generated_files/mcc.h" 2
 # 70 "mcc_generated_files/mcc.h"
@@ -14645,10 +14645,10 @@ __bit spi_master_open(spi_modes spiUniqueConfiguration)
     if(!SSP1CON1bits.SSPEN)
     {
 
-        SSPCLKPPS = 23;
-        SSPDATPPS = 22;
-        RC7PPS = 16;
-        RC1PPS = 20;
+        SSPCLKPPS = 16;
+        SSPDATPPS = 21;
+        RC0PPS = 18;
+        RA2PPS = 20;
 
 
         SSP1STAT = spi_configuration[spiUniqueConfiguration].stat;
@@ -14656,7 +14656,7 @@ __bit spi_master_open(spi_modes spiUniqueConfiguration)
         SSP1CON2 = 0x00;
         SSP1ADD = (uint8_t) (spi_configuration[spiUniqueConfiguration].add | 0);
 
-        TRISCbits.TRISC7 = 0;
+        TRISCbits.TRISC0 = 0;
         return 1;
     }
     return 0;
@@ -14668,17 +14668,17 @@ __bit spi_slave_open(spi_modes spiUniqueConfiguration)
     if(!SSP1CON1bits.SSPEN)
     {
 
-        SSPCLKPPS = 23;
-        SSPDATPPS = 22;
-        RC7PPS = 16;
-        RC1PPS = 20;
+        SSPCLKPPS = 16;
+        SSPDATPPS = 21;
+        RC0PPS = 18;
+        RA2PPS = 20;
 
         SSP1STAT = spi_configuration[spiUniqueConfiguration].stat;
         SSP1CON1 = (uint8_t) (spi_configuration[spiUniqueConfiguration].con1 | 0x25);
         SSP1CON2 = 0x00;
         SSP1ADD = (uint8_t) (spi_configuration[spiUniqueConfiguration].add | 0);
 
-        TRISCbits.TRISC7 = 1;
+        TRISCbits.TRISC0 = 1;
         return 1;
     }
     return 0;

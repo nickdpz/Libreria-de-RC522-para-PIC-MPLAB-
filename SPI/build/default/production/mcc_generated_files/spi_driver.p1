@@ -28,12 +28,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "23506
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1769.h: 23506: extern volatile unsigned char SSPDATPPS __attribute__((address(0xE21)));
 [v _SSPDATPPS `Vuc ~T0 @X0 0 e@3617 ]
-"24186
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1769.h: 24186: extern volatile unsigned char RC7PPS __attribute__((address(0xEA7)));
-[v _RC7PPS `Vuc ~T0 @X0 0 e@3751 ]
-"24066
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1769.h: 24066: extern volatile unsigned char RC1PPS __attribute__((address(0xEA1)));
-[v _RC1PPS `Vuc ~T0 @X0 0 e@3745 ]
+"24046
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1769.h: 24046: extern volatile unsigned char RC0PPS __attribute__((address(0xEA0)));
+[v _RC0PPS `Vuc ~T0 @X0 0 e@3744 ]
+"23906
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1769.h: 23906: extern volatile unsigned char RA2PPS __attribute__((address(0xE92)));
+[v _RA2PPS `Vuc ~T0 @X0 0 e@3730 ]
 "6129
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1769.h: 6129: extern volatile unsigned char SSP1STAT __attribute__((address(0x214)));
 [v _SSP1STAT `Vuc ~T0 @X0 0 e@532 ]
@@ -1420,16 +1420,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "49
 [; ;mcc_generated_files/spi_driver.c: 49: 
-[e = _SSPCLKPPS -> -> 23 `i `uc ]
+[e = _SSPCLKPPS -> -> 16 `i `uc ]
 "50
-[; ;mcc_generated_files/spi_driver.c: 50:         TRISCbits.TRISC7 = 1;
-[e = _SSPDATPPS -> -> 22 `i `uc ]
+[; ;mcc_generated_files/spi_driver.c: 50:         TRISCbits.TRISC0 = 1;
+[e = _SSPDATPPS -> -> 21 `i `uc ]
 "51
 [; ;mcc_generated_files/spi_driver.c: 51:         return 1;
-[e = _RC7PPS -> -> 16 `i `uc ]
+[e = _RC0PPS -> -> 18 `i `uc ]
 "52
 [; ;mcc_generated_files/spi_driver.c: 52:     }
-[e = _RC1PPS -> -> 20 `i `uc ]
+[e = _RA2PPS -> -> 20 `i `uc ]
 "55
 [; ;mcc_generated_files/spi_driver.c: 55: 
 [e = _SSP1STAT . *U + &U _spi_configuration * -> _spiUniqueConfiguration `ux -> -> # *U &U _spi_configuration `ui `ux 1 ]
@@ -1444,7 +1444,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _SSP1ADD -> | -> . *U + &U _spi_configuration * -> _spiUniqueConfiguration `ux -> -> # *U &U _spi_configuration `ui `ux 2 `i -> 0 `i `uc ]
 "60
 [; ;mcc_generated_files/spi_driver.c: 60:     while(!PIR1bits.SSP1IF);
-[e = . . _TRISCbits 0 7 -> -> 0 `i `uc ]
+[e = . . _TRISCbits 0 0 -> -> 0 `i `uc ]
 "61
 [; ;mcc_generated_files/spi_driver.c: 61:     PIR1bits.SSP1IF = 0;
 [e ) -> -> 1 `i `b ]
@@ -1482,16 +1482,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "72
 [; ;mcc_generated_files/spi_driver.c: 72:     }
-[e = _SSPCLKPPS -> -> 23 `i `uc ]
+[e = _SSPCLKPPS -> -> 16 `i `uc ]
 "73
 [; ;mcc_generated_files/spi_driver.c: 73: }
-[e = _SSPDATPPS -> -> 22 `i `uc ]
+[e = _SSPDATPPS -> -> 21 `i `uc ]
 "74
 [; ;mcc_generated_files/spi_driver.c: 74: 
-[e = _RC7PPS -> -> 16 `i `uc ]
+[e = _RC0PPS -> -> 18 `i `uc ]
 "75
 [; ;mcc_generated_files/spi_driver.c: 75: 
-[e = _RC1PPS -> -> 20 `i `uc ]
+[e = _RA2PPS -> -> 20 `i `uc ]
 "77
 [; ;mcc_generated_files/spi_driver.c: 77: {
 [e = _SSP1STAT . *U + &U _spi_configuration * -> _spiUniqueConfiguration `ux -> -> # *U &U _spi_configuration `ui `ux 1 ]
@@ -1506,7 +1506,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _SSP1ADD -> | -> . *U + &U _spi_configuration * -> _spiUniqueConfiguration `ux -> -> # *U &U _spi_configuration `ui `ux 2 `i -> 0 `i `uc ]
 "82
 [; ;mcc_generated_files/spi_driver.c: 82:     }
-[e = . . _TRISCbits 0 7 -> -> 1 `i `uc ]
+[e = . . _TRISCbits 0 0 -> -> 1 `i `uc ]
 "83
 [; ;mcc_generated_files/spi_driver.c: 83: }
 [e ) -> -> 1 `i `b ]

@@ -8,12 +8,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "4790
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1769.h: 4790: extern volatile unsigned char TX1STA __attribute__((address(0x19E)));
 [v _TX1STA `Vuc ~T0 @X0 0 e@414 ]
-"4486
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1769.h: 4486: extern volatile unsigned char SP1BRGL __attribute__((address(0x19B)));
-[v _SP1BRGL `Vuc ~T0 @X0 0 e@411 ]
-"4556
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1769.h: 4556: extern volatile unsigned char SP1BRGH __attribute__((address(0x19C)));
-[v _SP1BRGH `Vuc ~T0 @X0 0 e@412 ]
+"4499
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1769.h: 4499: extern volatile unsigned char SPBRGL __attribute__((address(0x19B)));
+[v _SPBRGL `Vuc ~T0 @X0 0 e@411 ]
+"4561
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1769.h: 4561: extern volatile unsigned char SPBRGH __attribute__((address(0x19C)));
+[v _SPBRGH `Vuc ~T0 @X0 0 e@412 ]
 "586
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1769.h: 586:     struct {
 [s S40 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -1371,14 +1371,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/eusart.c: 67:     TX1STA = 0x24;
 [e = _TX1STA -> -> 36 `i `uc ]
 "70
-[; ;mcc_generated_files/eusart.c: 70:     SP1BRGL = 0x40;
-[e = _SP1BRGL -> -> 64 `i `uc ]
+[; ;mcc_generated_files/eusart.c: 70:     SPBRGL = 0x40;
+[e = _SPBRGL -> -> 64 `i `uc ]
 "73
-[; ;mcc_generated_files/eusart.c: 73:     SP1BRGH = 0x03;
-[e = _SP1BRGH -> -> 3 `i `uc ]
+[; ;mcc_generated_files/eusart.c: 73:     SPBRGH = 0x03;
+[e = _SPBRGH -> -> 3 `i `uc ]
 "76
 [; ;mcc_generated_files/eusart.c: 76: }
-[e :UE 1301 ]
+[e :UE 1303 ]
 }
 "78
 [; ;mcc_generated_files/eusart.c: 78: _Bool EUSART_is_tx_ready(void)
@@ -1391,10 +1391,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "80
 [; ;mcc_generated_files/eusart.c: 80:     return (_Bool)(PIR1bits.TXIF && TX1STAbits.TXEN);
 [e ) -> -> && != -> . . _PIR1bits 0 4 `i -> 0 `i != -> . . _TX1STAbits 0 5 `i -> 0 `i `i `a ]
-[e $UE 1302  ]
+[e $UE 1304  ]
 "81
 [; ;mcc_generated_files/eusart.c: 81: }
-[e :UE 1302 ]
+[e :UE 1304 ]
 }
 "83
 [; ;mcc_generated_files/eusart.c: 83: _Bool EUSART_is_rx_ready(void)
@@ -1407,10 +1407,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "85
 [; ;mcc_generated_files/eusart.c: 85:     return PIR1bits.RCIF;
 [e ) -> . . _PIR1bits 0 5 `a ]
-[e $UE 1303  ]
+[e $UE 1305  ]
 "86
 [; ;mcc_generated_files/eusart.c: 86: }
-[e :UE 1303 ]
+[e :UE 1305 ]
 }
 "88
 [; ;mcc_generated_files/eusart.c: 88: _Bool EUSART_is_tx_done(void)
@@ -1423,10 +1423,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "90
 [; ;mcc_generated_files/eusart.c: 90:     return TX1STAbits.TRMT;
 [e ) -> . . _TX1STAbits 0 1 `a ]
-[e $UE 1304  ]
+[e $UE 1306  ]
 "91
 [; ;mcc_generated_files/eusart.c: 91: }
-[e :UE 1304 ]
+[e :UE 1306 ]
 }
 "93
 [; ;mcc_generated_files/eusart.c: 93: char EUSART_Read(void)
@@ -1438,22 +1438,22 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "95
 [; ;mcc_generated_files/eusart.c: 95:     while(!PIR1bits.RCIF)
-[e $U 1306  ]
-[e :U 1307 ]
+[e $U 1308  ]
+[e :U 1309 ]
 "96
 [; ;mcc_generated_files/eusart.c: 96:     {
 {
 "97
 [; ;mcc_generated_files/eusart.c: 97:     }
 }
-[e :U 1306 ]
+[e :U 1308 ]
 "95
 [; ;mcc_generated_files/eusart.c: 95:     while(!PIR1bits.RCIF)
-[e $ ! != -> . . _PIR1bits 0 5 `i -> 0 `i 1307  ]
-[e :U 1308 ]
+[e $ ! != -> . . _PIR1bits 0 5 `i -> 0 `i 1309  ]
+[e :U 1310 ]
 "100
 [; ;mcc_generated_files/eusart.c: 100:     if(1 == RC1STAbits.OERR)
-[e $ ! == -> 1 `i -> . . _RC1STAbits 0 1 `i 1309  ]
+[e $ ! == -> 1 `i -> . . _RC1STAbits 0 1 `i 1311  ]
 "101
 [; ;mcc_generated_files/eusart.c: 101:     {
 {
@@ -1466,14 +1466,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "106
 [; ;mcc_generated_files/eusart.c: 106:     }
 }
-[e :U 1309 ]
+[e :U 1311 ]
 "108
 [; ;mcc_generated_files/eusart.c: 108:     return RC1REG;
 [e ) -> _RC1REG `uc ]
-[e $UE 1305  ]
+[e $UE 1307  ]
 "109
 [; ;mcc_generated_files/eusart.c: 109: }
-[e :UE 1305 ]
+[e :UE 1307 ]
 }
 "111
 [; ;mcc_generated_files/eusart.c: 111: void EUSART_Write(char txData)
@@ -1490,25 +1490,25 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "113
 [; ;mcc_generated_files/eusart.c: 113:     while(0 == PIR1bits.TXIF)
-[e $U 1311  ]
-[e :U 1312 ]
+[e $U 1313  ]
+[e :U 1314 ]
 "114
 [; ;mcc_generated_files/eusart.c: 114:     {
 {
 "115
 [; ;mcc_generated_files/eusart.c: 115:     }
 }
-[e :U 1311 ]
+[e :U 1313 ]
 "113
 [; ;mcc_generated_files/eusart.c: 113:     while(0 == PIR1bits.TXIF)
-[e $ == -> 0 `i -> . . _PIR1bits 0 4 `i 1312  ]
-[e :U 1313 ]
+[e $ == -> 0 `i -> . . _PIR1bits 0 4 `i 1314  ]
+[e :U 1315 ]
 "117
 [; ;mcc_generated_files/eusart.c: 117:     TX1REG = txData;
 [e = _TX1REG -> _txData `uc ]
 "118
 [; ;mcc_generated_files/eusart.c: 118: }
-[e :UE 1310 ]
+[e :UE 1312 ]
 }
 "120
 [; ;mcc_generated_files/eusart.c: 120: void EUSART_PrintString(char *txBuffer, char txLength)
@@ -1530,28 +1530,28 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _aux -> -> 0 `i `uc ]
 "123
 [; ;mcc_generated_files/eusart.c: 123:     if (!txLength){
-[e $ ! ! != -> _txLength `i -> 0 `i 1315  ]
+[e $ ! ! != -> _txLength `i -> 0 `i 1317  ]
 {
 "124
 [; ;mcc_generated_files/eusart.c: 124:         txLength=strlen(txBuffer);}
 [e = _txLength -> ( _strlen (1 -> _txBuffer `*Cuc `uc ]
 }
-[e :U 1315 ]
+[e :U 1317 ]
 "126
 [; ;mcc_generated_files/eusart.c: 126:     while (aux<txLength){
-[e $U 1316  ]
-[e :U 1317 ]
+[e $U 1318  ]
+[e :U 1319 ]
 {
 "127
 [; ;mcc_generated_files/eusart.c: 127:             EUSART_Write(*(txBuffer+(aux++)));}
 [e ( _EUSART_Write (1 *U + _txBuffer * -> -> ++ _aux -> -> 1 `i `uc `i `x -> -> # *U _txBuffer `i `x ]
 }
-[e :U 1316 ]
+[e :U 1318 ]
 "126
 [; ;mcc_generated_files/eusart.c: 126:     while (aux<txLength){
-[e $ < -> _aux `i -> _txLength `i 1317  ]
-[e :U 1318 ]
+[e $ < -> _aux `i -> _txLength `i 1319  ]
+[e :U 1320 ]
 "129
 [; ;mcc_generated_files/eusart.c: 129: }
-[e :UE 1314 ]
+[e :UE 1316 ]
 }

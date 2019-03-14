@@ -14,7 +14,7 @@
     This source file provides APIs for EUSART.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.65.2
-        Device            :  PIC16F1709
+        Device            :  PIC16F1769
         Driver Version    :  2.01
     The generated drivers are tested against the following:
         Compiler          :  XC8 1.45
@@ -67,10 +67,10 @@ void EUSART_Initialize(void)
     TX1STA = 0x24;
 
     // SP1BRGL 64; 
-    SP1BRGL = 0x40;
+    SPBRGL = 0x40;
 
     // SP1BRGH 3; 
-    SP1BRGH = 0x03;
+    SPBRGH = 0x03;
 
 
 }
@@ -127,7 +127,6 @@ void EUSART_PrintString(char *txBuffer, char txLength)
             EUSART_Write(*(txBuffer+(aux++)));}
             
 }
-
 
 
 

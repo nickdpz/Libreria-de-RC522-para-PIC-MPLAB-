@@ -495,9 +495,9 @@ void spi_readBlock(void *block, size_t blockSize);
 # 7 "RC552.c" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 193 "./mcc_generated_files/pin_manager.h"
+# 190 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 205 "./mcc_generated_files/pin_manager.h"
+# 202 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 8 "RC552.c" 2
 
@@ -14834,19 +14834,19 @@ extern __bank0 __bit __timeout;
 
 
 # 1 "./mcc_generated_files/eusart.h" 1
-# 97 "./mcc_generated_files/eusart.h"
+# 98 "./mcc_generated_files/eusart.h"
 void EUSART_Initialize(void);
-# 145 "./mcc_generated_files/eusart.h"
+# 146 "./mcc_generated_files/eusart.h"
 _Bool EUSART_is_tx_ready(void);
-# 193 "./mcc_generated_files/eusart.h"
+# 194 "./mcc_generated_files/eusart.h"
 _Bool EUSART_is_rx_ready(void);
-# 240 "./mcc_generated_files/eusart.h"
+# 241 "./mcc_generated_files/eusart.h"
 _Bool EUSART_is_tx_done(void);
-# 260 "./mcc_generated_files/eusart.h"
+# 261 "./mcc_generated_files/eusart.h"
 char EUSART_Read(void);
-# 280 "./mcc_generated_files/eusart.h"
+# 281 "./mcc_generated_files/eusart.h"
 void EUSART_Write(char txData);
-# 301 "./mcc_generated_files/eusart.h"
+# 302 "./mcc_generated_files/eusart.h"
 void EUSART_PrintString(char *txBuffer, char txLength);
 # 55 "./mcc_generated_files/mcc.h" 2
 # 70 "./mcc_generated_files/mcc.h"
@@ -14865,27 +14865,27 @@ unsigned char readData;
 unsigned char readDummy;
 
 void PCD_WriteRegister(unsigned char addr, unsigned char value) {
-        do { LATCbits.LATC4 = 0; } while(0);
+        do { LATCbits.LATC1 = 0; } while(0);
         readData = spi_exchangeByte((addr<<1)&0x7E);
         readDummy = spi_exchangeByte(value);
-        do { LATCbits.LATC4 = 1; } while(0);
+        do { LATCbits.LATC1 = 1; } while(0);
 }
 void PCD_WriteRegisters( unsigned char addr,unsigned char count,unsigned char *values){
-    do { LATCbits.LATC4 = 0; } while(0);
+    do { LATCbits.LATC1 = 0; } while(0);
     readData = spi_exchangeByte((addr << 1 ) & 0x7E );
 
  for (unsigned char index = 0; index < count; index++) {
   readDummy = spi_exchangeByte(values[index]);
  }
- do { LATCbits.LATC4 = 1; } while(0);
+ do { LATCbits.LATC1 = 1; } while(0);
 }
 
 unsigned char PCD_ReadRegister(unsigned char addr) {
         unsigned char value;
-        do { LATCbits.LATC4 = 0; } while(0);
+        do { LATCbits.LATC1 = 0; } while(0);
         readData = spi_exchangeByte(((addr<<1)&0x7E)|0x80);
         value = spi_exchangeByte(0x00);
-        do { LATCbits.LATC4 = 1; } while(0);
+        do { LATCbits.LATC1 = 1; } while(0);
  return value;
 }
 
@@ -14900,7 +14900,7 @@ void PCD_ReadRegisters( unsigned char addr,
 
     unsigned char index = 0;
 
-    do { LATCbits.LATC4 = 0; } while(0);
+    do { LATCbits.LATC1 = 0; } while(0);
  count--;
  readData = spi_exchangeByte(((addr<<1)&0x7E)|0x80);
  if (rxAlign) {
@@ -14918,7 +14918,7 @@ void PCD_ReadRegisters( unsigned char addr,
  }
  values[index] = spi_exchangeByte(0x00);
 
-    do { LATCbits.LATC4 = 1; } while(0);
+    do { LATCbits.LATC1 = 1; } while(0);
 }
 
 void PCD_SetRegisterBitMask( unsigned char reg,
@@ -14971,14 +14971,14 @@ void PCD_Init(void) {
 
     _Bool hardReset;
     spi_master_open(SPI_CUSTOM0);
-    do { LATCbits.LATC4 = 1; } while(0);
+    do { LATCbits.LATC1 = 1; } while(0);
 
-    do { TRISCbits.TRISC3 = 1; } while(0);
-    if (PORTCbits.RC3 == 0) {
-    do { TRISCbits.TRISC3 = 0; } while(0);
-    do { LATCbits.LATC3 = 0; } while(0);
+    do { TRISCbits.TRISC4 = 1; } while(0);
+    if (PORTCbits.RC4 == 0) {
+    do { TRISCbits.TRISC4 = 0; } while(0);
+    do { LATCbits.LATC4 = 0; } while(0);
     _delay((unsigned long)((20)*(32000000/4000000.0)));
-    do { LATCbits.LATC3 = 1; } while(0);
+    do { LATCbits.LATC4 = 1; } while(0);
     _delay((unsigned long)((50)*(32000000/4000.0)));
  hardReset = 1;
     }

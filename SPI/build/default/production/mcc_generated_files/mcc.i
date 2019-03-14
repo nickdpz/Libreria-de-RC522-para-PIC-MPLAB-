@@ -14354,9 +14354,9 @@ extern __bank0 __bit __timeout;
 # 50 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/pin_manager.h" 1
-# 193 "mcc_generated_files/pin_manager.h"
+# 190 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 205 "mcc_generated_files/pin_manager.h"
+# 202 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "mcc_generated_files/mcc.h" 2
 
@@ -14602,19 +14602,19 @@ void spi_readBlock(void *block, size_t blockSize);
 # 54 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/eusart.h" 1
-# 97 "mcc_generated_files/eusart.h"
+# 98 "mcc_generated_files/eusart.h"
 void EUSART_Initialize(void);
-# 145 "mcc_generated_files/eusart.h"
+# 146 "mcc_generated_files/eusart.h"
 _Bool EUSART_is_tx_ready(void);
-# 193 "mcc_generated_files/eusart.h"
+# 194 "mcc_generated_files/eusart.h"
 _Bool EUSART_is_rx_ready(void);
-# 240 "mcc_generated_files/eusart.h"
+# 241 "mcc_generated_files/eusart.h"
 _Bool EUSART_is_tx_done(void);
-# 260 "mcc_generated_files/eusart.h"
+# 261 "mcc_generated_files/eusart.h"
 char EUSART_Read(void);
-# 280 "mcc_generated_files/eusart.h"
+# 281 "mcc_generated_files/eusart.h"
 void EUSART_Write(char txData);
-# 301 "mcc_generated_files/eusart.h"
+# 302 "mcc_generated_files/eusart.h"
 void EUSART_PrintString(char *txBuffer, char txLength);
 # 55 "mcc_generated_files/mcc.h" 2
 # 70 "mcc_generated_files/mcc.h"
