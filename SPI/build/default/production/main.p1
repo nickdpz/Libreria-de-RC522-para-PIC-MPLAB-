@@ -27,6 +27,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "276
 [; ;./RC522.h: 276:     unsigned char PICC_HaltA(void);
 [v _PICC_HaltA `(uc ~T0 @X0 0 ef ]
+"284
+[; ;./RC522.h: 284:     void PCD_StopCrypto1(void);
+[v _PCD_StopCrypto1 `(v ~T0 @X0 0 ef ]
 [v F9486 `(v ~T0 @X0 1 tf1`ul ]
 "92 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic.h
 [v __delay `JF9486 ~T0 @X0 0 e ]
@@ -1618,6 +1621,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 :U ..
 ..
 ]
+"10
+[; ;main.c: 10: char i=0;
+[v _i `uc ~T0 @X0 1 e ]
+[i _i
+-> -> 0 `i `uc
+]
 [v $root$_main `(v ~T0 @X0 0 e ]
 "14
 [; ;main.c: 14: void main(void)
@@ -1637,98 +1646,90 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 19:     EUSART_Initialize();
 [e ( _EUSART_Initialize ..  ]
 "20
-[; ;main.c: 20:     sprintf(phrase,"Te encontramos alelulla \r\n");
+[; ;main.c: 20:     sprintf(phrase,"Iniciando \r\n");
 [e ( _sprintf (1 , &U _phrase :s 1C ]
 "21
 [; ;main.c: 21:     EUSART_PrintString(phrase,0);
 [e ( _EUSART_PrintString (2 , &U _phrase -> -> 0 `i `uc ]
-"26
-[; ;main.c: 26:     while (1)
+"22
+[; ;main.c: 22:     while (1){
 [e :U 1307 ]
-"27
-[; ;main.c: 27:     {
 {
-"29
-[; ;main.c: 29:         if (PICC_IsNewCardPresent()){
+"23
+[; ;main.c: 23:         if (PICC_IsNewCardPresent()){
 [e $ ! != -> ( _PICC_IsNewCardPresent ..  `i -> 0 `i 1309  ]
 {
-"30
-[; ;main.c: 30:             sprintf(phrase,"Te encontramos alelulla r\n");
+"24
+[; ;main.c: 24:             sprintf(phrase,"Tarjeta Detectada \r\n");
 [e ( _sprintf (1 , &U _phrase :s 2C ]
-"31
-[; ;main.c: 31:             EUSART_PrintString(phrase,0);
+"25
+[; ;main.c: 25:             EUSART_PrintString(phrase,0);
 [e ( _EUSART_PrintString (2 , &U _phrase -> -> 0 `i `uc ]
-"32
-[; ;main.c: 32:              if (PICC_ReadCardSerial() )
+"26
+[; ;main.c: 26:              if (PICC_ReadCardSerial()){
 [e $ ! != -> ( _PICC_ReadCardSerial ..  `i -> 0 `i 1310  ]
-"33
-[; ;main.c: 33:             {
 {
-"35
-[; ;main.c: 35:                   sprintf(phrase,"Card UID:");
+"27
+[; ;main.c: 27:                   sprintf(phrase,"Card UID:");
 [e ( _sprintf (1 , &U _phrase :s 3C ]
-"37
-[; ;main.c: 37:                   for (char i = 0; i < uid.size; i++) {
+"28
+[; ;main.c: 28:                   for (i = 0; i < uid.size; i++) {
 {
-[v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
 [e $U 1314  ]
 [e :U 1311 ]
 {
-"38
-[; ;main.c: 38:                           sprintf(phrase,uid.uidByte[i] < 0x10 ? " " : " ");
+"29
+[; ;main.c: 29:                           sprintf(phrase,uid.uidByte[i] < 0x10 ? " " : " ");
 [e ( _sprintf (1 , &U _phrase -> ? < -> *U + &U . _uid 1 * -> _i `ux -> -> # *U &U . _uid 1 `ui `ux `i -> 16 `i : :s 4C :s 5C `*Cuc ]
-"39
-[; ;main.c: 39:                           EUSART_PrintString(phrase,0);
+"30
+[; ;main.c: 30:                           EUSART_PrintString(phrase,0);
 [e ( _EUSART_PrintString (2 , &U _phrase -> -> 0 `i `uc ]
-"40
-[; ;main.c: 40:                           sprintf(phrase,"%02X",uid.uidByte[i]);
+"31
+[; ;main.c: 31:                           sprintf(phrase,"%02X",uid.uidByte[i]);
 [e ( _sprintf (1 , (. , &U _phrase :s 6C -> *U + &U . _uid 1 * -> _i `ux -> -> # *U &U . _uid 1 `ui `ux `i ]
-"41
-[; ;main.c: 41:                           EUSART_PrintString(phrase,0);
+"32
+[; ;main.c: 32:                           EUSART_PrintString(phrase,0);
 [e ( _EUSART_PrintString (2 , &U _phrase -> -> 0 `i `uc ]
-"42
-[; ;main.c: 42:                   }
+"33
+[; ;main.c: 33:                   }
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e :U 1314 ]
 [e $ < -> _i `i -> . _uid 0 `i 1311  ]
 [e :U 1312 ]
 }
-"44
-[; ;main.c: 44:                   PICC_HaltA();
+"34
+[; ;main.c: 34:                   PICC_HaltA();
 [e ( _PICC_HaltA ..  ]
-"45
-[; ;main.c: 45:              }
+"35
+[; ;main.c: 35:                   PCD_StopCrypto1();
+[e ( _PCD_StopCrypto1 ..  ]
+"36
+[; ;main.c: 36:                   sprintf(phrase,"\r\n");
+[e ( _sprintf (1 , &U _phrase :s 7C ]
+"37
+[; ;main.c: 37:                   EUSART_PrintString(phrase,0);
+[e ( _EUSART_PrintString (2 , &U _phrase -> -> 0 `i `uc ]
+"38
+[; ;main.c: 38:              }
 }
 [e :U 1310 ]
-"46
-[; ;main.c: 46:         }else{
+"39
+[; ;main.c: 39:         }
 }
-[e $U 1315  ]
 [e :U 1309 ]
-{
-"47
-[; ;main.c: 47:             sprintf(phrase,"\n No Detectada\r\n");
-[e ( _sprintf (1 , &U _phrase :s 7C ]
-"48
-[; ;main.c: 48:             EUSART_PrintString(phrase,0);
-[e ( _EUSART_PrintString (2 , &U _phrase -> -> 0 `i `uc ]
-"49
-[; ;main.c: 49:         }
-}
-[e :U 1315 ]
-"50
-[; ;main.c: 50:         _delay((unsigned long)((1000)*(32000000/4000.0)));
+"45
+[; ;main.c: 45:         _delay((unsigned long)((1000)*(32000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
-"51
-[; ;main.c: 51:     }
+"47
+[; ;main.c: 47:     }
 }
 [e :U 1306 ]
 [e $U 1307  ]
 [e :U 1308 ]
-"52
-[; ;main.c: 52: }
+"48
+[; ;main.c: 48: }
 [e :UE 1305 ]
 }
 [p f _sprintf 11911692 ]
@@ -1736,6 +1737,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 [a 3C 67 97 114 100 32 85 73 68 58 0 ]
 [a 4C 32 0 ]
 [a 5C 32 0 ]
-[a 2C 84 101 32 101 110 99 111 110 116 114 97 109 111 115 32 97 108 101 108 117 108 108 97 32 114 10 0 ]
-[a 7C 10 32 78 111 32 68 101 116 101 99 116 97 100 97 13 10 0 ]
-[a 1C 84 101 32 101 110 99 111 110 116 114 97 109 111 115 32 97 108 101 108 117 108 108 97 32 13 10 0 ]
+[a 1C 73 110 105 99 105 97 110 100 111 32 13 10 0 ]
+[a 2C 84 97 114 106 101 116 97 32 68 101 116 101 99 116 97 100 97 32 13 10 0 ]
+[a 7C 13 10 0 ]

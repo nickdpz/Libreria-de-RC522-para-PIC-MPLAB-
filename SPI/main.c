@@ -7,7 +7,7 @@
 
 
 char phrase[30]={};
-
+char i=0;
 /*
                          Main application
  */
@@ -17,39 +17,35 @@ void main(void)
     SYSTEM_Initialize();
     PCD_Init();
     EUSART_Initialize();
-    sprintf(phrase,"Te encontramos alelulla \r\n");
+    sprintf(phrase,"Iniciando \r\n");
     EUSART_PrintString(phrase,0);
-    
-    
-
-
-    while (1)
-    {   
-
+    while (1){   
         if (PICC_IsNewCardPresent()){
-            sprintf(phrase,"Te encontramos alelulla r\n");
+            sprintf(phrase,"Tarjeta Detectada \r\n");
             EUSART_PrintString(phrase,0);
-             if (PICC_ReadCardSerial() )
-            {
-                  // Enviamos serialemente su UID
+             if (PICC_ReadCardSerial()){
                   sprintf(phrase,"Card UID:");
-                  //enviaDebug(phrase,0);
-                  for (char i = 0; i < uid.size; i++) {
+                  for (i = 0; i < uid.size; i++) {
                           sprintf(phrase,uid.uidByte[i] < 0x10 ? " " : " ");
                           EUSART_PrintString(phrase,0);
                           sprintf(phrase,"%02X",uid.uidByte[i]);   
                           EUSART_PrintString(phrase,0);
                   } 
-                  // Terminamos la lectura de la tarjeta  actual
                   PICC_HaltA(); 
+                  PCD_StopCrypto1();
+                  sprintf(phrase,"\r\n");   
+                  EUSART_PrintString(phrase,0);
              }
-        }else{
-            sprintf(phrase,"\n No Detectada\r\n"); 
-            EUSART_PrintString(phrase,0);
         }
+        /*else{
+            //sprintf(phrase,"%02X \r\n",PCD_ReadRegister(VersionReg));//Debe salir 91H 
+            //EUSART_PrintString(phrase,0);
+            
+        }*/
         __delay_ms(1000); 
+        
     }
 }
-/**
+/*
  End of File
 */

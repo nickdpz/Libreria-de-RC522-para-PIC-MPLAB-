@@ -119,6 +119,8 @@ SPI_CUSTOM0 0
 [v _PICC_Select PICC_Select `(uc  1 e 1 0 ]
 "639
 [v _PICC_HaltA PICC_HaltA `(uc  1 e 1 0 ]
+"694
+[v _PCD_StopCrypto1 PCD_StopCrypto1 `(v  1 e 1 0 ]
 "700
 [v _MIFARE_Read MIFARE_Read `(uc  1 e 1 0 ]
 "725
@@ -142,7 +144,7 @@ SPI_CUSTOM0 0
 [s S395 . 12 `uc 1 size 1 0 `[10]uc 1 uidByte 10 1 `uc 1 sak 1 11 ]
 "69
 [v _uid uid `S395  1 e 12 0 ]
-[s S497 . 1 `uc 1 RC0 1 0 :1:0 
+[s S501 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 RC3 1 0 :1:3 
@@ -152,8 +154,8 @@ SPI_CUSTOM0 0
 `uc 1 RC7 1 0 :1:7 
 ]
 "535 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1769.h
-[u S506 . 1 `S497 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES506  1 e 1 @14 ]
+[u S510 . 1 `S501 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES510  1 e 1 @14 ]
 [s S137 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
@@ -218,7 +220,7 @@ SPI_CUSTOM0 0
 [v _LATB LATB `VEuc  1 e 1 @269 ]
 "2811
 [v _LATC LATC `VEuc  1 e 1 @270 ]
-[s S460 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S464 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -228,8 +230,8 @@ SPI_CUSTOM0 0
 `uc 1 LATC7 1 0 :1:7 
 ]
 "2828
-[u S469 . 1 `S460 1 . 1 0 ]
-[v _LATCbits LATCbits `VES469  1 e 1 @270 ]
+[u S473 . 1 `S464 1 . 1 0 ]
+[v _LATCbits LATCbits `VES473  1 e 1 @270 ]
 "4051
 [v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
 "4090
@@ -342,6 +344,8 @@ SPI_CUSTOM0 0
 [v _nout nout `i  1 s 2 nout ]
 "9 C:\Users\nikod\Documents\RFID\SPI\main.c
 [v _phrase phrase `[30]uc  1 e 30 0 ]
+"10
+[v _i i `uc  1 e 1 0 ]
 [s S101 . 3 `uc 1 con1 1 0 `uc 1 stat 1 1 `uc 1 add 1 2 ]
 "39 C:\Users\nikod\Documents\RFID\SPI\mcc_generated_files/spi_driver.c
 [v _spi_configuration spi_configuration `DC[1]S101  1 s 3 spi_configuration ]
@@ -352,17 +356,15 @@ SPI_CUSTOM0 0
 "14 C:\Users\nikod\Documents\RFID\SPI\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"37
-[v main@i i `uc  1 a 1 79 ]
-"52
+"48
 } 0
 "9 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
 [v sprintf@s s `*.5uc  1 a 1 wreg ]
-[s S1251 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[s S1255 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
 "13
-[v sprintf@f f `S1251  1 a 5 4 ]
+[v sprintf@f f `S1255  1 a 5 4 ]
 "11
 [v sprintf@ret ret `i  1 a 2 0 ]
 "12
@@ -377,24 +379,24 @@ SPI_CUSTOM0 0
 "1368 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\doprnt.c
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
 {
-[s S824 _IO_FILE 0 ]
-[v vfprintf@fp fp `*.4S824  1 a 1 wreg ]
+[s S828 _IO_FILE 0 ]
+[v vfprintf@fp fp `*.4S828  1 a 1 wreg ]
 "1371
 [v vfprintf@cfmt cfmt `*.25uc  1 a 2 68 ]
 "1368
-[v vfprintf@fp fp `*.4S824  1 a 1 wreg ]
+[v vfprintf@fp fp `*.4S828  1 a 1 wreg ]
 [v vfprintf@fmt fmt `*.25DCuc  1 p 2 62 ]
 [v vfprintf@ap ap `*.4*.4v  1 p 1 64 ]
 "1373
 "1368
-[v vfprintf@fp fp `*.4S824  1 a 1 67 ]
+[v vfprintf@fp fp `*.4S828  1 a 1 67 ]
 "1382
 } 0
 "670
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 {
-[s S824 _IO_FILE 0 ]
-[v vfpfcnvrt@fp fp `*.4S824  1 a 1 wreg ]
+[s S828 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.4S828  1 a 1 wreg ]
 "675
 [v vfpfcnvrt@llu llu `ul  1 a 4 57 ]
 "673
@@ -405,19 +407,19 @@ SPI_CUSTOM0 0
 [v vfpfcnvrt@cp cp `*.4uc  1 a 1 49 ]
 [v vfpfcnvrt@c c `uc  1 a 1 48 ]
 "670
-[v vfpfcnvrt@fp fp `*.4S824  1 a 1 wreg ]
+[v vfpfcnvrt@fp fp `*.4S828  1 a 1 wreg ]
 [v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 40 ]
 [v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 41 ]
 "680
 "670
-[v vfpfcnvrt@fp fp `*.4S824  1 a 1 61 ]
+[v vfpfcnvrt@fp fp `*.4S828  1 a 1 61 ]
 "1365
 } 0
 "623
 [v _xtoa xtoa `(i  1 s 2 xtoa ]
 {
-[s S824 _IO_FILE 0 ]
-[v xtoa@fp fp `*.4S824  1 a 1 wreg ]
+[s S828 _IO_FILE 0 ]
+[v xtoa@fp fp `*.4S828  1 a 1 wreg ]
 "626
 [v xtoa@n n `ul  1 a 4 32 ]
 "625
@@ -426,12 +428,12 @@ SPI_CUSTOM0 0
 [v xtoa@w w `i  1 a 2 30 ]
 [v xtoa@p p `i  1 a 2 28 ]
 "623
-[v xtoa@fp fp `*.4S824  1 a 1 wreg ]
+[v xtoa@fp fp `*.4S828  1 a 1 wreg ]
 [v xtoa@d d `ul  1 p 4 12 ]
 [v xtoa@x x `uc  1 p 1 16 ]
 "629
 "623
-[v xtoa@fp fp `*.4S824  1 a 1 27 ]
+[v xtoa@fp fp `*.4S828  1 a 1 27 ]
 "665
 } 0
 "4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\toupper.c
@@ -449,18 +451,18 @@ SPI_CUSTOM0 0
 "72 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\doprnt.c
 [v _pad pad `(i  1 s 2 pad ]
 {
-[s S824 _IO_FILE 0 ]
-[v pad@fp fp `*.4S824  1 a 1 wreg ]
+[s S828 _IO_FILE 0 ]
+[v pad@fp fp `*.4S828  1 a 1 wreg ]
 "74
 [v pad@w w `i  1 a 2 9 ]
 [v pad@i i `i  1 a 2 7 ]
 "72
-[v pad@fp fp `*.4S824  1 a 1 wreg ]
+[v pad@fp fp `*.4S828  1 a 1 wreg ]
 [v pad@buf buf `*.5uc  1 p 1 4 ]
 [v pad@p p `i  1 p 2 5 ]
 "77
 "72
-[v pad@fp fp `*.4S824  1 a 1 11 ]
+[v pad@fp fp `*.4S828  1 a 1 11 ]
 "95
 } 0
 "8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\nf_fputs.c
@@ -473,8 +475,8 @@ SPI_CUSTOM0 0
 [v fputs@c c `uc  1 a 1 0 ]
 "8
 [v fputs@s s `*.5DCuc  1 a 1 wreg ]
-[s S1251 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
-[v fputs@fp fp `*.4S1251  1 p 1 8 ]
+[s S1255 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputs@fp fp `*.4S1255  1 p 1 8 ]
 "13
 [v fputs@s s `*.5DCuc  1 a 1 3 ]
 "19
@@ -494,8 +496,8 @@ SPI_CUSTOM0 0
 "546 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\doprnt.c
 [v _stoa stoa `(i  1 s 2 stoa ]
 {
-[s S824 _IO_FILE 0 ]
-[v stoa@fp fp `*.4S824  1 a 1 wreg ]
+[s S828 _IO_FILE 0 ]
+[v stoa@fp fp `*.4S828  1 a 1 wreg ]
 "548
 [v stoa@nuls nuls `[7]uc  1 a 7 0 ]
 "549
@@ -506,20 +508,20 @@ SPI_CUSTOM0 0
 "548
 [v stoa@cp cp `*.4uc  1 a 1 12 ]
 "546
-[v stoa@fp fp `*.4S824  1 a 1 wreg ]
+[v stoa@fp fp `*.4S828  1 a 1 wreg ]
 [v stoa@s s `*.4uc  1 p 1 8 ]
 "548
 [v stoa@F1121 F1121 `[7]uc  1 s 7 F1121 ]
 "546
-[v stoa@fp fp `*.4S824  1 a 1 11 ]
+[v stoa@fp fp `*.4S828  1 a 1 11 ]
 "589
 } 0
 "8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 0 ]
-[s S1251 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
-[v fputc@fp fp `*.4S1251  1 p 1 2 ]
+[s S1255 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputc@fp fp `*.4S1255  1 p 1 2 ]
 "21
 } 0
 "7 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\putch.c
@@ -701,20 +703,6 @@ SPI_CUSTOM0 0
 [v PICC_REQA_or_WUPA@command command `uc  1 a 1 48 ]
 "423
 } 0
-"83
-[v _PCD_ClearRegisterBitMask PCD_ClearRegisterBitMask `(v  1 e 1 0 ]
-{
-[v PCD_ClearRegisterBitMask@reg reg `uc  1 a 1 wreg ]
-"86
-[v PCD_ClearRegisterBitMask@tmp tmp `uc  1 a 1 6 ]
-"83
-[v PCD_ClearRegisterBitMask@reg reg `uc  1 a 1 wreg ]
-"84
-[v PCD_ClearRegisterBitMask@mask mask `uc  1 p 1 4 ]
-"87
-[v PCD_ClearRegisterBitMask@reg reg `uc  1 a 1 7 ]
-"89
-} 0
 "639
 [v _PICC_HaltA PICC_HaltA `(uc  1 e 1 0 ]
 {
@@ -757,7 +745,7 @@ SPI_CUSTOM0 0
 "378
 [v PCD_CommunicateWithPICC@status status `uc  1 a 1 21 ]
 "349
-[v PCD_CommunicateWithPICC@n_685 n `uc  1 a 1 24 ]
+[v PCD_CommunicateWithPICC@n_689 n `uc  1 a 1 24 ]
 "323
 [v PCD_CommunicateWithPICC@i i `us  1 a 2 22 ]
 "345
@@ -858,6 +846,25 @@ SPI_CUSTOM0 0
 [v PCD_WriteRegisters@values values `*.4uc  1 p 1 2 ]
 [v PCD_WriteRegisters@addr addr `uc  1 a 1 5 ]
 "31
+} 0
+"694
+[v _PCD_StopCrypto1 PCD_StopCrypto1 `(v  1 e 1 0 ]
+{
+"697
+} 0
+"83
+[v _PCD_ClearRegisterBitMask PCD_ClearRegisterBitMask `(v  1 e 1 0 ]
+{
+[v PCD_ClearRegisterBitMask@reg reg `uc  1 a 1 wreg ]
+"86
+[v PCD_ClearRegisterBitMask@tmp tmp `uc  1 a 1 6 ]
+"83
+[v PCD_ClearRegisterBitMask@reg reg `uc  1 a 1 wreg ]
+"84
+[v PCD_ClearRegisterBitMask@mask mask `uc  1 p 1 4 ]
+"87
+[v PCD_ClearRegisterBitMask@reg reg `uc  1 a 1 7 ]
+"89
 } 0
 "120
 [v _PCD_Init PCD_Init `(v  1 e 1 0 ]

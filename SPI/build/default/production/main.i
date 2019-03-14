@@ -14853,7 +14853,7 @@ void WDT_Initialize(void);
 
 
 char phrase[30]={};
-
+char i=0;
 
 
 
@@ -14863,36 +14863,32 @@ void main(void)
     SYSTEM_Initialize();
     PCD_Init();
     EUSART_Initialize();
-    sprintf(phrase,"Te encontramos alelulla \r\n");
+    sprintf(phrase,"Iniciando \r\n");
     EUSART_PrintString(phrase,0);
-
-
-
-
-    while (1)
-    {
-
+    while (1){
         if (PICC_IsNewCardPresent()){
-            sprintf(phrase,"Te encontramos alelulla r\n");
+            sprintf(phrase,"Tarjeta Detectada \r\n");
             EUSART_PrintString(phrase,0);
-             if (PICC_ReadCardSerial() )
-            {
-
+             if (PICC_ReadCardSerial()){
                   sprintf(phrase,"Card UID:");
-
-                  for (char i = 0; i < uid.size; i++) {
+                  for (i = 0; i < uid.size; i++) {
                           sprintf(phrase,uid.uidByte[i] < 0x10 ? " " : " ");
                           EUSART_PrintString(phrase,0);
                           sprintf(phrase,"%02X",uid.uidByte[i]);
                           EUSART_PrintString(phrase,0);
                   }
-
                   PICC_HaltA();
+                  PCD_StopCrypto1();
+                  sprintf(phrase,"\r\n");
+                  EUSART_PrintString(phrase,0);
              }
-        }else{
-            sprintf(phrase,"\n No Detectada\r\n");
-            EUSART_PrintString(phrase,0);
         }
+
+
+
+
+
         _delay((unsigned long)((1000)*(32000000/4000.0)));
+
     }
 }
