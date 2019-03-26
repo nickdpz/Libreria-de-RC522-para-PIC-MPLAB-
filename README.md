@@ -1,0 +1,2 @@
+# RC522-PIC-y-MCC-
+En este proyecto consiste en el paso de la libreria del lector de tarjetas RC522 de lenguaje c++ de arduino a lenguaje c para PIC. Se configura el dispositivo con la herramienta MCC de MPLAB, el ejemplo principal consisten en identificar el ID de tarjetas con tecnología RFID y enviarlo por medio de comunicación serial para la visialización en una terminal de computador, se usa el modulo USB-TTL CP2102 para polarizar los dispositivos y permitir la comunicación con el computador.
